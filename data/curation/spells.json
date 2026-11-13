@@ -1,0 +1,40 @@
+{
+  "_about": "Lægges oven på udtrukne spells, nøglet på ID.",
+  "overrides": {
+    "spell.dark-magic.nightfall": {
+      "variables": {
+        "range": {
+          "base": "20",
+          "step": "10"
+        },
+        "blast": {
+          "base": null,
+          "step": null
+        },
+        "burst": {
+          "base": null,
+          "step": null
+        },
+        "zone": {
+          "base": "4",
+          "step": "2"
+        },
+        "duration": {
+          "base": "1m",
+          "step": "1m"
+        },
+        "dmr": {
+          "base": null,
+          "step": null
+        },
+        "intensity": {
+          "base": null,
+          "step": null
+        }
+      },
+      "clarifications": [
+        "Husfortolkning: teksten beskriver en zone, så værdien 4/2 er flyttet fra burst til zone."
+      ]
+    }
+  }
+}

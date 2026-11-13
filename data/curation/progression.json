@@ -1,0 +1,212 @@
+{
+  "_about": "Tabeller og konstanter. Kilder: s. 13, 18, 126-129, 135.",
+  "standardArray": [
+    15,
+    14,
+    13,
+    12,
+    10,
+    8
+  ],
+  "attributeModifierTable": [
+    {
+      "min": 1,
+      "max": 1,
+      "modifier": -5
+    },
+    {
+      "min": 2,
+      "max": 3,
+      "modifier": -4
+    },
+    {
+      "min": 4,
+      "max": 5,
+      "modifier": -3
+    },
+    {
+      "min": 6,
+      "max": 7,
+      "modifier": -2
+    },
+    {
+      "min": 8,
+      "max": 9,
+      "modifier": -1
+    },
+    {
+      "min": 10,
+      "max": 11,
+      "modifier": 0
+    },
+    {
+      "min": 12,
+      "max": 13,
+      "modifier": 1
+    },
+    {
+      "min": 14,
+      "max": 15,
+      "modifier": 2
+    },
+    {
+      "min": 16,
+      "max": 17,
+      "modifier": 3
+    },
+    {
+      "min": 18,
+      "max": 19,
+      "modifier": 4
+    },
+    {
+      "min": 20,
+      "max": 20,
+      "modifier": 5
+    }
+  ],
+  "startingSkillPoints": 25,
+  "skillPointsPerLevel": 15,
+  "rankCost": [
+    1,
+    2
+  ],
+  "rankBonusBands": [
+    {
+      "fromRank": 1,
+      "toRank": 10,
+      "perRank": 1
+    },
+    {
+      "fromRank": 11,
+      "toRank": 30,
+      "perRank": 0.5
+    },
+    {
+      "fromRank": 31,
+      "toRank": null,
+      "perRank": 0.25
+    }
+  ],
+  "startingFeats": 3,
+  "startingSaveProficiencyPoints": 4,
+  "xpPerLevel": 1000,
+  "socialStanding": [
+    {
+      "roll": [
+        1,
+        1
+      ],
+      "status": "Social outcast",
+      "wealth": {
+        "amount": 1,
+        "currency": "cp"
+      }
+    },
+    {
+      "roll": [
+        2,
+        2
+      ],
+      "status": "Lower lower class",
+      "wealth": {
+        "amount": 3,
+        "currency": "cp"
+      }
+    },
+    {
+      "roll": [
+        3,
+        3
+      ],
+      "status": "Middle lower class",
+      "wealth": {
+        "amount": 5,
+        "currency": "cp"
+      }
+    },
+    {
+      "roll": [
+        4,
+        4
+      ],
+      "status": "Upper lower class",
+      "wealth": {
+        "amount": 10,
+        "currency": "cp"
+      }
+    },
+    {
+      "roll": [
+        5,
+        8
+      ],
+      "status": "Lower middle class",
+      "wealth": {
+        "amount": 30,
+        "currency": "bp"
+      }
+    },
+    {
+      "roll": [
+        9,
+        14
+      ],
+      "status": "Middle middle class",
+      "wealth": {
+        "amount": 80,
+        "currency": "bp"
+      }
+    },
+    {
+      "roll": [
+        15,
+        17
+      ],
+      "status": "Upper middle class",
+      "wealth": {
+        "amount": 20,
+        "currency": "sp"
+      }
+    },
+    {
+      "roll": [
+        18,
+        18
+      ],
+      "status": "Lower upper class",
+      "wealth": {
+        "amount": 50,
+        "currency": "sp"
+      }
+    },
+    {
+      "roll": [
+        19,
+        19
+      ],
+      "status": "Middle upper class",
+      "wealth": {
+        "amount": 10,
+        "currency": "gp"
+      }
+    },
+    {
+      "roll": [
+        20,
+        20
+      ],
+      "status": "Upper upper class",
+      "wealth": {
+        "amount": 40,
+        "currency": "gp"
+      }
+    }
+  ],
+  "currencyInCopper": {
+    "gp": 1000,
+    "sp": 100,
+    "bp": 10,
+    "cp": 1
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "_about": "Lægges oven på udtrukne feats, nøglet på ID.",
+  "overrides": {
+    "feat.warrior.thick-skinned": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "TOU"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.warrior.melee-specialist": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "DMR"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "Melee weapons, including unarmed attacks"
+        }
+      ]
+    },
+    "feat.warrior.force-to-be-reckoned-with": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "skill",
+            "skill": "skill.combat-melee-*"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.warrior.tough-as-nails": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "save",
+            "save": "death"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.primal.primal-endurance": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "BP"
+          },
+          "value": 20,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.universal.focused-learner": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "skillPointsPerLevel"
+          },
+          "value": 3,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.universal.in-our-maker-we-trust": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "DFR"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "When in cover"
+        }
+      ]
+    },
+    "feat.universal.martial-artist": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "DMR"
+          },
+          "value": 3,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "Unarmed attacks"
+        }
+      ]
+    },
+    "feat.universal.traveler": {
+      "aliases": [
+        "Traveller"
+      ]
+    },
+    "feat.universal.quickstride": {
+      "aliases": [
+        "Quick stride"
+      ]
+    },
+    "feat.human.fast-learner": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "skillPointsPerLevel"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.human.weapons-master": {
+      "choices": [
+        {
+          "key": "weapon",
+          "prompt": "Vælg en våbentype (fx Longsword)",
+          "from": {
+            "kind": "weapon"
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "skill",
+            "skill": "$choice.weapon"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "Med det valgte våben"
+        }
+      ]
+    },
+    "feat.human.arcane-studies": {
+      "choices": [
+        {
+          "key": "realm",
+          "prompt": "Vælg et spell-realm",
+          "from": {
+            "kind": "realm"
+          }
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "skill",
+            "skill": "$choice.realm"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "always"
+        }
+      ]
+    },
+    "feat.human.linguist": {
+      "choices": [
+        {
+          "key": "language",
+          "prompt": "Vælg et humanoidt sprog",
+          "from": {
+            "kind": "language"
+          }
+        }
+      ]
+    },
+    "feat.elf.wildlife-pact": {
+      "choices": [
+        {
+          "key": "animalGroup",
+          "prompt": "Vælg en gruppe dyr",
+          "from": {
+            "kind": "animalGroup"
+          }
+        }
+      ]
+    },
+    "feat.elf.flow-of-nature": {
+      "modifiers": [
+        {
+          "target": {
+            "kind": "skill",
+            "skill": "skill.magic-spiritualism"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "When casting Nature spells"
+        }
+      ],
+      "clarifications": [
+        "Husfortolkning: ‘Magic: Nature’ findes ikke. Giver +1 til Magic: Spiritualism ved Nature-spells."
+      ]
+    },
+    "feat.universal.combat-stamina": {
+      "clarifications": [
+        "Husfortolkning: prisen er 10 BP (prisfeltet). Teksten siger 5 BP."
+      ]
+    },
+    "feat.warrior.pain-relief": {
+      "clarifications": [
+        "Husfortolkning: ‘Stunned (S)’ læses som Staggered (S)."
+      ]
+    }
+  }
+}

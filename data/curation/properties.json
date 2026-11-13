@@ -1,0 +1,101 @@
+{
+  "_about": "Egenskaber, der bruges men ikke defineres i bogen (konflikt E2).",
+  "additions": [
+    {
+      "id": "property.thrown",
+      "name": "Thrown",
+      "appliesTo": "melee",
+      "param": "rangeBand",
+      "text": "The weapon can be thrown as a ranged attack with the given range (e.g. S).",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.reach",
+      "name": "Reach",
+      "appliesTo": "melee",
+      "param": "number",
+      "text": "The wielder can make melee attacks against targets up to x meters away.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.two-handed",
+      "name": "Two-handed",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "The weapon requires two hands to wield.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.minor",
+      "name": "Minor",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "The attack deals minor damage. Exact effect awaits the author.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.slow-reload",
+      "name": "Slow reload",
+      "appliesTo": "ranged",
+      "param": "number",
+      "text": "Reloading the weapon takes x rounds.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.agile",
+      "name": "Agile",
+      "appliesTo": "armor",
+      "param": "number",
+      "text": "Grants +x to Acrobatics & Athletics.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "runegate-companion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "rules": "python3 -I tools/import/build_rules.py",
+    "typecheck": "tsc -p .",
+    "test": "node --test test/engine.test.ts"
+  }
+}

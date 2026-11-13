@@ -1,0 +1,51 @@
+{
+  "_about": "ID-udsnit til review (rules.sample.json).",
+  "feats": [
+    "feat.warrior.thick-skinned",
+    "feat.warrior.melee-specialist",
+    "feat.warrior.riposte",
+    "feat.warrior.pain-relief",
+    "feat.warrior.tough-as-nails",
+    "feat.rogue.determination",
+    "feat.rogue.resourceful-agent",
+    "feat.rogue.stunning-blow",
+    "feat.primal.primal-endurance",
+    "feat.primal.magic-study-i-elementalism",
+    "feat.universal.focused-learner",
+    "feat.universal.heroic-essence",
+    "feat.universal.combat-stamina",
+    "feat.universal.in-our-maker-we-trust",
+    "feat.universal.traveler",
+    "feat.human.weapons-master",
+    "feat.human.fast-learner",
+    "feat.elf.flow-of-nature"
+  ],
+  "spells": [
+    "spell.fire.heat-resistance",
+    "spell.fire.firebolt",
+    "spell.fire.fireball",
+    "spell.dark-magic.nightfall"
+  ],
+  "backgrounds": [
+    "background.scholars-apprentice",
+    "background.city-guard",
+    "background.wildland-strider",
+    "background.noble"
+  ],
+  "weapons": [
+    "weapon.unarmed",
+    "weapon.dagger",
+    "weapon.longsword",
+    "weapon.flail",
+    "weapon.spear",
+    "weapon.longbow",
+    "weapon.crossbow-hand",
+    "weapon.musket"
+  ],
+  "armor": [
+    "armor.leather",
+    "armor.rigid-leather",
+    "armor.chain-mail",
+    "armor.shield-normal"
+  ]
+}

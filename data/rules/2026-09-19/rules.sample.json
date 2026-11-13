@@ -1,0 +1,3056 @@
+{
+  "meta": {
+    "book": "core",
+    "version": "2026-09-19",
+    "importedAt": "2026-11-13T23:08:52+00:00",
+    "sourceFile": "d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf"
+  },
+  "progression": {
+    "standardArray": [
+      15,
+      14,
+      13,
+      12,
+      10,
+      8
+    ],
+    "attributeModifierTable": [
+      {
+        "min": 1,
+        "max": 1,
+        "modifier": -5
+      },
+      {
+        "min": 2,
+        "max": 3,
+        "modifier": -4
+      },
+      {
+        "min": 4,
+        "max": 5,
+        "modifier": -3
+      },
+      {
+        "min": 6,
+        "max": 7,
+        "modifier": -2
+      },
+      {
+        "min": 8,
+        "max": 9,
+        "modifier": -1
+      },
+      {
+        "min": 10,
+        "max": 11,
+        "modifier": 0
+      },
+      {
+        "min": 12,
+        "max": 13,
+        "modifier": 1
+      },
+      {
+        "min": 14,
+        "max": 15,
+        "modifier": 2
+      },
+      {
+        "min": 16,
+        "max": 17,
+        "modifier": 3
+      },
+      {
+        "min": 18,
+        "max": 19,
+        "modifier": 4
+      },
+      {
+        "min": 20,
+        "max": 20,
+        "modifier": 5
+      }
+    ],
+    "startingSkillPoints": 25,
+    "skillPointsPerLevel": 15,
+    "rankCost": [
+      1,
+      2
+    ],
+    "rankBonusBands": [
+      {
+        "fromRank": 1,
+        "toRank": 10,
+        "perRank": 1
+      },
+      {
+        "fromRank": 11,
+        "toRank": 30,
+        "perRank": 0.5
+      },
+      {
+        "fromRank": 31,
+        "toRank": null,
+        "perRank": 0.25
+      }
+    ],
+    "startingFeats": 3,
+    "startingSaveProficiencyPoints": 4,
+    "xpPerLevel": 1000,
+    "socialStanding": [
+      {
+        "roll": [
+          1,
+          1
+        ],
+        "status": "Social outcast",
+        "wealth": {
+          "amount": 1,
+          "currency": "cp"
+        }
+      },
+      {
+        "roll": [
+          2,
+          2
+        ],
+        "status": "Lower lower class",
+        "wealth": {
+          "amount": 3,
+          "currency": "cp"
+        }
+      },
+      {
+        "roll": [
+          3,
+          3
+        ],
+        "status": "Middle lower class",
+        "wealth": {
+          "amount": 5,
+          "currency": "cp"
+        }
+      },
+      {
+        "roll": [
+          4,
+          4
+        ],
+        "status": "Upper lower class",
+        "wealth": {
+          "amount": 10,
+          "currency": "cp"
+        }
+      },
+      {
+        "roll": [
+          5,
+          8
+        ],
+        "status": "Lower middle class",
+        "wealth": {
+          "amount": 30,
+          "currency": "bp"
+        }
+      },
+      {
+        "roll": [
+          9,
+          14
+        ],
+        "status": "Middle middle class",
+        "wealth": {
+          "amount": 80,
+          "currency": "bp"
+        }
+      },
+      {
+        "roll": [
+          15,
+          17
+        ],
+        "status": "Upper middle class",
+        "wealth": {
+          "amount": 20,
+          "currency": "sp"
+        }
+      },
+      {
+        "roll": [
+          18,
+          18
+        ],
+        "status": "Lower upper class",
+        "wealth": {
+          "amount": 50,
+          "currency": "sp"
+        }
+      },
+      {
+        "roll": [
+          19,
+          19
+        ],
+        "status": "Middle upper class",
+        "wealth": {
+          "amount": 10,
+          "currency": "gp"
+        }
+      },
+      {
+        "roll": [
+          20,
+          20
+        ],
+        "status": "Upper upper class",
+        "wealth": {
+          "amount": 40,
+          "currency": "gp"
+        }
+      }
+    ],
+    "currencyInCopper": {
+      "gp": 1000,
+      "sp": 100,
+      "bp": 10,
+      "cp": 1
+    },
+    "levels": [
+      {
+        "level": 2,
+        "feats": 1
+      },
+      {
+        "level": 3,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 4,
+        "feats": 1
+      },
+      {
+        "level": 5,
+        "attributePoints": 2
+      },
+      {
+        "level": 6,
+        "feats": 1
+      },
+      {
+        "level": 7,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 8,
+        "feats": 1
+      },
+      {
+        "level": 9,
+        "attributePoints": 2
+      },
+      {
+        "level": 10,
+        "feats": 1
+      },
+      {
+        "level": 11,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 12,
+        "feats": 1
+      },
+      {
+        "level": 13,
+        "attributePoints": 2
+      },
+      {
+        "level": 14,
+        "feats": 1
+      },
+      {
+        "level": 15,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 16,
+        "feats": 1
+      },
+      {
+        "level": 17,
+        "attributePoints": 2
+      },
+      {
+        "level": 18,
+        "feats": 1
+      },
+      {
+        "level": 19,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 20,
+        "feats": 1
+      },
+      {
+        "level": 21,
+        "attributePoints": 2
+      },
+      {
+        "level": 22,
+        "feats": 1
+      },
+      {
+        "level": 23,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 24,
+        "feats": 1
+      },
+      {
+        "level": 25,
+        "attributePoints": 2
+      },
+      {
+        "level": 26,
+        "feats": 1
+      },
+      {
+        "level": 27,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 28,
+        "feats": 1
+      },
+      {
+        "level": 29,
+        "attributePoints": 2
+      },
+      {
+        "level": 30,
+        "feats": 1
+      },
+      {
+        "level": 31,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 32,
+        "feats": 1
+      },
+      {
+        "level": 33,
+        "attributePoints": 2
+      },
+      {
+        "level": 34,
+        "feats": 1
+      },
+      {
+        "level": 35,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 36,
+        "feats": 1
+      },
+      {
+        "level": 37,
+        "attributePoints": 2
+      },
+      {
+        "level": 38,
+        "feats": 1
+      },
+      {
+        "level": 39,
+        "bpOrMp": 5,
+        "saveProficiencyPoints": 2
+      },
+      {
+        "level": 40,
+        "feats": 1
+      }
+    ]
+  },
+  "ancestries": [
+    {
+      "id": "ancestry.human",
+      "name": "Human",
+      "text": "The player can select any one primary attribute, which has a +2 modifier, or two attributes that have +1.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 19,
+        "section": "Ancestry"
+      },
+      "modifiers": [],
+      "choices": [
+        {
+          "key": "attributeBoost",
+          "prompt": "Vælg én attribut +2, eller to attributter +1",
+          "from": {
+            "kind": "attributeBoost",
+            "patterns": [
+              [
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        }
+      ],
+      "traits": [
+        {
+          "name": "Versatile Learner",
+          "text": "Humans gain 2 additional skill points every hero level (including level 1).",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "skillPointsPerLevel"
+              },
+              "value": 2,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestry.elf",
+      "name": "Elf",
+      "text": "Elves gain a +2 DEX score, +1 INT score, +1 WIS score and a -2 CON score.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 20,
+        "section": "Ancestry"
+      },
+      "modifiers": [
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "DEX"
+          },
+          "value": 2,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "INT"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "WIS"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "CON"
+          },
+          "value": -2,
+          "type": "score",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "traits": [
+        {
+          "name": "Light feet",
+          "text": "Elves gain a +6 movement modifier and ignore non-magical difficult terrain.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "SPD"
+              },
+              "value": 6,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Low-light vision",
+          "text": "Elves can see bright as day in dim light and in darkness as if it was dim light within 20 meters.",
+          "modifiers": []
+        },
+        {
+          "name": "Mindfulness",
+          "text": "Elves gain a +10 MP bonus.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "MP"
+              },
+              "value": 10,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Mental stability",
+          "text": "Elves gain a +1 bonus to Will Power saves.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "save",
+                "save": "willpower"
+              },
+              "value": 1,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestry.dwarf",
+      "name": "Dwarf",
+      "text": "Dwarfs gain a +1 STR score, +2 CON score, +1 WIS score and -2 CHA score.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 21,
+        "section": "Ancestry"
+      },
+      "modifiers": [
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "STR"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "CON"
+          },
+          "value": 2,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "WIS"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "CHA"
+          },
+          "value": -2,
+          "type": "score",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "traits": [
+        {
+          "name": "Resiliency",
+          "text": "Dwarfs gain ‘Resistance(2)’ vs. Slashing, Piercing and Bludgeon damage.",
+          "modifiers": []
+        },
+        {
+          "name": "Low-light vision",
+          "text": "Dwarves can see bright as day in dim light and in darkness as if it was dim light within 20 meters.",
+          "modifiers": []
+        },
+        {
+          "name": "Sturdy",
+          "text": "Dwarfs gain a +10 BP bonus.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "BP"
+              },
+              "value": 10,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Tough as a rock",
+          "text": "Dwarves gain +1 bonus to Fortitude saves.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "save",
+                "save": "fortitude"
+              },
+              "value": 1,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestry.treegon",
+      "name": "Treegon",
+      "text": "The Treegons’ rigid, barky hide grant them a +4 item bonus to DFR, and +4 item bonus to TOU. Their rigid bodies, however, prevent them from using no more than +3 DEX modifier to DFR.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 22,
+        "section": "Ancestry"
+      },
+      "modifiers": [],
+      "choices": [],
+      "traits": [
+        {
+          "name": "Barky hide",
+          "text": "+4 item bonus to DFR, and +4 item bonus to TOU. No more than +3 DEX modifier to DFR.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "DFR"
+              },
+              "value": 4,
+              "type": "item",
+              "applies": "always"
+            },
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "TOU"
+              },
+              "value": 4,
+              "type": "item",
+              "applies": "always"
+            },
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "dexToDFR"
+              },
+              "operation": "cap",
+              "value": 3,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Natural weapons",
+          "text": "Unarmed attacks have a base +3 item modifier to DMR.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "DMR"
+              },
+              "value": 3,
+              "type": "item",
+              "applies": "situational",
+              "condition": "Unarmed attacks"
+            }
+          ]
+        },
+        {
+          "name": "Sturdy frame",
+          "text": "Treegons gain +15 conditional modifier to BP.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "BP"
+              },
+              "value": 15,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Speaker of the wild",
+          "text": "Can communicate with plants and wildlife (no fantastical or mythical creatures like griffons, dragons, etc.)",
+          "modifiers": []
+        },
+        {
+          "name": "Fire vulnerability",
+          "text": "Has ‘Vulnerability(5)’ vs. fire damage.",
+          "modifiers": []
+        }
+      ],
+      "restrictions": [
+        "Can’t wear armor and weapons."
+      ],
+      "reviewNotes": [
+        "Bogen navngiver ikke Treegon-trækkene – navnene er sat af appen"
+      ],
+      "clarifications": [
+        "Husfortolkning: forbuddet mod rustning gælder også skjolde."
+      ]
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "archetype.warrior",
+      "name": "Warrior",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 24
+      }
+    },
+    {
+      "id": "archetype.rogue",
+      "name": "Rogue",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 33
+      }
+    },
+    {
+      "id": "archetype.primal",
+      "name": "Primal",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 43
+      }
+    },
+    {
+      "id": "archetype.leader",
+      "name": "Leader",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 57
+      }
+    },
+    {
+      "id": "archetype.mystic",
+      "name": "Mystic",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 69
+      }
+    },
+    {
+      "id": "archetype.universal",
+      "name": "Universal",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 80
+      }
+    }
+  ],
+  "feats": [
+    {
+      "id": "feat.warrior.thick-skinned",
+      "name": "Thick skinned",
+      "group": "archetype.warrior",
+      "tags": [
+        "Passive",
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "CON(10)",
+      "prerequisites": [
+        {
+          "kind": "attribute",
+          "attribute": "CON",
+          "min": 10
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "TOU"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 25,
+        "section": "Warrior: Feats"
+      },
+      "text": "Toughness (TOU) is increased by 2 points, even if the Warrior does not wear armor."
+    },
+    {
+      "id": "feat.warrior.melee-specialist",
+      "name": "Melee specialist",
+      "group": "archetype.warrior",
+      "tags": [
+        "Passive",
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "STR(10)",
+      "prerequisites": [
+        {
+          "kind": "attribute",
+          "attribute": "STR",
+          "min": 10
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "DMR"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "Melee weapons, including unarmed attacks"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 25,
+        "section": "Warrior: Feats"
+      },
+      "text": "Warrior gains a +1 condition bonus to damage rating (DMR) with melee weapons, including unarmed attacks."
+    },
+    {
+      "id": "feat.warrior.riposte",
+      "name": "Riposte",
+      "group": "archetype.warrior",
+      "tags": [
+        "Attack"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "action",
+        "count": 1
+      },
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 26,
+        "section": "Warrior: Feats"
+      },
+      "text": "After an enemy has resolved a melee attack against the Warrior, he can use a ●, to make a counter attack with a +5 DMR bonus."
+    },
+    {
+      "id": "feat.warrior.pain-relief",
+      "name": "Pain Relief",
+      "group": "archetype.warrior",
+      "tags": [
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "action",
+        "count": 1
+      },
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 26,
+        "section": "Warrior: Feats"
+      },
+      "text": "As a ●, the warrior can negate up to one instance of Disorientation (D) or one Stunned (S) effect from an attack.",
+      "clarifications": [
+        "Husfortolkning: ‘Stunned (S)’ læses som Staggered (S)."
+      ]
+    },
+    {
+      "id": "feat.warrior.tough-as-nails",
+      "name": "Tough as nails",
+      "group": "archetype.warrior",
+      "tags": [
+        "Passive",
+        "Bonus",
+        "Buff"
+      ],
+      "isBonus": true,
+      "action": null,
+      "prerequisitesText": "3 non-bonus feats",
+      "prerequisites": [
+        {
+          "kind": "featCount",
+          "min": 3,
+          "counts": "nonBonus"
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "save",
+            "save": "death"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 24,
+        "section": "Warrior: Bonus feats"
+      },
+      "text": "Warrior has a strong urge for life, and gains a +2 condition bonus to death saves."
+    },
+    {
+      "id": "feat.rogue.determination",
+      "name": "Determination",
+      "group": "archetype.rogue",
+      "tags": [
+        "Attack"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "free"
+      },
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 41,
+        "section": "Rogue: Feats"
+      },
+      "cost": {
+        "mp": 15
+      },
+      "text": "The Rogue draws on his cunning, sharp wits and knack for devious play, utilizing his mental capacity to gain an additional action in exchange for 15 MP."
+    },
+    {
+      "id": "feat.rogue.resourceful-agent",
+      "name": "Resourceful Agent",
+      "group": "archetype.rogue",
+      "tags": [
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "action",
+        "count": 1
+      },
+      "prerequisitesText": "INT(11)",
+      "prerequisites": [
+        {
+          "kind": "attribute",
+          "attribute": "INT",
+          "min": 11
+        }
+      ],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 42,
+        "section": "Rogue: Feats"
+      },
+      "cost": {
+        "mp": 5
+      },
+      "text": "By using an ● to concentrate and focus, the Rogue gains advantage to his next non- combat skill check.\n The wilds are your home, its storms - your symphony, its beasts - your kin. You’ve walked where maps fade to blank, reading the wind and earth like an old friend’s letter. Whether hunter, shaman, or sentinel, you move with the rhythm of the living world, fierce and unyielding as the land itself. You’ve learned patience from rivers, courage from thunder, and loyalty from the creatures who walk beside you. While others build walls to keep the wild at bay, you walk freely between civilization and chaos, knowing that both live within you.\nType examples: Ranger, Druid, Shaman, Journeyman, Hunter, Scout, Witch, Vanguard, Sentinel, Barbarian."
+    },
+    {
+      "id": "feat.rogue.stunning-blow",
+      "name": "Stunning blow",
+      "group": "archetype.rogue",
+      "tags": [
+        "Attack",
+        "DeBuff"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "action",
+        "count": 2
+      },
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 42,
+        "section": "Rogue: Feats"
+      },
+      "text": "The Rogue performs a ●● melee attack. If the attack hits, the target must succeed a Fortitude save vs. 10+ the damage dealt, or become ‘Stunned(1)’, or ‘Stunned(2)’ on a critical failure."
+    },
+    {
+      "id": "feat.primal.primal-endurance",
+      "name": "Primal endurance",
+      "group": "archetype.primal",
+      "tags": [
+        "Passive",
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "CON(10)",
+      "prerequisites": [
+        {
+          "kind": "attribute",
+          "attribute": "CON",
+          "min": 10
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "BP"
+          },
+          "value": 20,
+          "type": "condition",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 53,
+        "section": "Primal: Feats"
+      },
+      "text": "The Primal gains a +20 conditional modifier to BP."
+    },
+    {
+      "id": "feat.primal.magic-study-i-elementalism",
+      "name": "Magic study I: Elementalism",
+      "group": "archetype.primal",
+      "tags": [
+        "Magic"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "INT(12)",
+      "prerequisites": [
+        {
+          "kind": "attribute",
+          "attribute": "INT",
+          "min": 12
+        }
+      ],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 55,
+        "section": "Primal: Feats"
+      },
+      "text": "The Primal has studied the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 5.",
+      "equivalenceKey": "magic-study.elementalism.1",
+      "clarifications": [
+        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+      ],
+      "grantsSpellAccess": {
+        "realmOrDomain": "realm.elementalism",
+        "maxLevel": 5
+      }
+    },
+    {
+      "id": "feat.universal.focused-learner",
+      "name": "Focused learner",
+      "group": "archetype.universal",
+      "tags": [
+        "Skill"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "skillPointsPerLevel"
+          },
+          "value": 3,
+          "type": "condition",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 83,
+        "section": "Universal: Feats"
+      },
+      "text": "Character gains a conditional skill point modifier of +3 each hero level."
+    },
+    {
+      "id": "feat.universal.heroic-essence",
+      "name": "Heroic essence",
+      "group": "archetype.universal",
+      "tags": [
+        "Defense"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "free"
+      },
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 84,
+        "section": "Universal: Feats"
+      },
+      "cost": {
+        "mp": 3,
+        "variable": true
+      },
+      "text": "When struck by an attack, and receiving a critical hit, the character can spend 3 MP to reduce the severity by 1 point (maximum of 5 points).\nFor example, if the damage inflicted is 5 points higher than the character's TOU, he can spend 9 MP, to reduce to count as if the damage was only 2 point above his TOU."
+    },
+    {
+      "id": "feat.universal.combat-stamina",
+      "name": "Combat stamina",
+      "group": "archetype.universal",
+      "tags": [
+        "Enable"
+      ],
+      "isBonus": false,
+      "action": {
+        "kind": "free"
+      },
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 83,
+        "section": "Universal: Feats"
+      },
+      "cost": {
+        "bp": 10
+      },
+      "text": "Gain an extra action for 5 BP.",
+      "clarifications": [
+        "Husfortolkning: prisen er 10 BP (prisfeltet). Teksten siger 5 BP."
+      ]
+    },
+    {
+      "id": "feat.universal.in-our-maker-we-trust",
+      "name": "In our maker we trust!",
+      "group": "archetype.universal",
+      "tags": [
+        "Defense"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "None",
+      "prerequisites": [],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "DFR"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "When in cover"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 83,
+        "section": "Universal: Feats"
+      },
+      "text": "Character gains a +2 conditional modifier to DFR, when in cover."
+    },
+    {
+      "id": "feat.universal.traveler",
+      "name": "Traveler",
+      "group": "archetype.universal",
+      "tags": [
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "CON(10)",
+      "prerequisites": [
+        {
+          "kind": "attribute",
+          "attribute": "CON",
+          "min": 10
+        }
+      ],
+      "modifiers": [],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 82,
+        "section": "Universal: Feats"
+      },
+      "text": "Character does not accumulate recovery penalties from traveling.",
+      "aliases": [
+        "Traveller"
+      ]
+    },
+    {
+      "id": "feat.human.weapons-master",
+      "name": "Weapons Master",
+      "group": "ancestry.human",
+      "tags": [
+        "Passive",
+        "Bonus",
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "Human",
+      "prerequisites": [
+        {
+          "kind": "ancestry",
+          "ancestry": "ancestry.human"
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "skill",
+            "skill": "$choice.weapon"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "Med det valgte våben"
+        }
+      ],
+      "choices": [
+        {
+          "key": "weapon",
+          "prompt": "Vælg en våbentype (fx Longsword)",
+          "from": {
+            "kind": "weapon"
+          }
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 86,
+        "section": "Human: Optional feats"
+      },
+      "text": "The player may select any one type of weapon (eg. Longsword), at which the character has a +1 conditional skill modifier."
+    },
+    {
+      "id": "feat.human.fast-learner",
+      "name": "Fast Learner",
+      "group": "ancestry.human",
+      "tags": [
+        "Passive",
+        "Bonus",
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "Human",
+      "prerequisites": [
+        {
+          "kind": "ancestry",
+          "ancestry": "ancestry.human"
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "stat",
+            "stat": "skillPointsPerLevel"
+          },
+          "value": 2,
+          "type": "condition",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 86,
+        "section": "Human: Optional feats"
+      },
+      "text": "The character gains an additional 2 skill points for each hero level."
+    },
+    {
+      "id": "feat.elf.flow-of-nature",
+      "name": "Flow of Nature",
+      "group": "ancestry.elf",
+      "tags": [
+        "Passive",
+        "Bonus",
+        "Buff"
+      ],
+      "isBonus": false,
+      "action": null,
+      "prerequisitesText": "Elf",
+      "prerequisites": [
+        {
+          "kind": "ancestry",
+          "ancestry": "ancestry.elf"
+        }
+      ],
+      "modifiers": [
+        {
+          "target": {
+            "kind": "skill",
+            "skill": "skill.magic-spiritualism"
+          },
+          "value": 1,
+          "type": "condition",
+          "applies": "situational",
+          "condition": "When casting Nature spells"
+        }
+      ],
+      "choices": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 87,
+        "section": "Elf: Optional feats"
+      },
+      "text": "The Elf character gains +1 conditional modifier to Magic: Nature.",
+      "clarifications": [
+        "Husfortolkning: ‘Magic: Nature’ findes ikke. Giver +1 til Magic: Spiritualism ved Nature-spells."
+      ]
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "background.scholars-apprentice",
+      "name": "Scholar’s apprentice",
+      "text": "You spent years fetching quills, grinding inks, and nodding thoughtfully while your mentor lectured on subjects no one else could pronounce. Between dusting scrolls and translating half-burned manuscripts, you absorbed more knowledge than you realize— and a touch of your master’s eccentricity. When your teacher vanished, retired, or simply stopped paying you, you packed up your notes and set out to learn from the greatest text of all: the world itself.",
+      "benefit": {
+        "kind": "feat",
+        "feat": "feat.universal.focused-learner"
+      },
+      "skillRanks": [
+        {
+          "skill": "skill.academics-and-science",
+          "ranks": 3
+        },
+        {
+          "skill": "skill.arcane-arts-and-occultism",
+          "ranks": 3
+        },
+        {
+          "skill": "skill.history-and-religion",
+          "ranks": 3
+        },
+        {
+          "skill": "skill.investigation-and-examination",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.survival-and-nature",
+          "ranks": 1
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 90,
+        "section": "Backgrounds"
+      }
+    },
+    {
+      "id": "background.city-guard",
+      "name": "City guard",
+      "text": "You’ve walked the same cobbled streets so long you can sense trouble before it even starts. Years of patrols have honed your eyes, your instincts, and your ability to talk down a fight before it gets messy. From drunks to thieves to the occasional rampaging golem, you’ve seen it all—and probably filed a report about it. When duty called beyond the city gates, you tightened your belt, grabbed your trusty weapon, and decided someone else can handle the night patrol for once.",
+      "benefit": {
+        "kind": "feat",
+        "feat": "feat.universal.city-navigator"
+      },
+      "skillRanks": [
+        {
+          "skill": "skill.insight-and-persuasion",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.perception-and-awareness",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.social-and-negotiation",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.skullduggery-and-streetwise",
+          "ranks": 2
+        },
+        {
+          "skill": {
+            "slot": "weapon",
+            "index": 1
+          },
+          "ranks": 2
+        },
+        {
+          "skill": {
+            "slot": "armor",
+            "index": 1
+          },
+          "ranks": 2
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 91,
+        "section": "Backgrounds"
+      }
+    },
+    {
+      "id": "background.wildland-strider",
+      "name": "Wildland strider",
+      "text": "You’ve spent more nights under open skies than under a roof, learning the language of wind, track, and trail. The wilds taught you to move quietly, think quickly, and trust your instincts when maps ran out and compasses spun. You’ve crossed tangled forests, icy ridges, and lonely moors where only your wits kept you company. The road may end for others—but for you, it’s simply where the next story begins.",
+      "benefit": {
+        "kind": "feat",
+        "feat": "feat.universal.traveler"
+      },
+      "skillRanks": [
+        {
+          "skill": "skill.acrobatics-and-athletics",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.perception-and-awareness",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.stalking-and-hiding",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.survival-and-nature",
+          "ranks": 2
+        },
+        {
+          "skill": {
+            "slot": "weapon",
+            "index": 1
+          },
+          "ranks": 2
+        },
+        {
+          "skill": {
+            "slot": "armor",
+            "index": 1
+          },
+          "ranks": 1
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 91,
+        "section": "Backgrounds"
+      }
+    },
+    {
+      "id": "background.noble",
+      "name": "Noble",
+      "text": "You were raised among silks, silverware, and speeches about duty, learning early how to smile while others schemed. From courtly banquets to backroom bargains, you mastered etiquette, intrigue, and the subtle art of saying nothing with perfect grace. But privilege can be its own prison, and the gilded halls began to feel too small for your ambition—or your conscience. So you traded velvet for travel dust, determined to earn a story not written by your family’s name.",
+      "benefit": {
+        "kind": "socialStanding",
+        "min": 17
+      },
+      "skillRanks": [
+        {
+          "skill": "skill.academics-and-science",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.deception-and-acting",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.history-and-religion",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.insight-and-persuasion",
+          "ranks": 2
+        },
+        {
+          "skill": "skill.social-and-negotiation",
+          "ranks": 3
+        },
+        {
+          "skill": {
+            "slot": "weapon",
+            "index": 1
+          },
+          "ranks": 1
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 92,
+        "section": "Backgrounds"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "attribute": "WIS",
+      "subskills": [
+        {
+          "name": "Alchemy & chemistry",
+          "text": "Alchemy is a skill of patience, dedication and precision. The ability to mix various reagents together, to have them apply some sort of e ect. Whether it is the arts of concocting beneficial potions, nasty poisons or grinding a couple of herbs together while on the road, is all covered by this skill.\nThe GM defines a DC to make the alchemical result, based on all materials and equipment available. The DC might be adjusted if especially equipment is either in poor condition or lagging all together.\nMoreover, the GM decides on the time it takes to produce the desired concoction.\nSomething may take days or weeks, while others can be rubbed together in 10 minutes.\nSome things might also not be able to produce, if vital equipment is not available.\nThe GM may also consider if the entire production process should be divided into more subprocesses, each demanding a separate skill check. This could be relevant if a concoction is made at a certain desired potency. If not all checks during the process are succeeded, the concoction might not be as potent as initially desired.\nAnd maybe the character doesn’t know it? Would be a real bummer to produce a tranquility dose, meant for a dragon, that didn’t end up being potent enough to  knock the dragon out, or maybe it ends up taking longer to have e ect than anticipated, or the duration isn’t as long as hoped."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 97,
+        "section": "Skills"
+      },
+      "id": "skill.academics-and-science",
+      "name": "Academics & Science",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "This skill encompasses any academic discipline, which is not covered by any specific lore skill. Not only knowledge, but also academic practices and approaches to structure, arrange and go through books, ledgers, scrolls, storages and the likes.\nA person well-versed in academic practices will be able to make reason out of massive piles of documents, find hints, clues, knowledge and how to group and organize it to serve as structured knowledge, from which meaning, reason and patterns emerge.\nWhen searching through archives, ancient libraries or other sources of written or recorded knowledge, a scholar is what is needed.\nThis skill also entails practices of economics, administration, record keeping and scribing.\nThe GM may also conclude that this skill may gain knowledge of military tactics and strategies.\nIn most cases, the GM might set a base duration a search for knowledge would take.\nAchieving success in this skill would most likely mean the character is able to derive whatever desired piece of knowledge, over the course of the specified time. If the result is higher, the GM might decide if additional knowledge is derived, or the process is performed faster than the initial processing time."
+    },
+    {
+      "attribute": "STR",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 98,
+        "section": "Skills"
+      },
+      "id": "skill.acrobatics-and-athletics",
+      "name": "Acrobatics & Athletics",
+      "category": "general",
+      "armorPenalty": "maneuver",
+      "text": "This skill covers a wide range of acrobatic maneuvers, from rolling, tumbling, somersaulting, swinging, bouncing etc. The skill should be used if the character tries an acrobatic or athletic maneuver, like vaulting a low wall, swinging from a chandelier, parkouring between obstacles, contorting through small or narrow passages or openings and other activities like that.\nThe GM might also include precision moves, and balance moves to this skill, if standing on an unstable rope bridge, balancing a narrow ledge or trying to grab that really rare gem in the hole with all the poisonous spikes, without touching them.\nA player can also roll an Acrobatics check to mitigate some damage from falling. For each 2 points of result he can achieve over DC20, he mitigates 1 meter fall distance.\nRolling 28 will mitigate 4 meters fall distance Athletics covers a wide range of physical movement skill like, jumping, swimming, climbing and the likes. Below are inspirational descriptions on how to apply the skill to the game.\nJumping Jumping might seem like a very rudimentary skill, and perhaps it is, in its core form. However, techniques can be developed and trained to perfect the ability to cross distance in-air.\nBut jumping could be extended to crossing surfaces or fields by more than just vaulting over it in a single powerful leap. Being able to achieve higher skill check results means the character apply special and advanced techniques to reach even farther. If this be either running along vertical surfaces, while having momentum of a carefully planned streak of kinetic movement or being able to tap-jump small poles or levers across a chasm, is up to the GM and player to decide on.\nAs a rule of thumb, the character can cross a space equal to 5% of his own height for each point he achieves with his skill check. Rolling 17, would mean he can jump 85% of his own height. A person of 185 cm height, would then be able to cross a space of 157 cm, without touching the ground.\nAgain, if the GM decides, that various obstacles or objects can help the character traverse an even wider space, it is totally up to the GM and player to agree on how cinematic the character’s movement is, and how far he can cross with a single check. Maybe the GM wants multiple checks?\n Climbing This skill is more than just simply climbing trees. Even though it also encompasses simple climbing, this skill embraces the use of various techniques to traverse a vertical surface. A skilled climber is able to get better footing, make small lunges or vaults from one surface to another, or even apply special techniques when both ascending or descending (like rappelling) alongside a vertical surface.\nIt is the GM, that sets the general di culty for ascending or descending a vertical surface and may apply bonusses if for instance the character has a rope at his disposal to aid him.\nA roll should most commonly be made, if the climb constitutes some sort of risk.\nFor instance, climbing up or down a ladder is not inherently di cult, at may not demand a climbing check. However, if it is covered in grease or oil, I may be an entirely di erent matter. Likewise, if the character wants to slide down the ladder like a firefighter, to save time, the GM might demand a skill check.\nSwimming This skill enables the character to swim with a various styles and techniques of swimming. Besides this, it enables the character to dive underwater, control underwater movement.\nThe GM might decide that this skill can also be used when jumping into water, and while making diving maneuvers in the air, before hitting the water.",
+      "clarifications": [
+        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+      ]
+    },
+    {
+      "attribute": "WIS",
+      "subskills": [
+        {
+          "name": "Magical rituals",
+          "text": "Magical rituals can be used for many things, amongst others to prolong the duration of magical spells far beyond what is possible by just casting them. If magical e ects, like traps, locks, barriers, portals, etc. lingers in an area, it is usually the result of a magical ritual. The GM and player should agree on the terms of using magical rituals to invoke certain e ects.\nBesides practicing magical rituals himself, a character may be able to identify the type of magic involved in an ongoing ritual, the purpose of the ritual, and how far it is in its process. Moreover, he will have knowledge of how to assist in a ritual, as well as interrupt it.\nThe character also knows what sort of ingredients, reagents or components must be used to perform a successful ritual, as well as instruct others on how to help."
+        },
+        {
+          "name": "Runes & symbols",
+          "text": "Runes and symbols are powerful entities in which to store magic. Many symbols and runes come with an inherit magical container, that can be filled with essence, in order to lie dormant, until invoked or released. As of such, it is not uncommon to have items engraved with runes or symbols, to be used when the occasion calls for it. Runes and symbols are independent entities, and do not interfere with magic that is imbedded in the actual item itself. In this way, an item imbedded with much magic, can be added with runes or symbols, to increase the variety of magical properties it holds.\nTo invoke the e ects of runes and symbols however, the character must understand the inherit and complex structure and essence of the individual rune or symbol, which is done with a check of this skill.\nOpposed to using magical properties imbedded in the item, which demands an Attunement check, the use of runes and symbols does not demand the character to be attuned to the item.\nHowever, runes and symbols usually come with one or more charges, instead of tapping into the essence of the wielder himself, to ignite the magical e ect imbedded in the item.\nA character can, therefore, invoke the powers of the rune or symbol, even without having any MP left, as the rune or symbol is already charged with the magical power to invoke or cast the any given number of times.\nUsually, the power of the rune or symbol inscribed sets the DC to beat with this skill, in order to invoke the e ect of the rune or symbol."
+        },
+        {
+          "name": "Attunement",
+          "text": "Understanding and connecting to magical powers, embedded into mundane objects is not necessarily for everybody. First and foremost, the character needs to be able to feel and understand the magical streams hidden and embedded in the object.\n This skill has two fundamental functions 1) Identifying magical properties within an object, and understanding how they work or what they do. 2) Connect (attune) to the object’s various powers in order to use or invoke them for the wielders benefit.\nIdentify an item’s powers The more powers an item has, the harder it is to decipher and understand each individual one of them, as the magical signals and streams in the item get mixed up.\nIn general, the base DC of getting to know the first power of an item is 15. A result of 15 also reveals the number of powers the item possesses, but not what they are. For each additional power, the DC increases 5 points. If the item holds 3 powers, the character must obtain a check result of at least 25 to decipher, know and understand each of them. Only when a power is identified can it be used.\nThe player must in advance of the attunement attempt declare, how many of the powers the character attempts to identify. Failures in the attempt to read an item will lead to loss of MP.\nIf a character attempts to identify all three powers of the object above. He must declare so and achieve a skill check of at least 25. If he is not able to, he loses a number of MP equal to the amount of failure. If he rolls 21, he loses 4 MP, and only identifies the first two powers.\nHe may attempt again to identify the last power, but the DC is still 25, since it is the third power.\nIn general, it takes a character 30 minutes to identify 1 power. While creating the connection to the item, scrying it to understand its powers, the character enters a sleeplike condition, that does not count as rest.\nConnect to, and use an item’s powers To be able to use a power from an object, the character must form a mental connection to the item, enabling him to invoke or trigger the item’s power.\nThe more item powers a character is connected to, the harder it becomes to connect and maintain connection to new powers.\nConnecting to one power, is a DC10. Connecting to the next power is DC15, and so on. The powers do not have to be in the same items but can be split across multiple items. For instance, a character can be connected to two powers in one item, and one power in two other items at a collective DC of 20. Once the connection is made, it sustains, until it is voluntarily dropped.\nAny failures in connecting to item powers result in a loss of MP, equal to the failure.\nMoreover, each connection “impounds” increasing portion of MP, which is temporarily bound to maintain the connection to the power of the item. Each individual item details, how many MP must be impounded to use its powers, and while they are impounded they cannot be used for casting magical spells or anything else. The character “lose” these MP temporarily in a way.\nOnce the connection is made, the powers can be used without any Attunement skill check.\n Optional: Feeling the Aether If the GM allows for it, the character might be allowed to use this skill to also feel the presence of magic in an area, see magical streams as he taps into the astral space, where these magical energies are visible.\nHowever, if the skill is used this way, the character will spend 5 MP to enter this type of projection into the plane, where he can see the Aether energies as an overlay to the plane of existence, if he pass a skill check of DC20."
+        },
+        {
+          "name": "Arcane Lore (Aberrations, Fiends)",
+          "text": "With this skill the character studies myriads of information about all sorts of beings or entities categorized as either Demons, Devils or Undead. All creatures in the world fall into some sort of category, and each being’s description will convey if it falls within the confines of this category. This category encompasses amongst other hellhound, pit fiend, succubus, plane travelers, etc. Demons and devils are wide terms, but common for most of the beings or entities in this category are, that they originate from other planes or dimensions, but have entered or been summoned to this world in some way. Many of them also has something to do with “The Taint” in some way.\nKnowledge about these entities might contain common types of attacks, or uncommon attacks. If it is poisonous, and how the poison a ects you, if subjected to it. If it knows spells, has other magical powers. It contains knowledge of their living-, feeding-, mating, wandering-, nesting habits, etc. Moreover, it grants the character knowledge to whether the being contains any valuable resources like poison glands, mandibles, fur, mystical reagents, etc. It may also disclose if the entity has weaknesses or particular strengths.\nInformation about this type of beings will be part of the entity description, and divided into various classes of knowledge.\nThe classes of knowledge are defined as common, uncommon, rare, ancient.\nTo gain access to the various tiers of knowledge, the character must make a check with this skill. The higher, the more information is achieved. It is up to GM’s discretion to decide, if a character gains the insight he desires, but the general rule of thumb below can be applied.\nNotice! Since information about a being could be broken down into various categories, like “Attacks”, “Habits”, “Resources” etc. the GM should consider if he wants the character to roll a check for each category, or just supply all information in all categories within result achieved by the check.\nThe GM could decide, the player must choose to roll for “Attack/combat styles”, and then only be informed about the types of attacks, abilities and tactics the creature would probably use within the confines of the result achieved by the check. Or, if the GM also allows the player to know about habits and resources, etc. as well."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 99,
+        "section": "Skills"
+      },
+      "id": "skill.arcane-arts-and-occultism",
+      "name": "Arcane arts & Occultism",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "The discipline of arcane arts is a mysterious skill that involves understanding and studies of the magical arts. Arcane arts are generally various ways of working with magic, besides casting spells. It is a way to understand and identify if magic is present, imbedded or in other ways applied to an object, area or maybe even a creature. The application of magic may come in a wide variety of ways from runes, crystals, ritualistic practices etc. This skill covers understanding and ability to deduct knowledge on all subjects in this regard.\nThis skill helps the character identify and understand if magic is applied in some way, and the most likely reason why, and how it is supposed to work. This could for instance be identifying a magical seal or lock, understanding how to break or circumvent it. It could also be getting insight into how a magical contraption works and is constructed, to operate it.\nThe skill also covers the attempt to practice non-spell casting magic, for instance rituals or imbedding magical properties to items."
+    },
+    {
+      "attribute": "STR",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-melee-unarmed",
+      "name": "Combat: Melee – Unarmed",
+      "family": "Combat: Melee",
+      "category": "combatMelee",
+      "armorPenalty": "none",
+      "text": "The arts of melee combat come in many forms, styles and techniques in general.\nEven though this skill encompasses a wide range of combat maneuvers, attacks styles, defensive stances etc. it must be broken into some broad weapon categories, since the way of use and handle them vary significantly.\nEach category allows the user to perform combat maneuvers – primarily attacks – with any selection of weapon within the specific category of weapons (eg. Swords & knives).\nThe Categories are: Unarmed, Swords & Knives, Axes, Clubs & Hammers and Polearms & Sta s.\nEach category is considered a separate skill and must be developed individually.\nWanting to be able to fight both unarmed and with swords and knives, requires the character to develop each category individually, spending the skills points on both."
+    },
+    {
+      "attribute": "STR",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-melee-swords-and-knives",
+      "name": "Combat: Melee – Swords & Knives",
+      "family": "Combat: Melee",
+      "category": "combatMelee",
+      "armorPenalty": "none",
+      "text": "The arts of melee combat come in many forms, styles and techniques in general.\nEven though this skill encompasses a wide range of combat maneuvers, attacks styles, defensive stances etc. it must be broken into some broad weapon categories, since the way of use and handle them vary significantly.\nEach category allows the user to perform combat maneuvers – primarily attacks – with any selection of weapon within the specific category of weapons (eg. Swords & knives).\nThe Categories are: Unarmed, Swords & Knives, Axes, Clubs & Hammers and Polearms & Sta s.\nEach category is considered a separate skill and must be developed individually.\nWanting to be able to fight both unarmed and with swords and knives, requires the character to develop each category individually, spending the skills points on both."
+    },
+    {
+      "attribute": "STR",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-melee-axes",
+      "name": "Combat: Melee – Axes",
+      "family": "Combat: Melee",
+      "category": "combatMelee",
+      "armorPenalty": "none",
+      "text": "The arts of melee combat come in many forms, styles and techniques in general.\nEven though this skill encompasses a wide range of combat maneuvers, attacks styles, defensive stances etc. it must be broken into some broad weapon categories, since the way of use and handle them vary significantly.\nEach category allows the user to perform combat maneuvers – primarily attacks – with any selection of weapon within the specific category of weapons (eg. Swords & knives).\nThe Categories are: Unarmed, Swords & Knives, Axes, Clubs & Hammers and Polearms & Sta s.\nEach category is considered a separate skill and must be developed individually.\nWanting to be able to fight both unarmed and with swords and knives, requires the character to develop each category individually, spending the skills points on both."
+    },
+    {
+      "attribute": "STR",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-melee-clubs-and-hammers",
+      "name": "Combat: Melee – Clubs & Hammers",
+      "family": "Combat: Melee",
+      "category": "combatMelee",
+      "armorPenalty": "none",
+      "text": "The arts of melee combat come in many forms, styles and techniques in general.\nEven though this skill encompasses a wide range of combat maneuvers, attacks styles, defensive stances etc. it must be broken into some broad weapon categories, since the way of use and handle them vary significantly.\nEach category allows the user to perform combat maneuvers – primarily attacks – with any selection of weapon within the specific category of weapons (eg. Swords & knives).\nThe Categories are: Unarmed, Swords & Knives, Axes, Clubs & Hammers and Polearms & Sta s.\nEach category is considered a separate skill and must be developed individually.\nWanting to be able to fight both unarmed and with swords and knives, requires the character to develop each category individually, spending the skills points on both."
+    },
+    {
+      "attribute": "STR",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-melee-polearms-and-staffs",
+      "name": "Combat: Melee – Polearms & Staffs",
+      "family": "Combat: Melee",
+      "category": "combatMelee",
+      "armorPenalty": "none",
+      "text": "The arts of melee combat come in many forms, styles and techniques in general.\nEven though this skill encompasses a wide range of combat maneuvers, attacks styles, defensive stances etc. it must be broken into some broad weapon categories, since the way of use and handle them vary significantly.\nEach category allows the user to perform combat maneuvers – primarily attacks – with any selection of weapon within the specific category of weapons (eg. Swords & knives).\nThe Categories are: Unarmed, Swords & Knives, Axes, Clubs & Hammers and Polearms & Sta s.\nEach category is considered a separate skill and must be developed individually.\nWanting to be able to fight both unarmed and with swords and knives, requires the character to develop each category individually, spending the skills points on both."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-ranged-bows",
+      "name": "Combat: Ranged – Bows",
+      "family": "Combat: Ranged",
+      "category": "combatRanged",
+      "armorPenalty": "none",
+      "text": "Training in ranged combat, means the character gains the ability to strike enemies from afar. Many ranged weaponries are similar to each other, but still unique enough to require di erent types of training. Therefore, as with melee weapons, the ranged attack skill is broken down into subcategories, that must be developed separately, if the character wants to be able to use the types of weaponry that fall under the given category.\nThe categories are: Bows, Crossbows, Thrown weaponry, Grenades, 1-handed firearms and 2-handed firearms.\nWanting to be able to both thrown grenades at your enemy, and cover them in a bullet storm, would require to train both Grenades and 2H firearms separately."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-ranged-crossbows",
+      "name": "Combat: Ranged – Crossbows",
+      "family": "Combat: Ranged",
+      "category": "combatRanged",
+      "armorPenalty": "none",
+      "text": "Training in ranged combat, means the character gains the ability to strike enemies from afar. Many ranged weaponries are similar to each other, but still unique enough to require di erent types of training. Therefore, as with melee weapons, the ranged attack skill is broken down into subcategories, that must be developed separately, if the character wants to be able to use the types of weaponry that fall under the given category.\nThe categories are: Bows, Crossbows, Thrown weaponry, Grenades, 1-handed firearms and 2-handed firearms.\nWanting to be able to both thrown grenades at your enemy, and cover them in a bullet storm, would require to train both Grenades and 2H firearms separately."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-ranged-thrown-weaponry",
+      "name": "Combat: Ranged – Thrown weaponry",
+      "family": "Combat: Ranged",
+      "category": "combatRanged",
+      "armorPenalty": "none",
+      "text": "Training in ranged combat, means the character gains the ability to strike enemies from afar. Many ranged weaponries are similar to each other, but still unique enough to require di erent types of training. Therefore, as with melee weapons, the ranged attack skill is broken down into subcategories, that must be developed separately, if the character wants to be able to use the types of weaponry that fall under the given category.\nThe categories are: Bows, Crossbows, Thrown weaponry, Grenades, 1-handed firearms and 2-handed firearms.\nWanting to be able to both thrown grenades at your enemy, and cover them in a bullet storm, would require to train both Grenades and 2H firearms separately."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-ranged-grenades",
+      "name": "Combat: Ranged – Grenades",
+      "family": "Combat: Ranged",
+      "category": "combatRanged",
+      "armorPenalty": "none",
+      "text": "Training in ranged combat, means the character gains the ability to strike enemies from afar. Many ranged weaponries are similar to each other, but still unique enough to require di erent types of training. Therefore, as with melee weapons, the ranged attack skill is broken down into subcategories, that must be developed separately, if the character wants to be able to use the types of weaponry that fall under the given category.\nThe categories are: Bows, Crossbows, Thrown weaponry, Grenades, 1-handed firearms and 2-handed firearms.\nWanting to be able to both thrown grenades at your enemy, and cover them in a bullet storm, would require to train both Grenades and 2H firearms separately."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-ranged-1-handed-firearms",
+      "name": "Combat: Ranged – 1-handed firearms",
+      "family": "Combat: Ranged",
+      "category": "combatRanged",
+      "armorPenalty": "none",
+      "text": "Training in ranged combat, means the character gains the ability to strike enemies from afar. Many ranged weaponries are similar to each other, but still unique enough to require di erent types of training. Therefore, as with melee weapons, the ranged attack skill is broken down into subcategories, that must be developed separately, if the character wants to be able to use the types of weaponry that fall under the given category.\nThe categories are: Bows, Crossbows, Thrown weaponry, Grenades, 1-handed firearms and 2-handed firearms.\nWanting to be able to both thrown grenades at your enemy, and cover them in a bullet storm, would require to train both Grenades and 2H firearms separately."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.combat-ranged-2-handed-firearms",
+      "name": "Combat: Ranged – 2-handed firearms",
+      "family": "Combat: Ranged",
+      "category": "combatRanged",
+      "armorPenalty": "none",
+      "text": "Training in ranged combat, means the character gains the ability to strike enemies from afar. Many ranged weaponries are similar to each other, but still unique enough to require di erent types of training. Therefore, as with melee weapons, the ranged attack skill is broken down into subcategories, that must be developed separately, if the character wants to be able to use the types of weaponry that fall under the given category.\nThe categories are: Bows, Crossbows, Thrown weaponry, Grenades, 1-handed firearms and 2-handed firearms.\nWanting to be able to both thrown grenades at your enemy, and cover them in a bullet storm, would require to train both Grenades and 2H firearms separately."
+    },
+    {
+      "attribute": "CHA",
+      "subskills": [
+        {
+          "name": "Acting",
+          "text": "Even though performance could ideally be divided into a variety of subcategories, this subskill covers all sorts of theatrical and artistic types of performances – not creating physical art though.\nWith training in this skill, the character starts to learn acting techniques, how to create drama, tension, voices, gestures, body language and other things needed to portray another person or slide into the role of a character. Moreover, this skill covers the character’s ability to improvise, create captivating narratives, maybe even scripts and scenery for plays or lyrics for songs.\nPerformance also comes in handy, when addressing larger crowds, public speaking when trying to talk your way out of sticky situations."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 103,
+        "section": "Skills"
+      },
+      "id": "skill.deception-and-acting",
+      "name": "Deception & Acting",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "The art of deception comes in many ways, and spans from fast-talking, misleading, confuse, deception and juggle phrasing and topics to ultimately gain the upper hand on the target, enforcing your will and desires on him, without him really realizing it – at least not during the process. This skill also covers more shady types of persuasions like bribery and blackmail. In this case, the GM should consider granting either advantages or disadvantages according to the significance of the leverage used in the attempt.\nMoreover, the skill entails the use of acting methods, change of voice or body language as tools to deceive another person. For instance, to look like someone else. In some cases, the GM may also allow this skill to cover the creation of disguises.\nBeing able to con your way through life may create temporary or immediate advantages or passage, but in the long run create some problems. Unless the character can totally and utterly con the target into oblivion, the target could after some time realize he has been conned, or experience regrets or remorse from  succumbing to the blu /con attempt of the character. A conned city guard could then report the character to his superiors, or a merchant may refuse any future trade with the character.\nThis skill is an “attack skill” against the target’s passive Willpower save. A passive save DC is considered 10 + Willpower save modifier.\nIn some cases, the GM might consider, that the target’s opinion or bias towards the character makes the DC either higher or lower.\nHowever, with these sorts of “social encounters”, the degree to which the skill attempt is a success matter.\nSocial encounters are also followed by the strain of mind and psyche. Playing with mind and emotion cost the character if unsuccessful. Therefore, if the character fails the attempt, the character loses double number of MP equal to the failure."
+    },
+    {
+      "attribute": "WIS",
+      "subskills": [
+        {
+          "name": "Regions & cultures",
+          "text": "With this skill, the character starts studying the history, traditions, habits and cultures of the civilized races of the world. Having knowledge about other races, factions and people can have a great impact in situations where you want to engage or interact with people of that race or faction. Knowing about their culture, lifestyles and etiquettes could grant tremendous advantages when wanting to create trade agreements or establish diplomatic relationships.\nSometimes the knowledge of cultures and lifestyles of a given race may prove useful in understanding and interpreting ancient texts of their civilization, or unravelling mysteries or puzzles involving their civilization.\nIn general, the GM sets the di culty of accessing a specific detail or historic information about a culture but below is an inspirational guideline.\n DC guideline Common knowledge DC15 Specific knowledge of common topic DC20 Specialized or uncommon knowledge DC25 Rare or extremely specific knowledge DC30 Ancient knowledge DC40 Notice! The DC guidelines above assume it is knowledge about the character’s own people, race, country or region of the world. Within each civilization is knowledge that is common, specialized, forgotten, ancient, etc. And knowing something about this is outlined above, as it is assumed this knowledge is accessible to the character as part of his or her upbringing and life within this specific culture.\nIf similar knowledge is sought about other cultures, races, countries or regions not native to the character himself, the GM should consider penalizing the character in some way, as attaining this knowledge would mean searching and gaining information in other ways than just living within that culture.\nGeneral guidelines about this are listed below.\nPenalty guidelines Neighboring region or country 1 disadvantage Different race 1 disadvantage Distant region or country 2 disadvantages This way uncommon knowledge about a di erent race in a neighboring region would demand a DC25 check with 2 disadvantages (Total DC 29)."
+        },
+        {
+          "name": "Religion & Gods",
+          "text": "This skill involves studies and understanding of religions around the world, and between all the civilized races of the world.\nReligion help identify and understand ceremonial symbols, and etiquette related to various religions, and hold knowledge about the various beliefs, gods, patrons etc.\nimportant to each religion.\nBut besides this, it also helps a character understand and derive belief and etiquette in other circumstances or environments, that are not as well documented as the ones of the civilized world. For instance, understand what might be important when observing secluded tribes or unfamiliar sentient creatures.\nThis skill also encompasses knowledge and understanding of the darker and more occult branches and subcultures of beliefs (but not magical rituals)."
+        },
+        {
+          "name": "Heraldry",
+          "text": "This skill means the character has studied the lineage of histories of families, tales and legends. He knows everything there is to know about important families, heroes (and maybe villains) that has been part of the world’s history.\nHe also knows all sorts of family trees, crests, coat of arms, and recognize ranks and other symbols of power and authority within structured hierarchies of both families and societies.\nWith this skill he is up-to-date with the significance of individual persons of a certain lineage, the stories and importance behind various factions, guilds, armies and other o cial societies.\nSkill combination! Knowing a lot about a person, their lineage or current state of a airs, may o er some sort of bonus to other skills checks about the person. This kind of knowledge might be usable when trying to reach a diplomatic solution, manipulating or simply con a person."
+        },
+        {
+          "name": "Divine Lore (Undead, Astral, Etheric, Extraplanar, Spirit)",
+          "text": "With this skill the character studies myriads of information about all sorts of beings or entities categorized as either Undeads, Astral, Spirit and celestial beings, Ethereal or Extraplanar. All creatures in the world fall into some sort of category, and each being’s description will convey if it falls within the confines of this category. This category encompasses amongst other hellhound, pit fiend, succubus, plane travelers, etc. Demons and devils are wide terms, but common for most of the beings or entities in this category are, that they originate from other planes or dimensions, but have entered or been summoned to this world in some way. Many of them also has something to do with “The Taint” in some way.\nKnowledge about these entities might contain common types of attacks, or uncommon attacks. If it is poisonous, and how the poison a ects you, if subjected to it. If it knows spells, has other magical powers. It contains knowledge of their living-, feeding-, mating, wandering-, nesting habits, etc. Moreover, it grants the character knowledge to whether the being contains any valuable resources like poison glands, mandibles, fur, mystical reagents, etc. It may also disclose if the entity has weaknesses or particular strengths.\nInformation about this type of beings will be part of the entity description, and divided into various classes of knowledge.\nThe classes of knowledge are defined as common, uncommon, rare, ancient.\nTo gain access to the various tiers of knowledge, the character must make a check with this skill. The higher, the more information is achieved. It is up to GM’s discretion to decide, if a character gains the insight he desires, but the general rule of thumb below can be applied.\nNotice! Since information about a being could be broken down into various categories, like “Attacks”, “Habits”, “Resources” etc. the GM should consider if he  wants the character to roll a check for each category, or just supply all information in all categories within result achieved by the check.\nThe GM could decide, the player must choose to roll for “Attack/combat styles”, and then only be informed about the types of attacks, abilities and tactics the creature would probably use within the confines of the result achieved by the check. Or, if the GM also allows the player to know about habits and resources, etc. as well."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 104,
+        "section": "Skills"
+      },
+      "id": "skill.history-and-religion",
+      "name": "History & Religion",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": ""
+    },
+    {
+      "attribute": "CHA",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 107,
+        "section": "Skills"
+      },
+      "id": "skill.insight-and-persuasion",
+      "name": "Insight & Persuasion",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "This skill is a subtle artform, allowing the character to pick up on small and subtle hints and tells in the body language, tone of voice, behavior, context, etc. of another being. By understanding these things, the character gains insight into motives, demeanor, truthfulness or even historical and personal facts about this person or creature. Profound understanding and application of this skill allows the character to deduce critical information about the target, that the target would otherwise not explicitly reveal about themselves.\nThis skill will also cover situations where the character might want to put himself in the place of the other character, try to think like the target, and thereby make better assumptions about most likely decisions the target would have made in a given situation.\nSkill combination! This skill may therefore also become a tool to better manipulate, deceive, mislead, negotiate, argue with or seduce another person. At the GM’s discretion, the character may gain enough insight into the target’s general position in the world, beliefs, personal values, or history to gain bonuses, when trying to engage in diplomatic negotiations or deceive the person.\nSkill combination! Under some circumstances, the GM may also allow a character with enough insight into the target, to achieve bonuses to track the target."
+    },
+    {
+      "attribute": "INT",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 107,
+        "section": "Skills"
+      },
+      "id": "skill.investigation-and-examination",
+      "name": "Investigation & Examination",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "Opposed to the Perception & Awareness skill, which is all about picking up on subtle changes and oddities in the environment that stand out, and makes the character react on these changes, this skill is more about deploying a structured, methodical and intelligent approach or technique to reveal specific information about a given topic or object.\nThis skill comes into play, when the character wants to search a dead body for clues, find hidden objects, hidden entrances or compartments, things that are out of place, patterns that do not readily spring to mind or catch the eye, and the likes.\nBut it stretches far beyond that. The Investigation & Examination skill also encompasses the use of highly trained deduction ability to derive clues about a  specific place, for instance a crime scene. This skill also apply for revealing records, administrational documents, or book keeping which has been used to fraudulent activities.\nEven though the character becomes an adept in discovering clues and revealing patterns, this skill does not grant any knowledge, understanding or insight into specifics or detailed information about the items or clues found. Only how they can be connected, and what it may mean or lead to.\nSkill combination! As per above, the character might need to combine this skill check with specific academic, heraldry, lore or other knowledge skills to deduct an entire scheme, plot or chain of events.\nA successful skill check applying additional information, may allow for new investigation checks to pursue or continue a path of investigational activities."
+    },
+    {
+      "attribute": "INT",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 108,
+        "section": "Skills"
+      },
+      "id": "skill.magic-elementalism",
+      "name": "Magic: Elementalism",
+      "category": "magic",
+      "armorPenalty": "magic",
+      "text": "Practicing this branch, realm or school of magic means studying how to understand, decipher and interpret the streams of magic, in order to mold them into magical e ects, that revolve around the four elements Earth, Air, Fire and Water.\nThis skill enables the caster to understand and cast spells from the schools of Fire, Water, Air and Earth, but not gain spells in them, as this is achieved through selection of feats.\nAs a baseline, all spell casting is set at DC5 + the spell’s level. To cast a successful spell, the skill check must achieve a result of at least 5+ the spell’s level, including any additional DC increase due to heightening the spell’s e ect.\nSpells can be boosted in their e ect, however, making them harder to cast.\nSee the magic chapter for more.",
+      "aliases": [
+        "Casting: Elementalism",
+        "Elementalism"
+      ]
+    },
+    {
+      "attribute": "CHA",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 108,
+        "section": "Skills"
+      },
+      "id": "skill.magic-mysticism",
+      "name": "Magic: Mysticism",
+      "category": "magic",
+      "armorPenalty": "magic",
+      "text": "This skill enables the caster to understand and cast spells from the schools of Mentalism, and Necromancy.\nMentalism delves in manipulating people and the reality around them. This can either be by mind manipulation, illusions or even bending reality itself. Mentalism also contains spells that alter reality, or increase physical and mental abilities of individuals beyond what is normally achievable.\nSome nations and authorities might dislike the use of these types of devious magic, and other might forbid them by law altogether.\nNecromancy Also known as Blood magic or Black magic, deals in death and depriving life and essence. Necromancy is indeed a powerful source of power, but  usually comes at great expenses – most commonly to others than the caster. But this practice of magic is great for empowering yourself, raising the dead to fight for you, or severely maiming and dismembering your enemies.\nAs such, the practices of this type of magic are forbidden. Some might study it in secret, and some might try to argue that the study is meant to understand and prevent its use. No matter the reason, most authorities strike down hard and severe on practitioners of this school of magic.\nSome people believe, necromancy is heavily tied to the Blight Curse, but solid evidence is still to be presented.\nAs a baseline, all spell casting is set at DC5 + the spell’s level. To cast a successful spell, the skill check must achieve a result of at least 5+ the spell’s level, including any additional DC increase due to heightening the spell’s e ect.\nSpells can be boosted in their e ect, however, making them harder to cast.\nSee the magic chapter for more.",
+      "aliases": [
+        "Casting: Mysticism",
+        "Mysticism"
+      ]
+    },
+    {
+      "attribute": "WIS",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 109,
+        "section": "Skills"
+      },
+      "id": "skill.magic-spiritualism",
+      "name": "Magic: Spiritualism",
+      "category": "magic",
+      "armorPenalty": "magic",
+      "text": "This skill enables the caster to understand and cast spells from the schools of Nature and Warding.\nNature allows the caster to understand nature, commune with nature, and gain nature as an ally in a variety of di erent ways. Whether it is the ability to cure poisons, cleanse water, or have razor sharp stone formations shoot up from the ground, or powerful vines engulf and grapple an enemy. Being one with nature, can be an extremely powerful ability.\nWarding focuses on turning the magical streams into protective, aiding and rejuvenating energies, that mend wounds, refresh the exhausted and bolsters the weak.\nThis school of magic is often found with people who also has some sort of divine devotion to a deity, or lives a life of helping others. It is not mandatory though.\nEveryone can study the arts of warding, and having an ally with these magical abilities are often handy when you travel the world and faces it’s perils.\nAs a baseline, all spell casting is set at DC5 + the spell’s level. To cast a successful spell, the skill check must achieve a result of at least 5+ the spell’s level, including any additional DC increase due to heightening the spell’s e ect.\nSpells can be boosted in their e ect, however, making them harder to cast.\nSee the magic chapter for more.",
+      "aliases": [
+        "Casting: Spiritualism",
+        "Spiritualism"
+      ]
+    },
+    {
+      "attribute": "INT",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 110,
+        "section": "Skills"
+      },
+      "id": "skill.magic-directed-spells",
+      "name": "Magic: Directed spells",
+      "category": "magic",
+      "armorPenalty": "magic",
+      "text": "One thing is to be able to conjure forth a magical missile of some sort, whether it’s a firebolt, lightning or anything else taking physical form.\nAnother matter is to hit a target with this magical missile. Just like archers need to hit their targets with their bows or the assassins with their throwing knives, a spell caster needs to guide and direct their magical missiles to hit their target. And this is the skill used for that.\nIt works just as a ranged attack skill and is subjected to the same conditions and modifiers. Similarly, targets get to use the same type of defensive measures against this type of attack.",
+      "aliases": [
+        "Casting: Directed spells",
+        "Directed spells"
+      ]
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [
+        {
+          "name": "Automaton Lore (Constructs, Golems)",
+          "text": "With this skill the character studies myriads of information about all sorts of beings or entities categorized as Constructs or Golems. All creatures in the world fall into some sort of category, and each being’s description will convey if it falls within the confines of this category. This category encompasses amongst other hellhound, pit fiend, succubus, plane travelers, etc. Demons and devils are wide terms, but common for most of the beings or entities in this category are, that they originate from other planes or dimensions, but have entered or been summoned to this world in some way. Many of them also has something to do with “The Taint” in some way.\nKnowledge about these entities might contain common types of attacks, or uncommon attacks. If it is poisonous, and how the poison a ects you, if subjected to it. If it knows spells, has other magical powers. It contains knowledge of their living-, feeding-, mating, wandering-, nesting habits, etc. Moreover, it grants the character knowledge to whether the being contains any valuable resources like poison glands, mandibles, fur, mystical reagents, etc. It may also disclose if the entity has weaknesses or particular strengths.\nInformation about this type of beings will be part of the entity description, and divided into various classes of knowledge.\nThe classes of knowledge are defined as common, uncommon, rare, ancient.\n To gain access to the various tiers of knowledge, the character must make a check with this skill. The higher, the more information is achieved. It is up to GM’s discretion to decide, if a character gains the insight he desires, but the general rule of thumb below can be applied.\nNotice! Since information about a being could be broken down into various categories, like “Attacks”, “Habits”, “Resources” etc. the GM should consider if he wants the character to roll a check for each category, or just supply all information in all categories within result achieved by the check.\nThe GM could decide, the player must choose to roll for “Attack/combat styles”, and then only be informed about the types of attacks, abilities and tactics the creature would probably use within the confines of the result achieved by the check. Or, if the GM also allows the player to know about habits and resources, etc. as well."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 110,
+        "section": "Skills"
+      },
+      "id": "skill.mechanics-and-machinery",
+      "name": "Mechanics & Machinery",
+      "category": "general",
+      "armorPenalty": "maneuver",
+      "text": "This skill concerns the use and understanding of machinery, automatons, technology and technical contraptions and constructs.\nThis may range widely from being actual steam-driven machinery, to complex mechanical constructions used for engineering purposes, traps, mechanisms etc.\nThe character can examine, understand and derive their functions and how they work and operate, reverse engineer them, create them from blueprints, or create blueprints for reproduction, based on a prototype or by examining the technical constructions of the item, object or structure it composes.\nThis way, the character may also gain insight into how to operate it, sabotage it or repair it.",
+      "clarifications": [
+        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+      ]
+    },
+    {
+      "attribute": "WIS",
+      "subskills": [
+        {
+          "name": "First aid",
+          "text": "If a character starts to bleed, as part of a combat encounter, a character can, with this skill, lay a bandage to stop the bleeding. 1 point of bleeding can be stopped for each 5 points of success, from DC10. Thus, 1 point stopped by 15, 2 points by 20, etc.\nGeneral medical care and treatment By using the prober equipment, the character can attend to each individual wound of a comrade. The character can add a number of “free” recovery points (RP) to an ailment, other than restoring BP or MP, for each point the result is above DC20.\nEach attempt has a base time of 20 minutes and demands a single “charge” or “resource” from the medical equipment used.\nIf an injury or ailment needs a specific number of RP to achieve a recovery, for instance 5 RP for getting a save vs. a poison or 5 points for healing an instance of an  injury, but the medical rolls for instance 23, leaving 3 points of free RP, the target only has to spent 2 points of the RP he rolled for, for that given rest.\nSpecial rule! If a medical check achieves for instance 31, leaving 11 free recovery points, the target of the aid is in fact allowed to heal more than a single instance, opposed to normal natural recovery.\nBut, the aiding character must spend an additional 20 minutes of treatment time, per instance he can add to the recovery.\nExample A character has su ered a critical injury, that demands 25 recovery points. By normal unaided recovery, this injury would take 5 days of rest, to recover fully from, as he can only allocate 5 RP per long rest to that injury. However, he is aided by his skilled buddy, that performs a Medical & Care skill check of 31, granting 11 free RP to that specific injury. The injured character now only needs 4 RP to heal 3 instances of that injury, due to the medical aid.\nThe aiding character spends 3 charges from his medical kit, and 60 minutes to treat the wound, since each instance is 20 minutes treating time and 1 charge of the medical kit.\nQuick patch During a short rest, a person trained in Medical & Care, can patch up an injured ally, replenishing a number of lost BP.\nBy using a charge of his medical kit, the character can return a number of BP equal to the target’s CON + 1 point for each success above DC 20 (a minimum of 0).\nThe charge from the medical kit is expended no matter the result of the check."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 111,
+        "section": "Skills"
+      },
+      "id": "skill.medical-and-care",
+      "name": "Medical & Care",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "If magical healers are not present, natural healers, doctors and medics are the second-best thing. With this skill, the character gains knowledge about medical procedures, how to perform medical aid from compressing a bleeding wound, bracing a broken leg, and other fundamental practices.\nGaining higher rank means the character increases his knowledge and will be able to perform surgery and repair more advanced injuries, if the tools, medicines and circumstances allow it.\nThis skill also enables the character to diagnose creatures similar to himself and assess any e ect of ailments, if they are caused by non-magical sources."
+    },
+    {
+      "attribute": "INT",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 112,
+        "section": "Skills"
+      },
+      "id": "skill.perception-and-awareness",
+      "name": "Perception & Awareness",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "This is the character’s general awareness when using all of his senses to absorb impressions from his surroundings, detecting changes, oddities, abnormalities, rhythm and flow of his immediate environment. Detecting these elements naturally attracts his attention to certain activities or situations of interest. A great awareness makes it easier for the character to spot hidden enemies, detect an ambush before it strikes, notice a surveilling creature or notice a hidden door as he walks past it.\nPerception & Awareness is used for many situations, where random chance of noticing something significant is important. This skill does not cover the scrutiny of specific items or objects, or investigation of particular patterns or systems, for instance at a crime scene.\nThis skill may have a blurry overlap to the Investigation skill, but should be used, whenever the circumstances or random chance might lead to the character discovering something useful, which is not part of a direct investigation.\n Sometimes, the GM might want to test the character’s “passive” perception, without alerting the player of some potential danger, opportunity or issue in the game. In this case, the GM might decide the character’s passive perception is his total score + 10, as a DC against for instance the stealth check of an approaching stalker, or versus the DC of finding a hidden door.\nNote It might be worthwhile for the GM to note all of the characters’ passive perception, to maintain the illusion. The secrecy isn’t very well preserved, if the GM has to ask out for everyones’ passive perception – might as well make everybody roll for er Perception check.\nExample A character makes way through a hallway of the ruins of an abandoned temple. In this hallway a secret passage leads to some underground catacombs. As age has taken its toll on the old temple, the once well-hidden passage is now much easier to discover. The GM decides a Perception check of 19 would su ce to detect the secret entrance.\nHowever, he doesn’t want to alert the player to this hidden passageway and decides to let the character’s “Passive perception” contest the DC of 19. As the character has a Perception & Awareness skill with a total of 13, adding 10 makes his total “Passive Perception” 23. Enough for the character to notice the slightly di erent design in the wall, framing the once much more hidden entrance.\nIn some cases, the character’s senses may be impaired or obstructed in some way.\nThe GM should then decide on penalties for any check or passive perception.\nCircumstances like smoke, fog, sandstorms, blizzard, foliage, shadow/darkness or being underwater might impair the senses of the character.\nGeneral awareness relies heavily on vision, and if vision is impaired, the character might su er 3 disadvantages.\nThe following can be used as guidelines for setting a penalty to a perception check, or passive perception.\nPenalty guideline Lightly obscured (Mist, light foliage, under clear water) 1 disadvantage Medium obscured (Fog, heavy foliage, mild sandstorm, snowing, dim light, rain) 2 disadvantages Heavy obscured (Darkness, heavy sandstorm, heavy rain or blizzard, blinded) 3 disadvantages  Note! Similar modifiers might work in advantage to someone trying to hide. Be careful not to apply both penalty to the person rolling for perception, as well as bonuses to the one making a stealth check. Either one gets the penalty, or the other gets the bonus."
+    },
+    {
+      "attribute": "CHA",
+      "subskills": [
+        {
+          "name": "Seduction",
+          "text": "Traditionally, this skill might be perceived a way to sway a person of either the opposite or same sex in a romantical way. And even though this skill also covers that area, it also covers seduction in ways that are not romantically aimed.\nA person that is well-versed in the arts of seduction knows exactly how to dose flattery, fun, kind words and gestures to become extremely likeable to coworkers, the boss, the neighbor, the city guard, the judge. By doing so, the character creates more opportune circumstances for himself, to handle or manipulate another person.\nSeduction is an artform that takes time. And making someone like or favor you is not done in an instance. The GM and player should figure out together, exactly how long any seduction attempt might last, before having e ect.\nSeduction can lead to a variety of benefits, from talking the target into doing something specific or disclosing otherwise secret information. It is at the GM’s  discretion and should be worked out between the player and GM what the goal/outcome of the seduction attempt is.\nExample Luring the secret passcode out of a security guard might take an entire evening, trying to seduce him or her at her favorite tavern.\nIf the GM likes, the attempt might be divided into several steps, where each step adds to a pool of chance or bonuses.\nIn the above example, the GM might decide, that the ultimately highest chance of the security guard spilling the passcode will be 45% (d20 result of 1-9). The GM divide the challenge into 3 phases, each yielding 15% chance, each phase taking 2 hours.\nAlternatively allowing the seducing character to have three checks over a 6 hour period at the tavern, where each point of skill success over the security guards’ passive Willpower yields 1% chance.\nSkill combination! Having great insight into the target could result in modifiers to the actual seduction skill check.\nSkill combination! If a target is properly seduced, it might lead to some leverage in later social encounter between the two. If for instance they stand on each side of negotiating parties."
+        },
+        {
+          "name": "Mysticship",
+          "text": "A character that excel in Mysticship can use it in two ways. To create order in the party, and keep down troublemakers from making too much ruckus. And on the other hand, skilled Mystic can motivate their men, to perform better, harder and longer.\nSkilled Mystics radiate authority and enjoy the natural respect, loyalty and allegiance that comes with it. The application of this skill can be tricky in the gaming world, but at the GM’s discretion, a well performed Mysticship check may grant the target an additional save during rest or in combat, or help with minor bonuses in a tight situation.\nOn the other hand, quarrels within the group could be squelched if the character rolling a Mysticship beats the Willpower save from each of the arguing characters, leading the GM to give the final say to the “Mystic” character.\nWith this skill the GM and players should decide which way the skill can be applied.\nKeep in mind though, Mystics suppressing their men all the time are not Mystics, but tyrants. And at some point, tyranny will eventually cause rebellion."
+        },
+        {
+          "name": "Trading",
+          "text": "Even though this skill falls under the social category, it is a wide skill. It extends across all sorts of techniques to haggle, barter and bargain over prices and goods, as the essential part of this skill.\nBesides this, the skill also contains the knowledge of trading routes, best way to pack, contain and transport goods. Characters with this skill also have insight into supply and demand of specific goods, and knowledge about where and when certain items might be in high demand, or if cultural preferences skewer normal supply and demand cycles- and mechanism.\nMoreover, it grants the character insight into regional and national economic history and knowledge of major suppliers of certain goods and items, if certain sellers or cultures deliver special quality in certain categories of goods (elven-made bows, dwarven-made armor, etc.) Skill combination! Insight into any counterpart in a bartering situation might grant bonuses, at the GM’s discretion."
+        },
+        {
+          "name": "Appraisal",
+          "text": "Appraisal is a skill that becomes very broad in terms of assessing the value of tradable goods, items, objects and commodities. This fundamentally spans from evaluating a fair price of everything from gems, jewelry, weapons, armor, crops, equipment, magical scrolls, herbs, natural resources, building materials, reagents, artwork, instruments, etc.\nEven though many of these goods would ideally fall into separate subcategories of expertise, in RuneGate they are all encompassed by this skill.\nThe GM may decide the DC for correctly assessing the value of an item, depending on its rarity. Common items normally traded in an area are easier to appraise than very special and/or rare items that only pop up every century. The GM may also increase the DC, if it is exotic items not from the local region, not produced by same race as the character himself, or anything that is deemed reasonable to make it harder or easier to assess the item’s value correctly.\nWith this skill, the character is able to take into account all of the elements that govern the price of an object: supply, demand, rarity, quality of the product etc."
+        },
+        {
+          "name": "Etiquette",
+          "text": "If you want to stand out, make good impressions, avoid o ending certain people or just know how to navigate the social circles within various cultural domains, you should practice etiquette.\nThe art of etiquette enables the character to decipher, understand and follow social protocol in any social environment he is situated in.\n Being able to navigate political environments, the noble courts tribal ceremonies are all part of knowing, understanding and following the local social protocol under the given circumstances.\nAn adept in etiquette has studied the subtle and delicate arts of social interactions, habits, customs, hierarchies and politics of a wide range of cultures, races and social groups.\nIn some cases, knowing what to do, when to do it and whom to address or not address might be a tipping point in negotiations, diplomatic relations or maybe even in avoiding o ending a chieftain, warlord or high ranking noble, or maybe even royalty.\nWhere Diplomacy is the art of using reason, intelligence and arguments to achieve a goal, Etiquette is the skill enabling the character to understand and decipher political intrigues, diplomatic entanglements, and taking into consideration the strategies that should sometimes be deployed in negotiations and diplomatic confrontations.\nSkill combination! Being a well-versed practitioner of etiquette might very well give a character the edge in political environments. A successful etiquette check might grant the character er benefit or bonus, when engaging in subsequent diplomatic endeavors or negotiations.\nIt is up to the GM and player to work out what kind of benefits a successful etiquette check could bestow the player in the given situation."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 114,
+        "section": "Skills"
+      },
+      "id": "skill.social-and-negotiation",
+      "name": "Social & Negotiation",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "Diplomacy is a way of achieving agreements or convincing through sober, logical and ethical negotiations against a counterpart, deploying negotiation tactics, strategies and wise arguments.\nThis process may take a lot of time, depending on the topic and general relation between the two negotiating factions. A simple discussion with a bouncer to let you into a night club might take 5-10 minutes, whereas diplomatic meetings discussing lands, borders, taxes, alliances, truces, spoils of war, etc. May extend over days, weeks, or even months.\nNegotiations are always made with one lead negotiator, making the defining dice rolls.\nThe negotiation is divided into topics, depending on the volume of the overall topic.\nEach negotiation topic ends up with a declared winner. If one side takes all victories, all their demands will be met. Otherwise, the negotiation will result in some wins and some losses. Crucial topics might even be divided into sub-rounds, as they are discussed over multiple hours or days.\nThe GM and the player(s) should decide how the topics should be divided.\nDepending on the severity of each topic, a sequence of negotiation phases should be determined, and each phase assigned a negotiation duration. The one with the most “victories” win the topic and any price/advantage related to it.\nExample One of the party characters has been found guilty of a crime. The party and GM decided the negotiation of punishment essentially has two topics.\n1) The sentence severity.\n2) The fine.\nThey define the sentence severity to have 4 phases: 1 month jail, 2 weeks jail, 1 week jail, no jail.\nThey define the fine also has 4 phases: 100 silver pieces, 75 silver pieces, 50 silver pieces and 25 silver pieces.\nEach phase is agreed to be 30 minutes negotiation time. The overall negotiation will then take approximately 4 hours, discussing back and forth.\nFirst, they discuss the sentence. Phase 1 is won by the city o cial, representing the authorities of the city. The second by the party, the third by the party, and the last  one by the city o cials, ending up in 2 wins for each side, and thereby a sentence of 1 week in jail.\nThe fine proceeds the same way. This time, the city o cial wins 3 of the four phases, and thus the fine ends up 75 silver pieces. And the ultimate sentence becomes 1 week in jail and a 75 silver pieces worth in fines.\nAs negotiations are emotionally and mentally taxing challenges, it may take some tolls on the participants’ psyche and morale. Each phase therefore cost MP, as the participants mentally wear out over the course of negotiations. All parties of the negotiation lose a base “cost” of 5 MP. If a phase is lost, double the di erence in skill checks as the additional amount of MP lost by the losing party.\nSkill combinations: In some cases, the GM may rule, that knowledge of culture, etiquette, etc. of the “opposing party” will grant bonuses in the negotiations. The same may go for successful Insight checks.\nNotice! All persons present at a social encounter should roll dice. Since their presence may influence the outcome, either by their participation or their mere presence may disrupt the flow of a negotiation, the number of “opponents” may intimidate the other party, or provoke undesired e ects.\nAlso, wearing heavy armor and weapons in an otherwise civilized and civilian court might impose one or more penalties. If the armor is not a special ceremonial armor or part of the status of the character wearing it.\nOn the other hand, prestigious or prober attire for a tribunal or code dictated by local culture might grant one or more bonuses."
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [
+        {
+          "name": "Hiding",
+          "text": "The skill of hiding may seem plain and simple. And to the lower degrees of training this may very well be the case. Crouching down behind a bush, hide behind a door or under a bed doesn’t demand much ingenuity or skill.\nHowever, becoming more adept at using once’s surroundings for hiding, calls for higher understanding of light, shade, angles and even the anticipation of movement from other creatures. Becoming highly trained in the arts of hiding means one can disappear in a crowd with moments notice, exploit even slim or meager opportunities to become or remain unseen by passing patrols or vicious creatures, and take advantage of angles, line of sight, and coordinate this with the immediate surroundings.\nWhen it comes to hiding, some conditions are advantageous. At the GM’s discretion, some may be combined, for instance darkness and dense vegetation.\nAdvantages Dim light 2 advantage Darkness 5 advantages  Dense vegetation (grass, bushes, etc.) 2 advantages Smoke, fog etc. 2 advantages Blizzard, sandstorm, etc. 3 advantages (Maybe 5 depending on severity) Obstructed line of sight ( eg. hiding behind a crate) 3 advantages In a few cases, the GM may decide there are other penalties for hiding. In those cases, the GM may have to consider though, if hiding is even possible? One may not be allowed to hide in a castle corridor with only plain walls, ceiling, and floor, while torches brightly light up the corridor. And it might also be impossible to hide in the middle of an abandoned castle courtyard during midday with the sun high in the sky.\nNotice! Besides hiding one self, this skill also encompass the ability to hide or conceal items within one’s clothes, equipment, or within an area. Moreover, it also applies to all attempts to camouflage items or objects to better fit the immideate sourroundings."
+        },
+        {
+          "name": "Stalking",
+          "text": "This skill sets itself apart from the hiding skill, as this is generally the ability to move unseen, opposed to hiding in one place.\nThis skill comes o simple in its fundamental form, as striding through an area trying to be concealed is one thing. But trying to move unseen or disappear in a crowd of people, or through a room full of guards is a di erent trick altogether. The real skilled practitioners can fit in crowds, disappear or pass unseen almost anywhere. This is because adepts of this skill become aware of more than their surroundings, how to exploit terrain, light and shade, etc. The real professionals are also able to anticipate other people’s movement, and take into consideration line of sight, angles of vision and obstructions, and exploit it to pass an area unseen.\nThe GM generally sets the DC for succeeding, but often this will be against the passive perception of those who could discover the character.\nThe GM can also consider giving the character bonuses in some cases, if the character can use for instance Deception skill to mix into the sourroundings with tone and feel, or the Sleight of hand skill to grab pieces of cloth, capes, hats, etc.\nfrom random merchant booths in the process of the Stalking attempt.\nIn other circumstances, the conditions of the environment would grant advantages to the attempt.\n Advantages Dim light 2 advantage Darkness 5 advantages Dense vegetation (grass, bushes, etc.) 2 advantages Smoke, fog etc. 2 advantages Blizzard, sandstorm, etc. 3 advantages (Maybe 5 depending on severity) Obstructed line of sight ( eg. hiding behind a crate) 3 advantages Penalties may also occur, if the character tries to stalk through a forest filled with dry twigs, a courtyard of pebble stones, etc."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 118,
+        "section": "Skills"
+      },
+      "id": "skill.stalking-and-hiding",
+      "name": "Stalking & Hiding",
+      "category": "general",
+      "armorPenalty": "maneuver",
+      "text": "",
+      "clarifications": [
+        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+      ]
+    },
+    {
+      "attribute": "DEX",
+      "subskills": [
+        {
+          "name": "Disarming traps",
+          "text": "From time to time, all adventurers wander into malicious dungeons, enemy territories, etc. where they might get exposed to traps. And if they manage to discover them, before setting them o , there is a chance of disarming these traps.\nTraps work in a variety of di erent ways, only limited by the imagination of their creators. They may be extremely di erent in nature as well in type and construction. A trap set deep within the forest will probably di er tremendously from one deep down a dungeon. Even so, this skill spans insight, knowledge and ability to disarm any trap, or any kind and mechanical design. This skill can also be used to gain knowledge about the functions and expected e ects of traps.\nIn general, the GM defines the DC to beat, to dismantle the trap.\nExtremely complex traps may demand more than one roll. And in some cases, the GM may rule that due to the design of the trap – say, if it for instance contains a failsafe against disarmament – multiple rolls should be performed.\nThis skill does not encompass disarming magical traps, barriers, etc. Only physical, mechanical traps can be disarmed with this skill.\nThe GM could decide, one check is needed to get the overlay or understanding of the trap, and one or more other, to disarm the trap itself, or all of its functions.\nNotice! Disarming traps are seldom as simple as cutting a wire or jamming the gears of a mechanical contraption. Often disarming traps require a set of various tools (screwdrivers, wire cutters, small hammers, a directed light source, magnifying goggles, etc.). Not having these kinds of tools (e.g. Thieves tool or Tinkerer’s tool) should impose a hefty penalty (e.g. -5) in the disarming attempt. And in many cases, more tools could be necessary simultaneously. Having only a single arrow or knife would therefore impose additional penalties. Thus, disarming a trap with only a dagger at disposal would probably mean trying at a higher penalty."
+        },
+        {
+          "name": "Picking locks",
+          "text": "Picking locks is a skill that grants a person the ability to open locks, normal mechanical locks, without the prober key. This skill may come in handy from time to time. And some may even perfect it into an art.\nGenerally, this skill could be branched out to understanding various genres of locks, such as normal locks and padlocks, to more sophisticated locking mechanisms such as vault doors, ingenious custom-made chest locks or gate locks.\nHowever, to keep things simple, this skill covers all understandings of locking mechanism no matter the complexity and construction.\nIt is up to the GM to define the DC for successfully opening any given lock. In some situations, the GM may decide the lock is comprised of several complex mechanisms, that needs triggering either simultaneously or in rapid succession. In  these cases, he can decide that more than one DC applies to the skill check, and therefore more than one roll should achieve the demanded results to be successful.\nGeneral DC guidelines Normal door or padlock DC15 Superior lock DC20 Specially constructed locks DC25 Extremely complex mechanic locks DC30 Unique and complex lock design or mechanism DC40 Notice! Picking locks can only be done with a prober tools (Thieves tool, or maybe a Tinkerer’s tool). This is a set of tools with various instruments designed for manipulating locking mechanisms. Attempts to pick locks with other instruments than a lock picking kit should be done at some degree of penalty. Thus, using for instance a knife, arrow tip or other items is not ideal, but may be attempted. Items should generally be thin, narrow and have some length.\nGenerally, items like arrows, bolts, nails, a sharpened bone, etc. would mean one or more disadvantages. Larger or broader objects like knives, daggers, etc. would mean even more disadvantages.\nIt is at GM’s discretion what he will allow to be used. But bear in mind, that picking locks are often only possible by using a combination of selected tools from a lock picking set, which is why a single arrow or dagger might not su ce, or would mean additional penalty, if only one instrument is available. Trying to pick a superior lock with only a dagger might be subjected to a penalty of three disadvantages or not allowed altogether."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 120,
+        "section": "Skills"
+      },
+      "id": "skill.sleight-of-hands-and-trickery",
+      "name": "Sleight of hands & Trickery",
+      "category": "general",
+      "armorPenalty": "maneuver",
+      "text": "This skill covers all sorts of rapid and precise trickery maneuvers, with the purpose of misleading, misguiding or tricking someone. One of the most common actions within this category is picking pockets.\nConsidered by most as a shady trait, the ability to relieve others of the valuables, without them knowing of it. This skill enables a character to retrieve items from another person (or creature perhaps), without them noticing it. This might be their purse, a weapon or the prison keys o a guard. But this skill also works the other way around – placing items on people without the noticing – a counterfeited letter, a note, a set of tools, etc.\nThis skill also applies when wanting to switch two mugs of ale, pass a note unseen to another person, make card tricks or other semi-illusionary actions. Shifty types, working together may also use this in a marketplace, to lift an item o a person, and rapidly distribute it between each other in the crowd of people.\nThe skill will also cover making cautious or precise maneuvers, like opening or closing a door very silently, reaching something inside a narrow tube without touching the sides, etc.\nThe GM generally decides the DC to be successful at the attempt, but in many cases, the attempt is made versus the target’s passive perception.\nThe GM should take into consideration that some items are harder to manipulate with than others. Lifting the firmly attached sword o the seasoned warrior would probably be harder than his purse, and therefore done at a penalty, as the sword is strapped on more firmly than the purse. Also, items that could make a sound like loose coins, a small pet or keys in a chain would probably impose a penalty of some sort. Trying to make trickeries with larger objects like lockbox, would also be harder than a single coin and would therefore impose penalty.",
+      "clarifications": [
+        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+      ]
+    },
+    {
+      "attribute": "CHA",
+      "subskills": [],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 122,
+        "section": "Skills"
+      },
+      "id": "skill.skullduggery-and-streetwise",
+      "name": "Skullduggery & Streetwise",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "Knowing your way around a city, understanding the ins and outs of the streets, and being able to scrounge in the most obvious places can come in very handy, when arriving or taking place in new establishments.\nThis skill involves much more than just passing someone up on the street, asking for directions. With higher ranks in this skill, the character becomes very adept at getting in sync with the vibe of the city, understanding the most likely types of factions, guilds, markets, layout of the city, most obvious shortcuts, unnoticeable passages etc. situated in the place. This also entails both legal and illegal activities and societies.\nThe GM is the one generally setting the DC for discovering the various points of interest, and he may demand the character to roll checks for each type of topic the character wants to investigate. For instance, trying to find all types of guilds in the city, all markets or specific shops.\n Furthermore, the use of this skill is not something that is done by just “looking a little around”. Depending on the size of the city, getting acquainted with it demands at least 1 hour. And even more if the city is big. The check may be subjected to some sort of cost when hiring transports, boats, entrance fees through gates or districts, etc.\nFailure does not necessarily only mean, you fail to find what you are looking for. The GM could also add to the narrative based on failure. Maybe the character didn’t find the underground black market but snooped around enough to get noticed. And maybe these types of personalities doesn’t like other people snooping around their business.\nMaybe the failure means the character gets arrested, for being in restricted areas of the city, or he gets lost in the city or has a hard time finding his way back. Maybe he gets mugged, or has something stolen from him on the way around the city, or find himself pinned in a sudden raid by the authorities."
+    },
+    {
+      "attribute": "WIS",
+      "subskills": [
+        {
+          "name": "Animal handling",
+          "text": "This skill is more about simply handling animals. To the farthest extent, this skill allows a character to understand a creature and its behavior in such detail and empathy that he will be able to form a special bond of friendship to the creature.\n But the skill contains much more than handling the animal itself. It also contains knowledge on how to best train and motivate them, how to feed and nurture them, and how to take best care of them.\nThe character would also know a lot about how to breed, load and herd the creatures if it is possible, and to generally create conditions where the creature(s) thrive the best.\nThe GM might also include actual anatomical knowledge, enabling the character to mend the creature or even perform surgery."
+        },
+        {
+          "name": "Beast Lore (Animal, Beast, Dragon, Elemental, Fey, Ooze, Plant)",
+          "text": "With this skill the character studies myriads of information about all sorts of creatures categorized as either a Animal, Beast, Dragon, Elemental, Fey, Ooze or Plant. All creatures in the world fall into some sort of category, and each creature description will be conveyed if it falls within the confines of this category. This category encompasses amongst other basilisks, gri ns, unicorns, minotaurs, faeries, dryads, elementals, etc.\nKnowing things about various beasts and creatures comes in handy in a lot of ways.\nIt might be the most common types of attacks, or uncommon attacks. If it is poisonous, and how the poison a ects you, if subjected to it. It contains knowledge of their living-, feeding-, mating, wandering-, nesting habits, etc. Moreover, it grants the character knowledge to whether they contain any valuable resources like poison glands, mandibles, fur, mystical reagents, etc. It may also be disclosed if the being has either certain weaknesses or strengths.\nInformation about this type of being will be part of the creature description and divided into various classes of knowledge.\nThe classes of knowledge are defined as common, uncommon, rare, and ancient.\nTo gain access to the various tiers of knowledge, the character must make a check with this skill. The higher, the more information is achieved. It is up to GM’s discretion to decide, if a character gains the insight he desires, but the general rule of thumb below can be applied.\nNotice! Since information about a being could be broken down into various categories, like “Attacks”, “Habits”, “Resources” etc. the GM should consider if he wants the character to roll a check for each category or just supply all information in all categories within result achieved by the check.\nThe GM could decide, the player must choose to roll for “Attack/combat styles”, and then only be informed about the types of attacks, abilities and tactics the creature would probably use within the confines of the result achieved by the check. Or, if the GM also allows the player to know about habits and resources, etc. as well."
+        },
+        {
+          "name": "Plants & wildlife",
+          "text": "This skill encompasses the studies of plants and wildlife found in nature. Even though, this skill could be divided into several subcategories, maybe based on  climates or types of environments like tundra, desert, plains, mountains, etc., this skill embraces knowledge of all normal wildlife and plants in all types of climates and environments.\nThis skill allows the character to gain knowledge about animals, insects, flowers, trees, etc. that is not covered by the specific knowledge skills, defined by the various lore skills. High ranks in this skill means knowing about wildlife habits, lifestyle, mating rituals, nesting habits, travel patterns, seasonal wandering, typical herd sizes, hunting strategies, etc.\nThis skill includes the knowledge about herbs as well, where to find them, how to find them, harvest them and how to keep and transport them without them losing whatever potency or e ect they have.\nIt does not include the knowledge about how to process them or work with them, making them into spices, potions, poisons, balms, etc. This is covered by Alchemy & Chemistry."
+        },
+        {
+          "name": "Tracking",
+          "text": "Tracking someone or something extends far beyond finding simple tracks and follow them through the wilderness. Tracking is an art, where you not only find tracks, but also combine the actual tracks with the other knowledge you have about the terrain, environment, habits and general living patterns of the creature or being you track.\nTracking thus becomes an e ort to not only find tracks but also consider if the creature you track would be more likely to head for a water source, a cave, the hills, etc. and what route it is most likely to take, given the immediate terrain around you.\nAre there routes that are more probable than others due to easy passage, danger, etc.? The true scout or hunter, tracking a creature, weighs in all of these factors, to become more likely to find his target.\nIn some cases, the GM may allow the tracking character a bonus to his tracking skill check, if he can use a lore skill, to gain insight or knowledge about the individual creature. For each DC-tier he can beat with the appropriate lore skill, he gains a +1 Tracking bonus.\nTracking is not something one simply do and then move on. Tracking is a discipline that demands concentration and e ort. Usually, the tracker sweeps a general area, to get bearings on the target, and this process often takes close to an hour, depending on the environment he searches.\nBesides this, following tracks over a longer distance will reduce the travelling speed of the tracker to half the normal travelling speed. If he wants to keep normal travel speed, the attempt is done with a disadvantage.\nNot all environments are equally suited for finding tracks. Thus, soft and moist mud is excellent for finding tracks, whereas a barren wasteland of rocks is not. The below guidelines outline the general modifiers of finding tracks."
+        }
+      ],
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 123,
+        "section": "Skills"
+      },
+      "id": "skill.survival-and-nature",
+      "name": "Survival & Nature",
+      "category": "general",
+      "armorPenalty": "none",
+      "text": "The art of survival in the wilderness and other hostile environments is important to all who dares to venture outside the protection and comfort of the city walls.\nThis is a wide skill that would branch out into a range of subskills, based on di erent types of terrain. With this skill, however, the character becomes knowledgeable in finding shelter, optimal campsites, starting a campfire, gathering firewood, finding edible natural resources, fresh water etc.\nThe survival skill also entails general direction sense, time sense, weather predictions, the understanding of various types of terrain and climate, navigating the landscape for best and less exhausting routes or around hazardous areas and obstacles. Knowing how to best survive and navigate through the jungle, tundra, desert, is key to surviving in the wilds.\nThe general DC of passing a skill check with this skill is at the GM’s discretion. But bonuses and penalties could be applied due to circumstances. Starting a campfire with damp or moist wood may be with penalty, as well as fog would impose penalty to direction sense.\nIn some cases, the GM may decide a given action is impossible, like finding shelter on a flat plain or rock surface. This would only be possible with certain types of gear like wind blocking screens, tents, etc."
+    },
+    {
+      "id": "skill.armor-light",
+      "name": "Armor: Light",
+      "attribute": null,
+      "category": "armor",
+      "family": "Armor",
+      "armorPenalty": "none",
+      "subskills": [],
+      "text": "Training in light armor. The skill bonus is added to DFR when wearing light armor.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 17,
+        "section": "Defense (DFR)"
+      },
+      "clarifications": [
+        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+      ]
+    },
+    {
+      "id": "skill.armor-medium",
+      "name": "Armor: Medium",
+      "attribute": null,
+      "category": "armor",
+      "family": "Armor",
+      "armorPenalty": "none",
+      "subskills": [],
+      "text": "Training in medium armor. The skill bonus is added to DFR when wearing medium armor.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 17,
+        "section": "Defense (DFR)"
+      },
+      "clarifications": [
+        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+      ]
+    },
+    {
+      "id": "skill.armor-heavy",
+      "name": "Armor: Heavy",
+      "attribute": null,
+      "category": "armor",
+      "family": "Armor",
+      "armorPenalty": "none",
+      "subskills": [],
+      "text": "Training in heavy armor. The skill bonus is added to DFR when wearing heavy armor.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 17,
+        "section": "Defense (DFR)"
+      },
+      "clarifications": [
+        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "property.durable",
+      "name": "Durable",
+      "appliesTo": "armor",
+      "param": "number",
+      "text": "The armor gains a +x bonus to armor saves.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.light-weight",
+      "name": "Light weight",
+      "appliesTo": "armor",
+      "param": "number",
+      "text": "The armor has x points lower Load.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.block",
+      "name": "Block",
+      "appliesTo": "shield",
+      "param": "none",
+      "text": "As a ↶, when knowing the damage of an attack (including AoE), the character can use the block property of a shield. When doing this, the shield yields a ‘Resistance(10)’ from that single attack, but in return must make an armor save with disadvantage.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.fast",
+      "name": "Fast",
+      "appliesTo": "melee",
+      "param": "number",
+      "text": "If the attack success is equal to or higher than the fast value, the character may perform a secondary attack for free, without the MAP, but with disadvantage. If the second attack has an attack success equal to or higher than two times the fast- value, the character may make a third attack with two disadvantages.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.light",
+      "name": "Light",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "The weapon is considered light in regard to feats. Moreover, the normal disadvantage for o -hand fighting is reduced 2 points.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.finesse",
+      "name": "Finesse",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "These weapons can be used for elegant and precise attacks, instead of hard and massive maneuvers. E ectively allowing replacement of the usual STR with DEX, as linked attribute to attack bonus.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.brutal",
+      "name": "Brutal",
+      "appliesTo": "melee",
+      "param": "number",
+      "text": "The weapon gains a +x bonus when determining crit severity.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.armor-pierce",
+      "name": "Armor pierce",
+      "appliesTo": "melee",
+      "param": "number",
+      "text": "Attacks with this weapon are made with the target’s TOU reduced x points.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.versatile",
+      "name": "Versatile",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "the weapon can also be used in two hands, allowing a roll with a higher damage rating.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.unreliable",
+      "name": "Unreliable",
+      "appliesTo": "melee",
+      "param": "number",
+      "text": "The fumble range of the weapon is not a natural 1, on the d20, but equal to the number in the parenthesis. Unreliable(3) would mean the weapon attack creates a threat when rolling 1-3 with a d20.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.reload",
+      "name": "Reload",
+      "appliesTo": "ranged",
+      "param": "number",
+      "text": "The weapon requires a number of actions to reload equal to the number in the parenthesis.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.fast-reload",
+      "name": "Fast reload",
+      "appliesTo": "ranged",
+      "param": "none",
+      "text": "The weapon can be reloaded as a free action.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.nimble",
+      "name": "Nimble",
+      "appliesTo": "ranged",
+      "param": "none",
+      "text": "The wielder does not have disadvantage when firing at an engaged target.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.inaccurate",
+      "name": "Inaccurate",
+      "appliesTo": "ranged",
+      "param": "none",
+      "text": "Disadvantages due to range are doubled.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Equipment"
+      }
+    },
+    {
+      "id": "property.thrown",
+      "name": "Thrown",
+      "appliesTo": "melee",
+      "param": "rangeBand",
+      "text": "The weapon can be thrown as a ranged attack with the given range (e.g. S).",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.reach",
+      "name": "Reach",
+      "appliesTo": "melee",
+      "param": "number",
+      "text": "The wielder can make melee attacks against targets up to x meters away.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.two-handed",
+      "name": "Two-handed",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "The weapon requires two hands to wield.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.minor",
+      "name": "Minor",
+      "appliesTo": "melee",
+      "param": "none",
+      "text": "The attack deals minor damage. Exact effect awaits the author.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.slow-reload",
+      "name": "Slow reload",
+      "appliesTo": "ranged",
+      "param": "number",
+      "text": "Reloading the weapon takes x rounds.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    },
+    {
+      "id": "property.agile",
+      "name": "Agile",
+      "appliesTo": "armor",
+      "param": "number",
+      "text": "Grants +x to Acrobatics & Athletics.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Equipment"
+      },
+      "clarifications": [
+        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "id": "weapon.unarmed",
+      "name": "Unarmed",
+      "kind": "melee",
+      "group": "skill.combat-melee-unarmed",
+      "dmg": null,
+      "enc": null,
+      "str": null,
+      "price": null,
+      "properties": [
+        {
+          "property": "property.fast",
+          "param": 5
+        },
+        {
+          "property": "property.minor"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Melee weapons"
+      }
+    },
+    {
+      "id": "weapon.dagger",
+      "name": "Dagger",
+      "kind": "melee",
+      "group": "skill.combat-melee-swords-and-knives",
+      "dmg": 3,
+      "enc": 1.5,
+      "str": 4,
+      "price": {
+        "amount": 3,
+        "currency": "sp"
+      },
+      "properties": [
+        {
+          "property": "property.fast",
+          "param": 5
+        },
+        {
+          "property": "property.light"
+        },
+        {
+          "property": "property.finesse"
+        },
+        {
+          "property": "property.thrown",
+          "param": "S"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Melee weapons"
+      }
+    },
+    {
+      "id": "weapon.longsword",
+      "name": "Longsword",
+      "kind": "melee",
+      "group": "skill.combat-melee-swords-and-knives",
+      "dmg": 7,
+      "enc": 3.5,
+      "str": 10,
+      "price": {
+        "amount": 12,
+        "currency": "sp"
+      },
+      "properties": [
+        {
+          "property": "property.versatile",
+          "param": "+3 DMR"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Melee weapons"
+      }
+    },
+    {
+      "id": "weapon.flail",
+      "name": "Flail",
+      "kind": "melee",
+      "group": "skill.combat-melee-clubs-and-hammers",
+      "dmg": 15,
+      "enc": 4,
+      "str": 12,
+      "price": {
+        "amount": 19,
+        "currency": "sp"
+      },
+      "properties": [
+        {
+          "property": "property.unreliable",
+          "param": 3
+        },
+        {
+          "property": "property.two-handed"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Melee weapons"
+      }
+    },
+    {
+      "id": "weapon.spear",
+      "name": "Spear",
+      "kind": "melee",
+      "group": "skill.combat-melee-polearms-and-staffs",
+      "dmg": 5,
+      "enc": 3,
+      "str": 6,
+      "price": {
+        "amount": 23,
+        "currency": "bp"
+      },
+      "properties": [
+        {
+          "property": "property.versatile",
+          "param": "+3 DMR"
+        },
+        {
+          "property": "property.reach",
+          "param": 4
+        },
+        {
+          "property": "property.thrown",
+          "param": "S"
+        },
+        {
+          "property": "property.inaccurate"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 132,
+        "section": "Melee weapons"
+      }
+    },
+    {
+      "id": "weapon.longbow",
+      "name": "Longbow",
+      "kind": "ranged",
+      "group": "skill.combat-ranged-bows",
+      "dmg": 7,
+      "enc": 4,
+      "str": 8,
+      "range": "M/L",
+      "ammo": 1,
+      "price": {
+        "amount": 10,
+        "currency": "sp"
+      },
+      "properties": [
+        {
+          "property": "property.reload",
+          "param": 1
+        },
+        {
+          "property": "property.two-handed"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Ranged weapons"
+      }
+    },
+    {
+      "id": "weapon.crossbow-hand",
+      "name": "Crossbow, Hand",
+      "kind": "ranged",
+      "group": "skill.combat-ranged-crossbows",
+      "dmg": 7,
+      "enc": 2,
+      "str": 8,
+      "range": "S/M",
+      "ammo": 1,
+      "price": {
+        "amount": 17,
+        "currency": "sp"
+      },
+      "properties": [
+        {
+          "property": "property.nimble"
+        },
+        {
+          "property": "property.slow-reload",
+          "param": 1
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Ranged weapons"
+      }
+    },
+    {
+      "id": "weapon.musket",
+      "name": "Musket",
+      "kind": "ranged",
+      "group": "skill.combat-ranged-2-handed-firearms",
+      "dmg": 13,
+      "enc": 4,
+      "str": 12,
+      "range": "M/L",
+      "ammo": 1,
+      "price": {
+        "amount": 100,
+        "currency": "sp"
+      },
+      "properties": [
+        {
+          "property": "property.inaccurate"
+        },
+        {
+          "property": "property.unreliable",
+          "param": 2
+        },
+        {
+          "property": "property.reload",
+          "param": 2
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 133,
+        "section": "Ranged weapons"
+      }
+    }
+  ],
+  "armor": [
+    {
+      "id": "armor.leather",
+      "name": "Leather",
+      "armorClass": "light",
+      "dfr": 0,
+      "tou": 2,
+      "dexCap": null,
+      "str": null,
+      "enc": 3.5,
+      "skillPenalty": 0,
+      "spellPenalty": 0,
+      "price": {
+        "amount": 3,
+        "currency": "sp"
+      },
+      "properties": [],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Armor & Shields"
+      }
+    },
+    {
+      "id": "armor.rigid-leather",
+      "name": "Rigid leather",
+      "armorClass": "medium",
+      "dfr": 3,
+      "tou": 3,
+      "dexCap": 3,
+      "str": 10,
+      "enc": 6,
+      "skillPenalty": -1,
+      "spellPenalty": -1,
+      "price": {
+        "amount": 15,
+        "currency": "sp"
+      },
+      "properties": [],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Armor & Shields"
+      }
+    },
+    {
+      "id": "armor.chain-mail",
+      "name": "Chain mail",
+      "armorClass": "heavy",
+      "dfr": 6,
+      "tou": 6,
+      "dexCap": 0,
+      "str": 12,
+      "enc": 14,
+      "skillPenalty": -4,
+      "spellPenalty": -4,
+      "price": {
+        "amount": 65,
+        "currency": "sp"
+      },
+      "properties": [],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Armor & Shields"
+      }
+    },
+    {
+      "id": "armor.shield-normal",
+      "name": "Shield (normal)",
+      "armorClass": "shield",
+      "dfr": 2,
+      "tou": 0,
+      "dexCap": null,
+      "str": 8,
+      "enc": 2.5,
+      "skillPenalty": 0,
+      "spellPenalty": -2,
+      "price": {
+        "amount": 55,
+        "currency": "bp"
+      },
+      "properties": [
+        {
+          "property": "property.block"
+        }
+      ],
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 131,
+        "section": "Armor & Shields"
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "spell.fire.heat-resistance",
+      "name": "Heat resistance",
+      "level": 1,
+      "realm": "realm.elementalism",
+      "domain": "domain.fire",
+      "tags": [
+        "Defense",
+        "Concentration"
+      ],
+      "variables": {
+        "range": {
+          "base": "S",
+          "step": "5"
+        },
+        "blast": {
+          "base": null,
+          "step": null
+        },
+        "burst": {
+          "base": null,
+          "step": null
+        },
+        "zone": {
+          "base": null,
+          "step": null
+        },
+        "duration": {
+          "base": "1h",
+          "step": "1h"
+        },
+        "dmr": {
+          "base": null,
+          "step": null
+        },
+        "intensity": {
+          "base": "2",
+          "step": "1"
+        }
+      },
+      "text": "Character enables himself to resist heat. He can resist heat as if he was standing in a large blazing campfire, without getting damaged. When attacked by magically induced fire, he gains ‘Resistance’, equal to the intensity score selected for the spell.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 160
+      }
+    },
+    {
+      "id": "spell.fire.firebolt",
+      "name": "Firebolt",
+      "level": 2,
+      "realm": "realm.elementalism",
+      "domain": "domain.fire",
+      "tags": [
+        "Attack",
+        "Directed"
+      ],
+      "variables": {
+        "range": {
+          "base": "10",
+          "step": "5"
+        },
+        "blast": {
+          "base": null,
+          "step": null
+        },
+        "burst": {
+          "base": null,
+          "step": null
+        },
+        "zone": {
+          "base": null,
+          "step": null
+        },
+        "duration": {
+          "base": null,
+          "step": null
+        },
+        "dmr": {
+          "base": "10",
+          "step": "1"
+        },
+        "intensity": {
+          "base": "HDC",
+          "step": "1"
+        }
+      },
+      "text": "The caster flicks his hand, and a bolt of searing hot fire darts from his fingertips.\nOn a hit, the target must pass a Reaction save with a DC equal to the intensity of the spell, or take ‘Persistent(2): Fire’.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 160
+      }
+    },
+    {
+      "id": "spell.fire.fireball",
+      "name": "Fireball",
+      "level": 5,
+      "realm": "realm.elementalism",
+      "domain": "domain.fire",
+      "tags": [
+        "Attack",
+        "AoE"
+      ],
+      "variables": {
+        "range": {
+          "base": "10",
+          "step": "5"
+        },
+        "blast": {
+          "base": null,
+          "step": null
+        },
+        "burst": {
+          "base": "2",
+          "step": "1"
+        },
+        "zone": {
+          "base": null,
+          "step": null
+        },
+        "duration": {
+          "base": null,
+          "step": null
+        },
+        "dmr": {
+          "base": "10",
+          "step": "2"
+        },
+        "intensity": {
+          "base": "HDC",
+          "step": "1"
+        }
+      },
+      "text": "An explosive ball of fire is shot from the palm of the caster, flying in a direct line at the area where it explodes, creating AoE damage. Anyone caught in the explosion must pass a Fortitude save with a DC equal to the intensity score of the spell. Any points of failure are added to the DMR of the Fireball. Also, failing the save means the target suffers a ‘Persistent(2)’ fire damage.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 161
+      }
+    },
+    {
+      "id": "spell.dark-magic.nightfall",
+      "name": "Nightfall",
+      "level": 1,
+      "realm": "realm.mysticism",
+      "domain": "domain.dark-magic",
+      "tags": [
+        "Summon",
+        "Concentration"
+      ],
+      "variables": {
+        "range": {
+          "base": "20",
+          "step": "10"
+        },
+        "blast": {
+          "base": null,
+          "step": null
+        },
+        "burst": {
+          "base": null,
+          "step": null
+        },
+        "zone": {
+          "base": "4",
+          "step": "2"
+        },
+        "duration": {
+          "base": "1m",
+          "step": "1m"
+        },
+        "dmr": {
+          "base": null,
+          "step": null
+        },
+        "intensity": {
+          "base": null,
+          "step": null
+        }
+      },
+      "text": "Caster creates a zone in which it becomes dark, as a starlit night. The zone is 2 meters in height. The darkness reacts as normal night and can be lit by normal means of light. The zone obstructs line of sight.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 197
+      },
+      "clarifications": [
+        "Husfortolkning: teksten beskriver en zone, så værdien 4/2 er flyttet fra burst til zone."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Holder Supabase-projektet vågent (gratisplanen pauser efter en uges inaktivitet – D1).
+name: Supabase keep-alive
+on:
+  schedule:
+    - cron: "17 4 * * *"   # hver dag kl. 04:17 UTC
+  workflow_dispatch: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase REST API
+        run: |
+          curl --fail --silent --show-error \
+            "https://ahrtztpryhrhkgfvlkzx.supabase.co/rest/v1/campaigns?select=id&limit=1" \
+            -H "apikey: sb_publishable_q6WuOugUz2bWRddAIwkcSQ_4krYhd20" > /dev/null
+          echo "Supabase svarede"

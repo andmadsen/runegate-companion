@@ -1,0 +1,345 @@
+{
+  "_about": "Ancestries er kurateret i hånden (s. 19-22): små og stabile.",
+  "items": [
+    {
+      "id": "ancestry.human",
+      "name": "Human",
+      "text": "The player can select any one primary attribute, which has a +2 modifier, or two attributes that have +1.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 19,
+        "section": "Ancestry"
+      },
+      "modifiers": [],
+      "choices": [
+        {
+          "key": "attributeBoost",
+          "prompt": "Vælg én attribut +2, eller to attributter +1",
+          "from": {
+            "kind": "attributeBoost",
+            "patterns": [
+              [
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        }
+      ],
+      "traits": [
+        {
+          "name": "Versatile Learner",
+          "text": "Humans gain 2 additional skill points every hero level (including level 1).",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "skillPointsPerLevel"
+              },
+              "value": 2,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestry.elf",
+      "name": "Elf",
+      "text": "Elves gain a +2 DEX score, +1 INT score, +1 WIS score and a -2 CON score.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 20,
+        "section": "Ancestry"
+      },
+      "modifiers": [
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "DEX"
+          },
+          "value": 2,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "INT"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "WIS"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "CON"
+          },
+          "value": -2,
+          "type": "score",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "traits": [
+        {
+          "name": "Light feet",
+          "text": "Elves gain a +6 movement modifier and ignore non-magical difficult terrain.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "SPD"
+              },
+              "value": 6,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Low-light vision",
+          "text": "Elves can see bright as day in dim light and in darkness as if it was dim light within 20 meters.",
+          "modifiers": []
+        },
+        {
+          "name": "Mindfulness",
+          "text": "Elves gain a +10 MP bonus.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "MP"
+              },
+              "value": 10,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Mental stability",
+          "text": "Elves gain a +1 bonus to Will Power saves.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "save",
+                "save": "willpower"
+              },
+              "value": 1,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestry.dwarf",
+      "name": "Dwarf",
+      "text": "Dwarfs gain a +1 STR score, +2 CON score, +1 WIS score and -2 CHA score.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 21,
+        "section": "Ancestry"
+      },
+      "modifiers": [
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "STR"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "CON"
+          },
+          "value": 2,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "WIS"
+          },
+          "value": 1,
+          "type": "score",
+          "applies": "always"
+        },
+        {
+          "target": {
+            "kind": "attribute",
+            "attribute": "CHA"
+          },
+          "value": -2,
+          "type": "score",
+          "applies": "always"
+        }
+      ],
+      "choices": [],
+      "traits": [
+        {
+          "name": "Resiliency",
+          "text": "Dwarfs gain ‘Resistance(2)’ vs. Slashing, Piercing and Bludgeon damage.",
+          "modifiers": []
+        },
+        {
+          "name": "Low-light vision",
+          "text": "Dwarves can see bright as day in dim light and in darkness as if it was dim light within 20 meters.",
+          "modifiers": []
+        },
+        {
+          "name": "Sturdy",
+          "text": "Dwarfs gain a +10 BP bonus.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "BP"
+              },
+              "value": 10,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Tough as a rock",
+          "text": "Dwarves gain +1 bonus to Fortitude saves.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "save",
+                "save": "fortitude"
+              },
+              "value": 1,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestry.treegon",
+      "name": "Treegon",
+      "text": "The Treegons’ rigid, barky hide grant them a +4 item bonus to DFR, and +4 item bonus to TOU. Their rigid bodies, however, prevent them from using no more than +3 DEX modifier to DFR.",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 22,
+        "section": "Ancestry"
+      },
+      "modifiers": [],
+      "choices": [],
+      "traits": [
+        {
+          "name": "Barky hide",
+          "text": "+4 item bonus to DFR, and +4 item bonus to TOU. No more than +3 DEX modifier to DFR.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "DFR"
+              },
+              "value": 4,
+              "type": "item",
+              "applies": "always"
+            },
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "TOU"
+              },
+              "value": 4,
+              "type": "item",
+              "applies": "always"
+            },
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "dexToDFR"
+              },
+              "operation": "cap",
+              "value": 3,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Natural weapons",
+          "text": "Unarmed attacks have a base +3 item modifier to DMR.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "DMR"
+              },
+              "value": 3,
+              "type": "item",
+              "applies": "situational",
+              "condition": "Unarmed attacks"
+            }
+          ]
+        },
+        {
+          "name": "Sturdy frame",
+          "text": "Treegons gain +15 conditional modifier to BP.",
+          "modifiers": [
+            {
+              "target": {
+                "kind": "stat",
+                "stat": "BP"
+              },
+              "value": 15,
+              "type": "condition",
+              "applies": "always"
+            }
+          ]
+        },
+        {
+          "name": "Speaker of the wild",
+          "text": "Can communicate with plants and wildlife (no fantastical or mythical creatures like griffons, dragons, etc.)",
+          "modifiers": []
+        },
+        {
+          "name": "Fire vulnerability",
+          "text": "Has ‘Vulnerability(5)’ vs. fire damage.",
+          "modifiers": []
+        }
+      ],
+      "restrictions": [
+        "Can’t wear armor and weapons."
+      ],
+      "reviewNotes": [
+        "Bogen navngiver ikke Treegon-trækkene – navnene er sat af appen"
+      ],
+      "clarifications": [
+        "Husfortolkning: forbuddet mod rustning gælder også skjolde."
+      ]
+    }
+  ]
+}

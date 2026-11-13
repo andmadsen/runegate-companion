@@ -1,0 +1,65 @@
+{
+  "_about": "Archetypes (s. 23-84).",
+  "items": [
+    {
+      "id": "archetype.warrior",
+      "name": "Warrior",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 24
+      }
+    },
+    {
+      "id": "archetype.rogue",
+      "name": "Rogue",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 33
+      }
+    },
+    {
+      "id": "archetype.primal",
+      "name": "Primal",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 43
+      }
+    },
+    {
+      "id": "archetype.leader",
+      "name": "Leader",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 57
+      }
+    },
+    {
+      "id": "archetype.mystic",
+      "name": "Mystic",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 69
+      }
+    },
+    {
+      "id": "archetype.universal",
+      "name": "Universal",
+      "text": "",
+      "source": {
+        "book": "core",
+        "version": "2026-09-19",
+        "page": 80
+      }
+    }
+  ]
+}
