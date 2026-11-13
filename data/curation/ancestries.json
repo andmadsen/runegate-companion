@@ -15,7 +15,7 @@
       "choices": [
         {
           "key": "attributeBoost",
-          "prompt": "Vælg én attribut +2, eller to attributter +1",
+          "prompt": "Choose +2 for one attribute or +1 for two",
           "from": {
             "kind": "attributeBoost",
             "patterns": [
@@ -338,7 +338,7 @@
         "Bogen navngiver ikke Treegon-trækkene – navnene er sat af appen"
       ],
       "clarifications": [
-        "Husfortolkning: forbuddet mod rustning gælder også skjolde."
+        "House ruling: the ban on armor also covers shields."
       ]
     }
   ]

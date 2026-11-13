@@ -207,8 +207,8 @@ def parse_feats(pages) -> list[dict]:
                     prev = f"feat.{slug(group)}.{slug('Magic study ' + roman[lvl - 1] + ': ' + ms.group(2))}"
                     feat["prerequisites"].append({"kind": "feat", "feat": prev})
                 feat.setdefault("clarifications", []).append(
-                    "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); "
-                    "hvert niveau kræver det forrige.")
+                    "House ruling: the same feat across archetypes (can be taken once); "
+                    "each level requires the previous one.")
             m = re.search(r"maximum of level (\d+)", feat["text"])
             if feat["name"].startswith("Magic study") and m:
                 target = feat["name"].split(":", 1)[1].strip()
@@ -481,7 +481,7 @@ def parse_skills(pages) -> list[dict]:
             sk = {**base, "id": f"skill.{slug(name)}", "name": name, "category": "general",
                   "armorPenalty": "maneuver" if name in MANEUVER_SKILLS else "none", "text": text}
             if name in MANEUVER_SKILLS:
-                sk["clarifications"] = ["Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."]
+                sk["clarifications"] = ["House ruling: maneuver skill, affected by the armor's maneuver penalty."]
             skills.append(sk)
     # Konflikt K3: armor-skills bruges i DFR og backgrounds, men er ikke defineret i bogen
     for grp in ("Light", "Medium", "Heavy"):
@@ -490,8 +490,8 @@ def parse_skills(pages) -> list[dict]:
                        "text": f"Training in {grp.lower()} armor. The skill bonus is added to DFR "
                                f"when wearing {grp.lower()} armor.",
                        "source": src(17, "Defense (DFR)"),
-                       "clarifications": ["Husfortolkning: bogen definerer ikke armor-skills. Ingen "
-                                          "tilknyttet attribut – bonus = rank-bonus."]})
+                       "clarifications": ["House ruling: the book does not define armor skills. No linked "
+                                          "attribute; the bonus is the rank bonus."]})
     return skills
 
 

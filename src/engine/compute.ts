@@ -77,7 +77,7 @@ export function collectModifiers(build: CharacterBuild, inventory: InventoryItem
   }
   for (const [attr, v] of Object.entries(build.ancestryChoices.attributeBoost ?? {})) {
     out.push({ modifier: { target: { kind: "attribute", attribute: attr as Attribute }, value: v!, type: "score", applies: "always" },
-      source: `Ancestry: ${ancestry?.name ?? "?"} (valgt)` });
+      source: `Ancestry: ${ancestry?.name ?? "?"} (chosen)` });
   }
   const picks = allFeatPicks(build, ix);
   for (const { feat, choices } of picks) {
@@ -94,7 +94,7 @@ export function collectModifiers(build: CharacterBuild, inventory: InventoryItem
   for (const item of inventory) {
     if (!item.equipped || !item.custom?.modifiers) continue;
     if (item.custom.attunementMp && !item.attuned) continue;
-    for (const m of item.custom.modifiers) out.push({ modifier: m, source: `Udstyr: ${item.custom.name}` });
+    for (const m of item.custom.modifiers) out.push({ modifier: m, source: `Item: ${item.custom.name}` });
   }
   return out;
 }
@@ -156,22 +156,22 @@ export function computeSheet(build: CharacterBuild, inventory: InventoryItem[], 
   // --- Attributter: base + ancestry + level-up-point ---------------------------------
   const attributes = {} as Sheet["attributes"];
   for (const a of ATTRIBUTES) {
-    const base: Part[] = [basePart("Grundværdi", build.baseAttributes[a])];
+    const base: Part[] = [basePart("Base score", build.baseAttributes[a])];
     const ups = build.levels.reduce((n, l) => n + (l.attributeIncreases?.filter((x) => x === a).length ?? 0), 0);
-    if (ups) base.push(basePart("Level-up", ups));
+    if (ups) base.push(basePart("Level-ups", ups));
     const score = value(base, mods, `attr:${a}`);
     attributes[a] = { score, modifier: attributeModifier(score.total) };
   }
   const m = (a: Attribute) => attributes[a].modifier;
   const s = (a: Attribute) => attributes[a].score.total;
-  const am = (a: Attribute) => basePart(`${a}-modifier`, m(a));
+  const am = (a: Attribute) => basePart(`${a} modifier`, m(a));
 
   // --- Udstyr ------------------------------------------------------------------------------
   const worn = inventory.filter((i) => i.equipped && i.ref).map((i) => ix.get<Armor>(i.ref!, "armor")).filter(Boolean) as Armor[];
   const wornArmor = worn.find((a) => a.armorClass !== "shield");
   const wornShield = worn.find((a) => a.armorClass === "shield");
 
-  const carry = value([basePart("Grundværdi", 10), basePart("STR-score", s("STR")), am("STR")], mods, "stat:Carry");
+  const carry = value([basePart("Base", 10), basePart("STR score", s("STR")), am("STR")], mods, "stat:Carry");
   const enc = inventory.reduce((sum, i) => sum + itemEnc(i, ix), 0);
   const overload = Math.max(0, Math.floor(enc - carry.total));
 
@@ -180,7 +180,7 @@ export function computeSheet(build: CharacterBuild, inventory: InventoryItem[], 
   for (const sv of SAVES) {
     const prof = build.levels.reduce((n, l) => n + (l.saveProficiency[sv] ?? 0), 0);
     const [a1, a2] = SAVE_ATTRS[sv];
-    saves[sv] = value([am(a1), am(a2), basePart("Proficiency-point", prof)], mods, `save:${sv}`, "save:all");
+    saves[sv] = value([am(a1), am(a2), basePart("Proficiency points", prof)], mods, `save:${sv}`, "save:all");
   }
 
   // --- Sekundære værdier (s. 17-18) ------------------------------------------------------------
@@ -192,7 +192,7 @@ export function computeSheet(build: CharacterBuild, inventory: InventoryItem[], 
   const mpBoundByAttunement = inventory
     .filter((i) => i.attuned && i.custom?.attunementMp).reduce((n, i) => n + i.custom!.attunementMp!, 0);
 
-  const spd = value([basePart("Grundværdi", 10), am("STR"), am("CON"), basePart("Overload", -overload)], mods, "stat:SPD", "stat:movement");
+  const spd = value([basePart("Base", 10), am("STR"), am("CON"), basePart("Overload", -overload)], mods, "stat:SPD", "stat:movement");
 
   // DFR: rustning og skjold er led i formlen, ikke item-modifiers – ellers ville de ikke stable.
   const armorSkill = ix.skill(`skill.armor-${wornArmor?.armorClass ?? "light"}`);
@@ -203,20 +203,20 @@ export function computeSheet(build: CharacterBuild, inventory: InventoryItem[], 
   const dexCap = dexCaps.length ? Math.min(...dexCaps) : Infinity;
   const dexToDfr = Math.min(m("DEX"), dexCap);
   const dfr = value([
-    basePart("Grundværdi", 8),
-    basePart("DEX-modifier", dexToDfr, dexToDfr < m("DEX") ? `begrænset til ${dexCap}` : undefined),
-    basePart(`${armorSkill?.name ?? "Armor"}-skill`, armorSkill ? rankBonus(ranks.get(armorSkill.id) ?? 0, rules) : 0),
+    basePart("Base", 8),
+    basePart("DEX modifier", dexToDfr, dexToDfr < m("DEX") ? `capped at ${dexCap}` : undefined),
+    basePart(`${armorSkill?.name ?? "Armor"} skill`, armorSkill ? rankBonus(ranks.get(armorSkill.id) ?? 0, rules) : 0),
     ...(wornArmor ? [basePart(wornArmor.name, wornArmor.dfr)] : []),
     ...(wornShield ? [basePart(wornShield.name, wornShield.dfr)] : []),
   ], mods, "stat:DFR");
-  const tou = value([basePart("Grundværdi", 8), am("CON"),
+  const tou = value([basePart("Base", 8), am("CON"),
     ...(wornArmor ? [basePart(wornArmor.name, wornArmor.tou)] : []),
     ...(wornShield ? [basePart(wornShield.name, wornShield.tou)] : []),
   ], mods, "stat:TOU");
-  const wt = value([basePart("Grundværdi", 4), am("CON")], mods, "stat:WT");
+  const wt = value([basePart("Base", 4), am("CON")], mods, "stat:WT");
   const highest = Math.max(...ATTRIBUTES.map(m));
-  const hdc = value([basePart("Grundværdi", 10), basePart("½ level (rundet op)", Math.ceil(level / 2)),
-    basePart("Højeste attribut-modifier", highest)], mods, "stat:HDC");
+  const hdc = value([basePart("Base", 10), basePart("Half level, rounded up", Math.ceil(level / 2)),
+    basePart("Highest attribute modifier", highest)], mods, "stat:HDC");
   const initiative = value([basePart("Reaction save", saves.reaction.total), basePart("Overload", -overload)], mods, "stat:INIT");
 
   // --- Skills (s. 126-127) ----------------------------------------------------------------------
@@ -226,8 +226,8 @@ export function computeSheet(build: CharacterBuild, inventory: InventoryItem[], 
     const r = ranks.get(sk.id) ?? 0;
     const base: Part[] = [basePart("Ranks", rankBonus(r, rules), `${r} ranks`)];
     if (sk.attribute) base.push(am(sk.attribute));
-    if (sk.armorPenalty === "maneuver" && maneuverPenalty) base.push(basePart("Rustning (maneuver)", maneuverPenalty));
-    if (sk.armorPenalty === "magic" && magicPenalty) base.push(basePart("Rustning (magi)", magicPenalty));
+    if (sk.armorPenalty === "maneuver" && maneuverPenalty) base.push(basePart("Armor (maneuver penalty)", maneuverPenalty));
+    if (sk.armorPenalty === "magic" && magicPenalty) base.push(basePart("Armor (magic penalty)", magicPenalty));
     if (sk.armorPenalty !== "none" && overload) base.push(basePart("Overload", -overload));
     return { skill: sk, ranks: r, value: value(base, mods, `skill:${sk.id}`) };
   });

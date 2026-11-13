@@ -2,7 +2,7 @@
   "meta": {
     "book": "core",
     "version": "2026-09-19",
-    "importedAt": "2026-11-13T23:08:52+00:00",
+    "importedAt": "2026-11-13T23:53:28+00:00",
     "sourceFile": "d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf"
   },
   "progression": {
@@ -399,7 +399,7 @@
       "choices": [
         {
           "key": "attributeBoost",
-          "prompt": "Vælg én attribut +2, eller to attributter +1",
+          "prompt": "Choose +2 for one attribute or +1 for two",
           "from": {
             "kind": "attributeBoost",
             "patterns": [
@@ -722,7 +722,7 @@
         "Bogen navngiver ikke Treegon-trækkene – navnene er sat af appen"
       ],
       "clarifications": [
-        "Husfortolkning: forbuddet mod rustning gælder også skjolde."
+        "House ruling: the ban on armor also covers shields."
       ]
     }
   ],
@@ -914,7 +914,7 @@
       },
       "text": "As a ●, the warrior can negate up to one instance of Disorientation (D) or one Stunned (S) effect from an attack.",
       "clarifications": [
-        "Husfortolkning: ‘Stunned (S)’ læses som Staggered (S)."
+        "House ruling: ‘Stunned (S)’ is read as Staggered (S)."
       ]
     },
     {
@@ -1106,7 +1106,7 @@
       "text": "The Primal has studied the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.elementalism.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -1197,7 +1197,7 @@
       },
       "text": "Gain an extra action for 5 BP.",
       "clarifications": [
-        "Husfortolkning: prisen er 10 BP (prisfeltet). Teksten siger 5 BP."
+        "House ruling: the cost is 10 BP (the cost field). The text says 5 BP."
       ]
     },
     {
@@ -1289,13 +1289,13 @@
           "value": 1,
           "type": "condition",
           "applies": "situational",
-          "condition": "Med det valgte våben"
+          "condition": "With the chosen weapon"
         }
       ],
       "choices": [
         {
           "key": "weapon",
-          "prompt": "Vælg en våbentype (fx Longsword)",
+          "prompt": "Choose a weapon type (e.g. Longsword)",
           "from": {
             "kind": "weapon"
           }
@@ -1386,7 +1386,7 @@
       },
       "text": "The Elf character gains +1 conditional modifier to Magic: Nature.",
       "clarifications": [
-        "Husfortolkning: ‘Magic: Nature’ findes ikke. Giver +1 til Magic: Spiritualism ved Nature-spells."
+        "House ruling: ‘Magic: Nature’ does not exist. Gives +1 to Magic: Spiritualism when casting Nature spells."
       ]
     }
   ],
@@ -1603,7 +1603,7 @@
       "armorPenalty": "maneuver",
       "text": "This skill covers a wide range of acrobatic maneuvers, from rolling, tumbling, somersaulting, swinging, bouncing etc. The skill should be used if the character tries an acrobatic or athletic maneuver, like vaulting a low wall, swinging from a chandelier, parkouring between obstacles, contorting through small or narrow passages or openings and other activities like that.\nThe GM might also include precision moves, and balance moves to this skill, if standing on an unstable rope bridge, balancing a narrow ledge or trying to grab that really rare gem in the hole with all the poisonous spikes, without touching them.\nA player can also roll an Acrobatics check to mitigate some damage from falling. For each 2 points of result he can achieve over DC20, he mitigates 1 meter fall distance.\nRolling 28 will mitigate 4 meters fall distance Athletics covers a wide range of physical movement skill like, jumping, swimming, climbing and the likes. Below are inspirational descriptions on how to apply the skill to the game.\nJumping Jumping might seem like a very rudimentary skill, and perhaps it is, in its core form. However, techniques can be developed and trained to perfect the ability to cross distance in-air.\nBut jumping could be extended to crossing surfaces or fields by more than just vaulting over it in a single powerful leap. Being able to achieve higher skill check results means the character apply special and advanced techniques to reach even farther. If this be either running along vertical surfaces, while having momentum of a carefully planned streak of kinetic movement or being able to tap-jump small poles or levers across a chasm, is up to the GM and player to decide on.\nAs a rule of thumb, the character can cross a space equal to 5% of his own height for each point he achieves with his skill check. Rolling 17, would mean he can jump 85% of his own height. A person of 185 cm height, would then be able to cross a space of 157 cm, without touching the ground.\nAgain, if the GM decides, that various obstacles or objects can help the character traverse an even wider space, it is totally up to the GM and player to agree on how cinematic the character’s movement is, and how far he can cross with a single check. Maybe the GM wants multiple checks?\n Climbing This skill is more than just simply climbing trees. Even though it also encompasses simple climbing, this skill embraces the use of various techniques to traverse a vertical surface. A skilled climber is able to get better footing, make small lunges or vaults from one surface to another, or even apply special techniques when both ascending or descending (like rappelling) alongside a vertical surface.\nIt is the GM, that sets the general di culty for ascending or descending a vertical surface and may apply bonusses if for instance the character has a rope at his disposal to aid him.\nA roll should most commonly be made, if the climb constitutes some sort of risk.\nFor instance, climbing up or down a ladder is not inherently di cult, at may not demand a climbing check. However, if it is covered in grease or oil, I may be an entirely di erent matter. Likewise, if the character wants to slide down the ladder like a firefighter, to save time, the GM might demand a skill check.\nSwimming This skill enables the character to swim with a various styles and techniques of swimming. Besides this, it enables the character to dive underwater, control underwater movement.\nThe GM might decide that this skill can also be used when jumping into water, and while making diving maneuvers in the air, before hitting the water.",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -1992,7 +1992,7 @@
       "armorPenalty": "maneuver",
       "text": "This skill concerns the use and understanding of machinery, automatons, technology and technical contraptions and constructs.\nThis may range widely from being actual steam-driven machinery, to complex mechanical constructions used for engineering purposes, traps, mechanisms etc.\nThe character can examine, understand and derive their functions and how they work and operate, reverse engineer them, create them from blueprints, or create blueprints for reproduction, based on a prototype or by examining the technical constructions of the item, object or structure it composes.\nThis way, the character may also gain insight into how to operate it, sabotage it or repair it.",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -2090,7 +2090,7 @@
       "armorPenalty": "maneuver",
       "text": "",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -2117,7 +2117,7 @@
       "armorPenalty": "maneuver",
       "text": "This skill covers all sorts of rapid and precise trickery maneuvers, with the purpose of misleading, misguiding or tricking someone. One of the most common actions within this category is picking pockets.\nConsidered by most as a shady trait, the ability to relieve others of the valuables, without them knowing of it. This skill enables a character to retrieve items from another person (or creature perhaps), without them noticing it. This might be their purse, a weapon or the prison keys o a guard. But this skill also works the other way around – placing items on people without the noticing – a counterfeited letter, a note, a set of tools, etc.\nThis skill also applies when wanting to switch two mugs of ale, pass a note unseen to another person, make card tricks or other semi-illusionary actions. Shifty types, working together may also use this in a marketplace, to lift an item o a person, and rapidly distribute it between each other in the crowd of people.\nThe skill will also cover making cautious or precise maneuvers, like opening or closing a door very silently, reaching something inside a narrow tube without touching the sides, etc.\nThe GM generally decides the DC to be successful at the attempt, but in many cases, the attempt is made versus the target’s passive perception.\nThe GM should take into consideration that some items are harder to manipulate with than others. Lifting the firmly attached sword o the seasoned warrior would probably be harder than his purse, and therefore done at a penalty, as the sword is strapped on more firmly than the purse. Also, items that could make a sound like loose coins, a small pet or keys in a chain would probably impose a penalty of some sort. Trying to make trickeries with larger objects like lockbox, would also be harder than a single coin and would therefore impose penalty.",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -2183,7 +2183,7 @@
         "section": "Defense (DFR)"
       },
       "clarifications": [
-        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+        "House ruling: the book does not define armor skills. No linked attribute; the bonus is the rank bonus."
       ]
     },
     {
@@ -2202,7 +2202,7 @@
         "section": "Defense (DFR)"
       },
       "clarifications": [
-        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+        "House ruling: the book does not define armor skills. No linked attribute; the bonus is the rank bonus."
       ]
     },
     {
@@ -2221,7 +2221,7 @@
         "section": "Defense (DFR)"
       },
       "clarifications": [
-        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+        "House ruling: the book does not define armor skills. No linked attribute; the bonus is the rank bonus."
       ]
     }
   ],
@@ -2421,7 +2421,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -2437,7 +2437,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -2453,7 +2453,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -2469,7 +2469,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -2485,7 +2485,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -2501,7 +2501,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     }
   ],
@@ -3049,7 +3049,7 @@
         "page": 197
       },
       "clarifications": [
-        "Husfortolkning: teksten beskriver en zone, så værdien 4/2 er flyttet fra burst til zone."
+        "House ruling: the text describes a zone, so 4/2 has been moved from burst to zone."
       ]
     }
   ]

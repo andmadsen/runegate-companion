@@ -83,7 +83,7 @@ export function stack(mods: SourcedModifier[], keys: string[]): { add: number; c
 
   for (const m of always.filter((m) => m.modifier.operation === "cap")) {
     cap = cap === null ? m.modifier.value : Math.min(cap, m.modifier.value);
-    parts.push(part(m, true, `loft: maks ${m.modifier.value}`));
+    parts.push(part(m, true, `cap: at most ${m.modifier.value}`));
   }
 
   const adds = always.filter((m) => m.modifier.operation !== "cap");
@@ -99,7 +99,7 @@ export function stack(mods: SourcedModifier[], keys: string[]): { add: number; c
     for (const m of penalties) { add += m.modifier.value; parts.push(part(m, true)); }
     bonuses.forEach((m, i) => {
       if (i === 0) add += m.modifier.value;
-      parts.push(part(m, i === 0, i === 0 ? undefined : `stabler ikke med anden ${type}-bonus`));
+      parts.push(part(m, i === 0, i === 0 ? undefined : `does not stack with a larger ${type} bonus`));
     });
   }
   return { add, cap, parts };

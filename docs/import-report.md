@@ -1,6 +1,6 @@
 # Import-rapport – regelbog 2026-09-19
 
-Genereret 2026-11-13T23:08:52+00:00 fra `d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf`.
+Genereret 2026-11-13T23:53:28+00:00 fra `d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf`.
 
 | Kategori | Antal |
 |---|---|

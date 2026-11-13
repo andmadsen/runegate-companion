@@ -86,7 +86,7 @@ describe("Brokk (Dwarf, level 1)", () => {
   });
   test("DFR-forklaring viser rustning, skjold og ring", () => {
     const labels = sheet.dfr.parts.map((p) => p.label);
-    for (const l of ["Chain mail", "Shield (normal)", "Udstyr: Ring of protection"]) assert.ok(labels.includes(l), l);
+    for (const l of ["Chain mail", "Shield (normal)", "Item: Ring of protection"]) assert.ok(labels.includes(l), l);
   });
   test("buildet er gyldigt", () => assert.deepEqual(errors(brokk, brokkGear), []));
 });

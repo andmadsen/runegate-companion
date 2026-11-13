@@ -2,7 +2,7 @@
   "meta": {
     "book": "core",
     "version": "2026-09-19",
-    "importedAt": "2026-11-13T23:08:52+00:00",
+    "importedAt": "2026-11-13T23:53:28+00:00",
     "sourceFile": "d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf"
   },
   "progression": {
@@ -399,7 +399,7 @@
       "choices": [
         {
           "key": "attributeBoost",
-          "prompt": "Vælg én attribut +2, eller to attributter +1",
+          "prompt": "Choose +2 for one attribute or +1 for two",
           "from": {
             "kind": "attributeBoost",
             "patterns": [
@@ -722,7 +722,7 @@
         "Bogen navngiver ikke Treegon-trækkene – navnene er sat af appen"
       ],
       "clarifications": [
-        "Husfortolkning: forbuddet mod rustning gælder også skjolde."
+        "House ruling: the ban on armor also covers shields."
       ]
     }
   ],
@@ -1121,7 +1121,7 @@
       },
       "text": "As a ●, the warrior can negate up to one instance of Disorientation (D) or one Stunned (S) effect from an attack.",
       "clarifications": [
-        "Husfortolkning: ‘Stunned (S)’ læses som Staggered (S)."
+        "House ruling: ‘Stunned (S)’ is read as Staggered (S)."
       ]
     },
     {
@@ -4440,7 +4440,7 @@
       "text": "The Primal has studied the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.nature.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -4479,7 +4479,7 @@
       "text": "The Primal has delved deeper into the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.nature.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -4518,7 +4518,7 @@
       "text": "The Primal has conducted intense studies of the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.nature.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -4557,7 +4557,7 @@
       "text": "The Primal has some of the deepest and profound knowledge of the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.nature.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -4596,7 +4596,7 @@
       "text": "The Primal has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.nature.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -4631,7 +4631,7 @@
       "text": "The Primal has studied the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.warding.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -4670,7 +4670,7 @@
       "text": "The Primal has delved deeper into the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.warding.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -4709,7 +4709,7 @@
       "text": "The Primal has conducted intense studies of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.warding.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -4748,7 +4748,7 @@
       "text": "The Primal has some of the deepest and profound knowledge of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.warding.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -4787,7 +4787,7 @@
       "text": "The Primal has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.warding.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -4822,7 +4822,7 @@
       "text": "The Primal has studied the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.elementalism.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -4861,7 +4861,7 @@
       "text": "The Primal has delved deeper into the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.elementalism.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -4900,7 +4900,7 @@
       "text": "The Primal has conducted intense studies of the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.elementalism.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -4939,7 +4939,7 @@
       "text": "The Primal has some of the deepest and profound knowledge of the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.elementalism.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -4978,7 +4978,7 @@
       "text": "The Primal has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 25 and above.\n Where others see chaos, you see purpose waiting to be shaped. Your strength lies not only in blade or spell, but in the courage you awaken in those who stand beside you. Whether commander, priest, or chosen champion, your presence steadies hearts and sharpens resolve. You mend wounds with one hand and lead the charge with the other, turning desperation into defiance. Titles may di er—captain, chieftain, warlord, healer—but when the tide threatens to swallow all, it’s your voice that cuts through the storm.\nType examples: Priest, Cleric, Demon hunter, Paladin, Warlord, Chieftain, O cer, Commanders, Rebel leader, Healer.",
       "equivalenceKey": "magic-study.elementalism.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -6201,7 +6201,7 @@
       "text": "The Leader has studied the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.mysticism.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -6240,7 +6240,7 @@
       "text": "The Leader has delved deeper into the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.mysticism.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -6279,7 +6279,7 @@
       "text": "The Leader has conducted intense studies of the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.mysticism.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -6318,7 +6318,7 @@
       "text": "The Leader has some of the deepest and profound knowledge of the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.mysticism.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -6357,7 +6357,7 @@
       "text": "The Leader has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.mysticism.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -6392,7 +6392,7 @@
       "text": "The Leader has studied the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.warding.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -6431,7 +6431,7 @@
       "text": "The Leader has delved deeper into the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.warding.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -6470,7 +6470,7 @@
       "text": "The Leader has conducted intense studies of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.warding.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -6509,7 +6509,7 @@
       "text": "The Leader has some of the deepest and profound knowledge of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.warding.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -6548,7 +6548,7 @@
       "text": "The Leader has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 25 and above.\n You command the raw pulse of creation itself - threads of flame, storm, and starlight weaving at your fingertips. The weave of magic answers your will, shaping into bursts of power or delicate wonders beyond mortal craft. Whether wizard, shaman, warlock, sorcerer or spirit-binder, your art defies boundaries and hungers for discovery. You’ve felt magic sing through your veins, brilliant and terrifying, beautiful and alive. The art you wield demands focus, sacrifice, and the courage to peer into places no mortal mind was meant to wander. For magic is both gift and burden - and you intend to master it before it masters you.\nType examples: Wizard, Sorcerer, Shaman, Cultist, Necromancer, Spell blade, Arcane trickster, Ritualist, Summoner, Witch, Warlock, Bard.",
       "equivalenceKey": "magic-study.warding.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -7333,7 +7333,7 @@
       "text": "The Mystic has studied the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.mysticism.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -7372,7 +7372,7 @@
       "text": "The Mystic has delved deeper into the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.mysticism.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -7411,7 +7411,7 @@
       "text": "The Mystic has conducted intense studies of the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.mysticism.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -7450,7 +7450,7 @@
       "text": "The Mystic has some of the deepest and profound knowledge of the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.mysticism.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -7489,7 +7489,7 @@
       "text": "The Mystic has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Mysticism magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.mysticism.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.mysticism",
@@ -7524,7 +7524,7 @@
       "text": "The Mystic has studied the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.warding.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -7563,7 +7563,7 @@
       "text": "The Mystic has delved deeper into the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.warding.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -7602,7 +7602,7 @@
       "text": "The Mystic has conducted intense studies of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.warding.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -7641,7 +7641,7 @@
       "text": "The Mystic has some of the deepest and profound knowledge of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.warding.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -7680,7 +7680,7 @@
       "text": "The Mystic has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Warding magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.warding.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.warding",
@@ -7715,7 +7715,7 @@
       "text": "The Mystic has studied the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.nature.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -7754,7 +7754,7 @@
       "text": "The Mystic has delved deeper into the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.nature.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -7793,7 +7793,7 @@
       "text": "The Mystic has conducted intense studies of the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.nature.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -7832,7 +7832,7 @@
       "text": "The Mystic has some of the deepest and profound knowledge of the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.nature.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -7871,7 +7871,7 @@
       "text": "The Mystic has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Nature magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.nature.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.nature",
@@ -7906,7 +7906,7 @@
       "text": "The Mystic has studied the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.elementalism.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -7945,7 +7945,7 @@
       "text": "The Mystic has delved deeper into the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.elementalism.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -7984,7 +7984,7 @@
       "text": "The Mystic has conducted intense studies of the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.elementalism.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -8023,7 +8023,7 @@
       "text": "The Mystic has some of the deepest and profound knowledge of the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.elementalism.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -8062,7 +8062,7 @@
       "text": "The Mystic has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Elementalism magic, enabling him to learn and cast spell with a maximum of level 25 and above.",
       "equivalenceKey": "magic-study.elementalism.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "realm.elementalism",
@@ -8097,7 +8097,7 @@
       "text": "The Mystic has studied the ways of Dark magic, enabling him to learn and cast spell with a maximum of level 5.",
       "equivalenceKey": "magic-study.dark-magic.1",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.dark-magic",
@@ -8136,7 +8136,7 @@
       "text": "The Mystic has delved deeper into the ways of Dark magic, enabling him to learn and cast spell with a maximum of level 10.",
       "equivalenceKey": "magic-study.dark-magic.2",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.dark-magic",
@@ -8175,7 +8175,7 @@
       "text": "The Mystic has conducted intense studies of the ways of Dark magic, enabling him to learn and cast spell with a maximum of level 15.",
       "equivalenceKey": "magic-study.dark-magic.3",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.dark-magic",
@@ -8214,7 +8214,7 @@
       "text": "The Mystic has some of the deepest and profound knowledge of the ways of Dark magic, enabling him to learn and cast spell with a maximum of level 20.",
       "equivalenceKey": "magic-study.dark-magic.4",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.dark-magic",
@@ -8253,7 +8253,7 @@
       "text": "The Mystic has experimented, unearthed and uncovered the most well-kept and ancient secrets of the ways of Dark magic, enabling him to learn and cast spell with a maximum of level 25 and above.\n You walk no chosen path, and that is your greatest strength. While others bind themselves to tradition or creed, you’ve learned to thrive by adapting, shaping skill and instinct to whatever the moment demands. A touch of magic here, a clever trick there - nothing mastered, yet everything familiar. You move between worlds with ease, defying labels and expectations alike. The road ahead holds no clear destination, only opportunity - and you intend to make it your own.\nType example: Wanderer, Merchant, Adventurer, Explorer, Craftsman, Herold, Jack of all trades.",
       "equivalenceKey": "magic-study.dark-magic.5",
       "clarifications": [
-        "Husfortolkning: samme feat på tværs af archetypes (kan tages én gang); hvert niveau kræver det forrige."
+        "House ruling: the same feat across archetypes (can be taken once); each level requires the previous one."
       ],
       "grantsSpellAccess": {
         "realmOrDomain": "domain.dark-magic",
@@ -8781,7 +8781,7 @@
       },
       "text": "Gain an extra action for 5 BP.",
       "clarifications": [
-        "Husfortolkning: prisen er 10 BP (prisfeltet). Teksten siger 5 BP."
+        "House ruling: the cost is 10 BP (the cost field). The text says 5 BP."
       ]
     },
     {
@@ -8954,13 +8954,13 @@
           "value": 1,
           "type": "condition",
           "applies": "situational",
-          "condition": "Med det valgte våben"
+          "condition": "With the chosen weapon"
         }
       ],
       "choices": [
         {
           "key": "weapon",
-          "prompt": "Vælg en våbentype (fx Longsword)",
+          "prompt": "Choose a weapon type (e.g. Longsword)",
           "from": {
             "kind": "weapon"
           }
@@ -9033,7 +9033,7 @@
       "choices": [
         {
           "key": "language",
-          "prompt": "Vælg et humanoidt sprog",
+          "prompt": "Choose a humanoid language",
           "from": {
             "kind": "language"
           }
@@ -9079,7 +9079,7 @@
       "choices": [
         {
           "key": "realm",
-          "prompt": "Vælg et spell-realm",
+          "prompt": "Choose a spell realm",
           "from": {
             "kind": "realm"
           }
@@ -9159,7 +9159,7 @@
       },
       "text": "The Elf character gains +1 conditional modifier to Magic: Nature.",
       "clarifications": [
-        "Husfortolkning: ‘Magic: Nature’ findes ikke. Giver +1 til Magic: Spiritualism ved Nature-spells."
+        "House ruling: ‘Magic: Nature’ does not exist. Gives +1 to Magic: Spiritualism when casting Nature spells."
       ]
     },
     {
@@ -9183,7 +9183,7 @@
       "choices": [
         {
           "key": "animalGroup",
-          "prompt": "Vælg en gruppe dyr",
+          "prompt": "Choose a group of animals",
           "from": {
             "kind": "animalGroup"
           }
@@ -10396,7 +10396,7 @@
       "armorPenalty": "maneuver",
       "text": "This skill covers a wide range of acrobatic maneuvers, from rolling, tumbling, somersaulting, swinging, bouncing etc. The skill should be used if the character tries an acrobatic or athletic maneuver, like vaulting a low wall, swinging from a chandelier, parkouring between obstacles, contorting through small or narrow passages or openings and other activities like that.\nThe GM might also include precision moves, and balance moves to this skill, if standing on an unstable rope bridge, balancing a narrow ledge or trying to grab that really rare gem in the hole with all the poisonous spikes, without touching them.\nA player can also roll an Acrobatics check to mitigate some damage from falling. For each 2 points of result he can achieve over DC20, he mitigates 1 meter fall distance.\nRolling 28 will mitigate 4 meters fall distance Athletics covers a wide range of physical movement skill like, jumping, swimming, climbing and the likes. Below are inspirational descriptions on how to apply the skill to the game.\nJumping Jumping might seem like a very rudimentary skill, and perhaps it is, in its core form. However, techniques can be developed and trained to perfect the ability to cross distance in-air.\nBut jumping could be extended to crossing surfaces or fields by more than just vaulting over it in a single powerful leap. Being able to achieve higher skill check results means the character apply special and advanced techniques to reach even farther. If this be either running along vertical surfaces, while having momentum of a carefully planned streak of kinetic movement or being able to tap-jump small poles or levers across a chasm, is up to the GM and player to decide on.\nAs a rule of thumb, the character can cross a space equal to 5% of his own height for each point he achieves with his skill check. Rolling 17, would mean he can jump 85% of his own height. A person of 185 cm height, would then be able to cross a space of 157 cm, without touching the ground.\nAgain, if the GM decides, that various obstacles or objects can help the character traverse an even wider space, it is totally up to the GM and player to agree on how cinematic the character’s movement is, and how far he can cross with a single check. Maybe the GM wants multiple checks?\n Climbing This skill is more than just simply climbing trees. Even though it also encompasses simple climbing, this skill embraces the use of various techniques to traverse a vertical surface. A skilled climber is able to get better footing, make small lunges or vaults from one surface to another, or even apply special techniques when both ascending or descending (like rappelling) alongside a vertical surface.\nIt is the GM, that sets the general di culty for ascending or descending a vertical surface and may apply bonusses if for instance the character has a rope at his disposal to aid him.\nA roll should most commonly be made, if the climb constitutes some sort of risk.\nFor instance, climbing up or down a ladder is not inherently di cult, at may not demand a climbing check. However, if it is covered in grease or oil, I may be an entirely di erent matter. Likewise, if the character wants to slide down the ladder like a firefighter, to save time, the GM might demand a skill check.\nSwimming This skill enables the character to swim with a various styles and techniques of swimming. Besides this, it enables the character to dive underwater, control underwater movement.\nThe GM might decide that this skill can also be used when jumping into water, and while making diving maneuvers in the air, before hitting the water.",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -10785,7 +10785,7 @@
       "armorPenalty": "maneuver",
       "text": "This skill concerns the use and understanding of machinery, automatons, technology and technical contraptions and constructs.\nThis may range widely from being actual steam-driven machinery, to complex mechanical constructions used for engineering purposes, traps, mechanisms etc.\nThe character can examine, understand and derive their functions and how they work and operate, reverse engineer them, create them from blueprints, or create blueprints for reproduction, based on a prototype or by examining the technical constructions of the item, object or structure it composes.\nThis way, the character may also gain insight into how to operate it, sabotage it or repair it.",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -10883,7 +10883,7 @@
       "armorPenalty": "maneuver",
       "text": "",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -10910,7 +10910,7 @@
       "armorPenalty": "maneuver",
       "text": "This skill covers all sorts of rapid and precise trickery maneuvers, with the purpose of misleading, misguiding or tricking someone. One of the most common actions within this category is picking pockets.\nConsidered by most as a shady trait, the ability to relieve others of the valuables, without them knowing of it. This skill enables a character to retrieve items from another person (or creature perhaps), without them noticing it. This might be their purse, a weapon or the prison keys o a guard. But this skill also works the other way around – placing items on people without the noticing – a counterfeited letter, a note, a set of tools, etc.\nThis skill also applies when wanting to switch two mugs of ale, pass a note unseen to another person, make card tricks or other semi-illusionary actions. Shifty types, working together may also use this in a marketplace, to lift an item o a person, and rapidly distribute it between each other in the crowd of people.\nThe skill will also cover making cautious or precise maneuvers, like opening or closing a door very silently, reaching something inside a narrow tube without touching the sides, etc.\nThe GM generally decides the DC to be successful at the attempt, but in many cases, the attempt is made versus the target’s passive perception.\nThe GM should take into consideration that some items are harder to manipulate with than others. Lifting the firmly attached sword o the seasoned warrior would probably be harder than his purse, and therefore done at a penalty, as the sword is strapped on more firmly than the purse. Also, items that could make a sound like loose coins, a small pet or keys in a chain would probably impose a penalty of some sort. Trying to make trickeries with larger objects like lockbox, would also be harder than a single coin and would therefore impose penalty.",
       "clarifications": [
-        "Husfortolkning: maneuver skill – rammes af rustningens maneuver-straf."
+        "House ruling: maneuver skill, affected by the armor's maneuver penalty."
       ]
     },
     {
@@ -10976,7 +10976,7 @@
         "section": "Defense (DFR)"
       },
       "clarifications": [
-        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+        "House ruling: the book does not define armor skills. No linked attribute; the bonus is the rank bonus."
       ]
     },
     {
@@ -10995,7 +10995,7 @@
         "section": "Defense (DFR)"
       },
       "clarifications": [
-        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+        "House ruling: the book does not define armor skills. No linked attribute; the bonus is the rank bonus."
       ]
     },
     {
@@ -11014,7 +11014,7 @@
         "section": "Defense (DFR)"
       },
       "clarifications": [
-        "Husfortolkning: bogen definerer ikke armor-skills. Ingen tilknyttet attribut – bonus = rank-bonus."
+        "House ruling: the book does not define armor skills. No linked attribute; the bonus is the rank bonus."
       ]
     }
   ],
@@ -11214,7 +11214,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -11230,7 +11230,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -11246,7 +11246,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -11262,7 +11262,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -11278,7 +11278,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     },
     {
@@ -11294,7 +11294,7 @@
         "section": "Equipment"
       },
       "clarifications": [
-        "Husfortolkning: egenskaben bruges i bogen, men er ikke defineret. Midlertidig definition."
+        "House ruling: this property is used in the book but not defined. Temporary definition."
       ]
     }
   ],
@@ -19292,7 +19292,7 @@
         "page": 197
       },
       "clarifications": [
-        "Husfortolkning: teksten beskriver en zone, så værdien 4/2 er flyttet fra burst til zone."
+        "House ruling: the text describes a zone, so 4/2 has been moved from burst to zone."
       ]
     },
     {

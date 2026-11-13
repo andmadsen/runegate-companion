@@ -10,9 +10,12 @@ Færdigt:
 - **Regelmotor:** `src/engine/` (compute, validate, modifier-stabling), karaktermodel i `src/character/types.ts`. 36 tests: `npm test`.
 - **Database:** Supabase-projekt `ahrtztpryhrhkgfvlkzx` (EU). Migrationerne i `supabase/migrations/` er anvendt, og RLS er testet (`supabase/tests/`). Ingen sikkerhedsadvarsler fra Supabase.
 
-Næste skridt (fase 2 – MVP, D8/D9):
-1. React + Vite + TypeScript-app (PWA) i `app/` eller i roden: login via Supabase (magic link), karakterliste, guidet oprettelse (ancestry → attributter → background → feats → skills → saves → udstyr), sheet med "hvor kommer tallet fra", inventory og level up, tracking af BP/MP/wounds/conditions.
-2. Deploy på Vercel fra GitHub.
+- **Fase 2 – app (første version):** React + Vite i `src/app/`. Login via magic link, karakterliste, guidet oprettelse, sheet med forklaring af tal, tracking (BP/MP/wounds/conditions/fate), inventory med egne items og attunement, level up. Kør lokalt uden Supabase-variabler = "local mode" (data i browseren, regler fra repoet).
+
+Næste skridt:
+1. Upload `data/rules/2026-09-19/rules.json` til Supabase Storage-bucket `rules` som `2026-09-19/rules.json` (D13).
+2. Deploy på Vercel fra GitHub; sæt Supabase Auth → URL Configuration (Site URL + redirect) til Vercel-adressen.
+3. PWA/offline, regelopslag (fase 4), GM-modul (fase 5).
 
 ## Faste principper
 
@@ -27,6 +30,8 @@ Næste skridt (fase 2 – MVP, D8/D9):
 ```bash
 python3 -I tools/import/build_rules.py <regelbog.pdf>   # byg regeldata
 npm run typecheck && npm test                            # regelmotor (Node 22.18+)
+npm run dev                                              # app lokalt (local mode uden .env.local)
+npm run build                                            # produktionsbygget (bruger .env.production)
 ```
 
 ## Miljø

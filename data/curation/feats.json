@@ -135,7 +135,7 @@
       "choices": [
         {
           "key": "weapon",
-          "prompt": "Vælg en våbentype (fx Longsword)",
+          "prompt": "Choose a weapon type (e.g. Longsword)",
           "from": {
             "kind": "weapon"
           }
@@ -150,7 +150,7 @@
           "value": 1,
           "type": "condition",
           "applies": "situational",
-          "condition": "Med det valgte våben"
+          "condition": "With the chosen weapon"
         }
       ]
     },
@@ -158,7 +158,7 @@
       "choices": [
         {
           "key": "realm",
-          "prompt": "Vælg et spell-realm",
+          "prompt": "Choose a spell realm",
           "from": {
             "kind": "realm"
           }
@@ -180,7 +180,7 @@
       "choices": [
         {
           "key": "language",
-          "prompt": "Vælg et humanoidt sprog",
+          "prompt": "Choose a humanoid language",
           "from": {
             "kind": "language"
           }
@@ -191,7 +191,7 @@
       "choices": [
         {
           "key": "animalGroup",
-          "prompt": "Vælg en gruppe dyr",
+          "prompt": "Choose a group of animals",
           "from": {
             "kind": "animalGroup"
           }
@@ -212,17 +212,17 @@
         }
       ],
       "clarifications": [
-        "Husfortolkning: ‘Magic: Nature’ findes ikke. Giver +1 til Magic: Spiritualism ved Nature-spells."
+        "House ruling: ‘Magic: Nature’ does not exist. Gives +1 to Magic: Spiritualism when casting Nature spells."
       ]
     },
     "feat.universal.combat-stamina": {
       "clarifications": [
-        "Husfortolkning: prisen er 10 BP (prisfeltet). Teksten siger 5 BP."
+        "House ruling: the cost is 10 BP (the cost field). The text says 5 BP."
       ]
     },
     "feat.warrior.pain-relief": {
       "clarifications": [
-        "Husfortolkning: ‘Stunned (S)’ læses som Staggered (S)."
+        "House ruling: ‘Stunned (S)’ is read as Staggered (S)."
       ]
     }
   }
