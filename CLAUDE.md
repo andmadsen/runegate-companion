@@ -14,10 +14,11 @@ Færdigt:
 
 - **Drift:** appen kører på https://runegate-companion.vercel.app (Vercel, auto-deploy fra `main`).
 
+- **I drift 2026-11-14:** regeldata ligger i bucket `rules/2026-09-19/rules.json`, Supabase Auth peger på Vercel-adressen, og projektejeren har logget ind og oprettet en karakter.
+
 Næste skridt:
-1. Regeldata skal ligge i Supabase Storage-bucket `rules` som `2026-09-19/rules.json` (D13).
-2. Supabase Auth → URL Configuration: Site URL og redirect skal pege på Vercel-adressen.
-3. PWA/offline, regelopslag (fase 4), GM-modul (fase 5).
+1. Feedback fra test ved bordet.
+2. PWA/offline (installerbar på telefonen), regelopslag (fase 4), GM-modul (fase 5).
 
 ## Faste principper
 
