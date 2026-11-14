@@ -198,3 +198,50 @@ describe("modifiers og ranks", () => {
     assert.equal(s.dfr.total, 15);
   });
 });
+
+// ---------------------------------------------------------------------------------------------
+// Spells
+// ---------------------------------------------------------------------------------------------
+import { spellGroups, spellLines } from "../src/engine/spells.ts";
+
+describe("spells", () => {
+  const sp = (domain: string, level: number) => rules.spells.filter((s) => s.domain === domain && s.level <= level && s.level > level - 5);
+  const fire = sp("domain.fire", 5).map((s) => s.id);
+  const earth = sp("domain.earth", 5).map((s) => s.id);
+  const fire2 = sp("domain.fire", 10).map((s) => s.id);
+  // Ilsa har Magic study I (level 1) og II (level 2): Elementalism
+  const withSpells = (ids: string[], source: "start" | "learned" = "start"): CharacterBuild =>
+    ({ ...ilsa, spells: ids.map((spell) => ({ spell, source })) });
+  const sheet = computeSheet(ilsa, [], rules, ix);
+
+  test("adgang: Elementalism tier 2 (level 1-10), kun tier 1 ved level 1", () => {
+    const [g] = spellGroups(ilsa, sheet, rules, ix);
+    assert.equal(g.id, "realm.elementalism"); assert.equal(g.maxLevel, 10); assert.equal(g.tierAtLevel1, 1);
+    assert.deepEqual(g.domains, ["domain.fire", "domain.earth", "domain.air", "domain.water"]);
+  });
+  test("memoriseringsgrænse = 5 + INT 4 + ½ level (5) = 11; cantrip rank = Elementalism-skill 14", () => {
+    const [g] = spellGroups(ilsa, sheet, rules, ix);
+    assert.equal(g.memorizedLimit, 11); assert.equal(g.cantripRank, 14);
+  });
+  test("3 startspells på tværs af domæner i realmet er gyldigt (K11)", () => {
+    const codes = errors(withSpells([fire[0], fire[1], earth[0]])).map((i) => i.code);
+    assert.deepEqual(codes.filter((c) => c.startsWith("spell")), []);
+  });
+  test("4 startspells i samme tier er for mange", () => {
+    assert.ok(errors(withSpells([fire[0], fire[1], fire[2], earth[0]])).some((i) => i.code === "spell.start.count"));
+  });
+  test("tier 2-spells kan ikke vælges som startspells (Study II blev taget på level 2)", () => {
+    assert.ok(errors(withSpells([fire2[0]])).some((i) => i.code === "spell.start.count"));
+  });
+  test("lærte spells inden for adgang er altid gyldige; uden for adgang er de ikke", () => {
+    assert.deepEqual(errors(withSpells([fire2[0], fire2[1], fire2[2], fire2[3]], "learned")).filter((i) => i.code.startsWith("spell")), []);
+    const warding = rules.spells.find((s) => s.domain === "domain.warding")!.id;
+    assert.ok(errors(withSpells([warding], "learned")).some((i) => i.code === "spell.access"));
+  });
+  test("spell-linjer: MP-pris = level, cantrip når level ≤ cantrip rank", () => {
+    const b = withSpells([fire[0]]);
+    const s = computeSheet(b, [], rules, ix);
+    const [line] = spellLines(b, { memorizedSpells: [fire[0]] } as any, spellGroups(b, s, rules, ix), ix);
+    assert.equal(line.mpCost, line.spell.level); assert.equal(line.cantrip, true); assert.equal(line.memorized, true);
+  });
+});

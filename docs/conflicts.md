@@ -159,6 +159,26 @@ Prioritet: 🔴 blokerer MVP (karakteroprettelse/sheet regner forkert) · 🟡 v
 
 ---
 
+## Spells (tilføjet 2026-11-14)
+
+### K11 🔴 Startspells ved study-feats for et helt realm
+- **s. 127/153:** "3 spells fra hvert tier, man har en feat for". Eksemplet bruger domæne-feats (Warding, Nature), men nogle feats gælder et helt realm (Elementalism, Mysticism).
+- **Beslutning:** ✅ 3 spells pr. study-feat-tier. Magic study I: Elementalism giver 3 spells på level 1–5, frit fordelt på Fire, Earth, Air og Water. Kun studies taget på level 1 giver startspells.
+
+### K12 🟡 Grænse for memoriserede spells
+- **s. 153:** "5 + the spell domains linked attribute + ½ Hero level". Det fremgår ikke, om grænsen gælder samlet eller pr. domæne.
+- **Beslutning:** ✅ Pr. study (realm eller domæne): 5 + modifier for realmets casting-attribut + ½ level, rundet ned.
+
+### K13 ⚪ Spells lært under spillet
+- **s. 152:** Spells læres fra skriftruller, bøger og lærere. Det kræver studietid og et check mod DC 10 + spellens level.
+- **Beslutning:** ✅ Spilleren tilføjer selv lærte spells i appen. Der er ingen grænse for antallet, men spellen skal ligge inden for ens studies. Checket slås ved bordet.
+
+### K14 ⚪ Druidic practices
+- "Gain 3 extra Nature spells from start."
+- **Beslutning:** ✅ Kræver adgang til Nature-spells. De 3 spells kan vælges fra ethvert tier, man har adgang til.
+
+---
+
 ## Til forfatteren – forslag til rettelser i bogen
 
 1. Skill points: gør s. 18 ens med s. 126 og s. 129 (25 ved start, 15 pr. level).
@@ -173,3 +193,4 @@ Prioritet: 🔴 blokerer MVP (karakteroprettelse/sheet regner forkert) · 🟡 v
 10. Chain shirt ENC 12 – er det rigtigt?
 11. Treegon og skjolde.
 12. Forklar ⊙ (free action) sammen med de andre ikoner på s. 140.
+13. Spells: gælder 3 startspells pr. realm-feat eller pr. domæne? Er grænsen for memoriserede spells samlet eller pr. domæne?

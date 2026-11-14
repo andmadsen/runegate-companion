@@ -2,7 +2,7 @@
   "meta": {
     "book": "core",
     "version": "2026-09-19",
-    "importedAt": "2026-11-13T23:53:28+00:00",
+    "importedAt": "2026-11-14T00:35:24+00:00",
     "sourceFile": "d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf"
   },
   "progression": {
@@ -215,6 +215,64 @@
       "bp": 10,
       "cp": 1
     },
+    "realms": [
+      {
+        "id": "realm.elementalism",
+        "name": "Elementalism",
+        "skill": "skill.magic-elementalism",
+        "domains": [
+          {
+            "id": "domain.fire",
+            "name": "Fire"
+          },
+          {
+            "id": "domain.earth",
+            "name": "Earth"
+          },
+          {
+            "id": "domain.air",
+            "name": "Air"
+          },
+          {
+            "id": "domain.water",
+            "name": "Water"
+          }
+        ]
+      },
+      {
+        "id": "realm.spiritualism",
+        "name": "Spiritualism",
+        "skill": "skill.magic-spiritualism",
+        "domains": [
+          {
+            "id": "domain.warding",
+            "name": "Warding"
+          },
+          {
+            "id": "domain.nature",
+            "name": "Nature"
+          }
+        ]
+      },
+      {
+        "id": "realm.mysticism",
+        "name": "Mysticism",
+        "skill": "skill.magic-mysticism",
+        "domains": [
+          {
+            "id": "domain.mentalism",
+            "name": "Mentalism"
+          },
+          {
+            "id": "domain.dark-magic",
+            "name": "Dark magic"
+          }
+        ]
+      }
+    ],
+    "startingSpellsPerTier": 3,
+    "spellLevelsPerTier": 5,
+    "memorizedSpellsBase": 5,
     "levels": [
       {
         "level": 2,

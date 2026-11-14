@@ -1,0 +1,15 @@
+{
+  "_about": "Lægges oven på udtrukne backgrounds, nøglet på ID.",
+  "overrides": {
+    "background.druidic-practices": {
+      "benefit": {
+        "kind": "extraSpells",
+        "group": "domain.nature",
+        "count": 3
+      },
+      "clarifications": [
+        "House ruling: the 3 extra Nature spells require access to Nature spells (a Magic study feat for Nature) and can be of any tier you have access to."
+      ]
+    }
+  }
+}

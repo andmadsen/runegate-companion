@@ -208,5 +208,63 @@
     "sp": 100,
     "bp": 10,
     "cp": 1
-  }
+  },
+  "realms": [
+    {
+      "id": "realm.elementalism",
+      "name": "Elementalism",
+      "skill": "skill.magic-elementalism",
+      "domains": [
+        {
+          "id": "domain.fire",
+          "name": "Fire"
+        },
+        {
+          "id": "domain.earth",
+          "name": "Earth"
+        },
+        {
+          "id": "domain.air",
+          "name": "Air"
+        },
+        {
+          "id": "domain.water",
+          "name": "Water"
+        }
+      ]
+    },
+    {
+      "id": "realm.spiritualism",
+      "name": "Spiritualism",
+      "skill": "skill.magic-spiritualism",
+      "domains": [
+        {
+          "id": "domain.warding",
+          "name": "Warding"
+        },
+        {
+          "id": "domain.nature",
+          "name": "Nature"
+        }
+      ]
+    },
+    {
+      "id": "realm.mysticism",
+      "name": "Mysticism",
+      "skill": "skill.magic-mysticism",
+      "domains": [
+        {
+          "id": "domain.mentalism",
+          "name": "Mentalism"
+        },
+        {
+          "id": "domain.dark-magic",
+          "name": "Dark magic"
+        }
+      ]
+    }
+  ],
+  "startingSpellsPerTier": 3,
+  "spellLevelsPerTier": 5,
+  "memorizedSpellsBase": 5
 }

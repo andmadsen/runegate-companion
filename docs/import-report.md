@@ -1,6 +1,6 @@
 # Import-rapport – regelbog 2026-09-19
 
-Genereret 2026-11-13T23:53:28+00:00 fra `d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf`.
+Genereret 2026-11-14T00:35:24+00:00 fra `d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf`.
 
 | Kategori | Antal |
 |---|---|
@@ -29,6 +29,7 @@ Ingen.
 
 - ancestries: 1
 - feats: 53
+- backgrounds: 1
 - skills: 7
 - properties: 6
 - spells: 1

@@ -5,6 +5,8 @@
 import type { Ancestry, Background, Feat, Prerequisite, RulesPackage } from "../rules/types.ts";
 import type { CharacterBuild, InventoryItem } from "../character/types.ts";
 import { allFeatPicks, ATTRIBUTES, computeSheet, RulesIndex, SAVES, type Sheet } from "./compute.ts";
+import { groupForSpell, spellGroups, spellTier, startingSpellAllowance } from "./spells.ts";
+import type { Spell } from "../rules/types.ts";
 
 export interface Issue {
   severity: "error" | "warning";
@@ -115,8 +117,45 @@ export function validateBuild(build: CharacterBuild, inventory: InventoryItem[],
       if (!p.choices?.[c.key]) err("feat.choice", `${p.feat.name}: ${c.prompt}.`, p.level);
     }
   }
+  validateSpells(build, sheet, rules, ix, err, warn);
   return issues;
 }
+
+function validateSpells(build: CharacterBuild, sheet: Sheet, rules: RulesPackage, ix: RulesIndex,
+  err: (c: string, m: string) => void, warn: (c: string, m: string) => void) {
+  const groups = spellGroups(build, sheet, rules, ix);
+  const known = build.spells ?? [];
+  const seen = new Set<string>();
+  const used = new Map<string, number>();
+  let extraUsed = 0;
+  const { perTier, extra } = startingSpellAllowance(build, groups, rules, ix);
+  for (const k of known) {
+    const spell = ix.get<Spell>(k.spell, "spell");
+    if (!spell) { err("spell.unknown", `Unknown spell ${k.spell}.`); continue; }
+    if (seen.has(spell.id)) err("spell.duplicate", `${spell.name} is known twice.`);
+    seen.add(spell.id);
+    const group = groupForSpell(spell, groups);
+    if (!group) { err("spell.access", `${spell.name}: you have no access to level ${spell.level} ${idName(spell.domain)} spells.`); continue; }
+    if (k.source !== "start") continue;
+    const key = `${group.id}#${spellTier(spell, rules)}`;
+    const n = (used.get(key) ?? 0) + 1;
+    if (n <= (perTier.get(key) ?? 0)) used.set(key, n);
+    else if (extra && (extra.group === spell.domain || extra.group === group.id) && extraUsed < extra.count) extraUsed++;
+    else err("spell.start.count", `Too many starting ${group.name} spells of level ${tierRange(spellTier(spell, rules), rules)}.`);
+  }
+  for (const [key, max] of perTier) {
+    const left = max - (used.get(key) ?? 0);
+    const [gid, t] = key.split("#");
+    const g = groups.find((x) => x.id === gid)!;
+    if (left > 0) warn("spell.start.left", `${left} starting ${g.name} spell(s) of level ${tierRange(Number(t), rules)} not chosen yet.`);
+  }
+  if (extra && extraUsed < extra.count) {
+    warn("spell.start.extra", `${extra.count - extraUsed} extra ${idName(extra.group)} spell(s) from your background not chosen yet.`);
+  }
+}
+
+const idName = (id: string) => { const s = id.split(".").pop()!.replace(/-/g, " "); return s[0].toUpperCase() + s.slice(1); };
+const tierRange = (t: number, rules: RulesPackage) => `${(t - 1) * rules.progression.spellLevelsPerTier + 1}-${t * rules.progression.spellLevelsPerTier}`;
 
 function checkPrereq(pre: Prerequisite, sheet: Sheet, build: CharacterBuild, regularCount: number,
   hasFeat: (id: string) => boolean, ix: RulesIndex): string | null | "unchecked" {

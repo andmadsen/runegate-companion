@@ -94,6 +94,8 @@ def main(pdf: str) -> None:
     apply_curation(spells, load("spells.json")["overrides"])
     skills = ex.parse_skills(pages)
     equipment = ex.parse_equipment(pdf)
+    backgrounds = ex.parse_backgrounds(pdf, skills, feats)
+    apply_curation(backgrounds, load("backgrounds.json")["overrides"])
     properties = ex.parse_properties(pdf)
     known = {p["id"] for p in properties}
     properties += [p for p in load("properties.json")["additions"] if p["id"] not in known]
@@ -106,7 +108,7 @@ def main(pdf: str) -> None:
         "ancestries": load("ancestries.json")["items"],
         "archetypes": load("archetypes.json")["items"],
         "feats": feats,
-        "backgrounds": ex.parse_backgrounds(pdf, skills, feats),
+        "backgrounds": backgrounds,
         "skills": skills,
         "properties": properties,
         "weapons": equipment["weapons"],

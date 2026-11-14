@@ -27,6 +27,12 @@ export interface CharacterBuild {
 
   /** Ét element pr. hero level; levels[0] er level 1. Level = levels.length. */
   levels: LevelChoices[];
+
+  /**
+   * Kendte spells. "start" = valgt ved oprettelse (3 pr. study-tier),
+   * "learned" = lært i spillet fra skriftruller, lærere osv. (ingen grænse).
+   */
+  spells?: { spell: Id; source: "start" | "learned" }[];
 }
 
 export interface FeatPick {
@@ -77,6 +83,8 @@ export interface PlayState {
   wounds: number;
   conditions: { id: string; value?: number; note?: string }[];
   fatePoints: number;
+  /** Spells, der er memoriseret lige nu (skiftes under hvil). */
+  memorizedSpells?: Id[];
   xp: number;
   money: Record<Currency, number>;
 }

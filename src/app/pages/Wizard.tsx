@@ -8,18 +8,20 @@ import type { Ancestry, Armor, Attribute, Background, Feat, Save, Skill, Weapon 
 import type { CharacterBuild, FeatPick, InventoryItem, LevelChoices } from "../../character/types.ts";
 import { ATTRIBUTES, attributeModifier, computeSheet, rankBonus, SAVES, type Sheet } from "../../engine/compute.ts";
 import { featAvailability, validateBuild, type Issue } from "../../engine/validate.ts";
+import { spellGroups, spellTier, startingSpellAllowance } from "../../engine/spells.ts";
+import { DomainFilter, SpellCard } from "../components/Spells.tsx";
 import { useRules } from "../lib/rules.tsx";
 import { repo } from "../lib/repo.ts";
 import { actionLabel, ATTRIBUTE_NAMES, emptyLevel, initialPlay, newBuild, priceLabel, signed } from "../lib/character.ts";
 
-type StepId = "ancestry" | "attributes" | "background" | "gains" | "feats" | "skills" | "saves" | "gear" | "review";
+type StepId = "ancestry" | "attributes" | "background" | "gains" | "feats" | "spells" | "skills" | "saves" | "gear" | "review";
 const STEP_LABEL: Record<StepId, string> = {
   ancestry: "Ancestry", attributes: "Attributes", background: "Background", gains: "Level gains",
-  feats: "Feats", skills: "Skills", saves: "Saves", gear: "Gear", review: "Review",
+  feats: "Feats", spells: "Spells", skills: "Skills", saves: "Saves", gear: "Gear", review: "Review",
 };
 const STEP_FOR_ISSUE: [RegExp, StepId][] = [
   [/^ancestry/, "ancestry"], [/^attr/, "attributes"], [/^background/, "background"],
-  [/^level\.(attr|bpmp)/, "gains"], [/^feat/, "feats"], [/^skill/, "skills"], [/^level\.saves/, "saves"],
+  [/^level\.(attr|bpmp)/, "gains"], [/^feat/, "feats"], [/^spell/, "spells"], [/^skill/, "skills"], [/^level\.saves/, "saves"],
 ];
 const stepOf = (i: Issue): StepId => STEP_FOR_ISSUE.find(([re]) => re.test(i.code))?.[1] ?? "review";
 
@@ -49,8 +51,9 @@ export function Wizard({ mode }: { mode: "create" | "levelup" }) {
 
   const level = build.levels.length;
   const row = rules.progression.levels.find((l) => l.level === level);
+  const hasSpells = mode === "create" && spellGroups(build, sheet, rules, ix).some((g) => g.tierAtLevel1 > 0);
   const steps: StepId[] = mode === "create"
-    ? ["ancestry", "attributes", "background", "feats", "skills", "saves", "gear", "review"]
+    ? ["ancestry", "attributes", "background", "feats", ...(hasSpells ? ["spells" as const] : []), "skills", "saves", "gear", "review"]
     : [...(row?.attributePoints || row?.bpOrMp ? ["gains" as const] : []), "feats", "skills",
        ...(row?.saveProficiencyPoints ? ["saves" as const] : []), "review"];
   const current = steps.includes(step) ? step : steps[0];
@@ -102,6 +105,7 @@ export function Wizard({ mode }: { mode: "create" | "levelup" }) {
       {current === "background" && <BackgroundStep {...props} />}
       {current === "gains" && <GainsStep {...props} />}
       {current === "feats" && <FeatsStep {...props} />}
+      {current === "spells" && <SpellsStep {...props} />}
       {current === "skills" && <SkillsStep {...props} />}
       {current === "saves" && <SavesStep {...props} />}
       {current === "gear" && <GearStep inventory={inventory} setInventory={setInventory} sheet={sheet} />}
@@ -281,7 +285,9 @@ function BackgroundStep({ build, update }: StepProps) {
             <h3>{b.name}</h3>
             <p className="small muted" style={{ marginTop: "0.35rem" }}>{b.text}</p>
             <p className="small" style={{ margin: 0 }}>
-              <b>{b.benefit.kind === "feat" ? `Free feat: ${ix.feat(b.benefit.feat)?.name}` : b.benefit.kind === "socialStanding" ? `Social standing ${b.benefit.min}+` : b.benefit.text}</b>
+              <b>{b.benefit.kind === "feat" ? `Free feat: ${ix.feat(b.benefit.feat)?.name}`
+                : b.benefit.kind === "socialStanding" ? `Social standing ${b.benefit.min}+`
+                : b.benefit.kind === "extraSpells" ? `${b.benefit.count} extra ${idName(b.benefit.group)} spells at start` : b.benefit.text}</b>
             </p>
             <p className="small muted" style={{ margin: 0 }}>{b.skillRanks.map((r) => `${rankLabel(r)} (${r.ranks})`).join(", ")}</p>
           </button>
@@ -451,6 +457,54 @@ function FeatsStep({ build, sheet, updateLevel }: StepProps) {
           );
         })}
       </ul>
+    </section>
+  );
+}
+
+// ---------------------------------------------------------------------------------------------
+const idName = (id: string) => { const s = id.split(".").pop()!.replace(/-/g, " "); return s[0].toUpperCase() + s.slice(1); };
+
+function SpellsStep({ build, sheet, update }: StepProps) {
+  const { rules, ix } = useRules();
+  const groups = spellGroups(build, sheet, rules, ix).filter((g) => g.tierAtLevel1 > 0);
+  const { extra } = startingSpellAllowance(build, groups, rules, ix);
+  const per = rules.progression.startingSpellsPerTier;
+  const chosen = new Set((build.spells ?? []).map((s) => s.spell));
+  const toggle = (id: string) => update((b) => ({
+    ...b, spells: chosen.has(id) ? (b.spells ?? []).filter((s) => s.spell !== id) : [...(b.spells ?? []), { spell: id, source: "start" as const }],
+  }));
+  const size = rules.progression.spellLevelsPerTier;
+  const [filter, setFilter] = useState<Record<string, string>>({});
+  return (
+    <section className="grid">
+      <h2>Starting spells</h2>
+      <p className="muted">For each Magic study you take at level 1, choose {per} spells of that study's level range. You learn more spells during play from scrolls, tomes and teachers.</p>
+      {extra && <p className="small">Your background gives you {extra.count} extra {idName(extra.group)} spells.</p>}
+      {groups.flatMap((g) => Array.from({ length: g.tierAtLevel1 }, (_, i) => i + 1).map((tier) => {
+        const all = rules.spells.filter((sp) => g.domains.includes(sp.domain) && spellTier(sp, rules) === tier);
+        const n = all.filter((sp) => chosen.has(sp.id)).length;
+        const key = `${g.id}${tier}`;
+        const list = all.filter((sp) => !filter[key] || sp.domain === filter[key] || chosen.has(sp.id));
+        const max = per + (extra && (extra.group === g.id || g.domains.includes(extra.group)) ? extra.count : 0);
+        return (
+          <div key={`${g.id}${tier}`} className="panel">
+            <div className="spread">
+              <h3>{g.name}, level {(tier - 1) * size + 1}-{tier * size}</h3>
+              <span className={`counter ${n > max ? "over" : ""}`}>{n}/{per}{max > per ? ` +${max - per}` : ""}</span>
+            </div>
+            <DomainFilter domains={g.domains} value={filter[key] ?? ""} onChange={(d) => setFilter({ ...filter, [key]: d })} />
+            <ul className="list">
+              {list.map((sp) => (
+                <li key={sp.id}>
+                  <SpellCard spell={sp} action={
+                    <button className={chosen.has(sp.id) ? "btn small" : "btn small quiet"} disabled={!chosen.has(sp.id) && n >= max}
+                      onClick={() => toggle(sp.id)}>{chosen.has(sp.id) ? "Chosen" : "Choose"}</button>} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      }))}
     </section>
   );
 }

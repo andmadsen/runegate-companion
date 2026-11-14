@@ -20,6 +20,7 @@ Løsningsarkitekt: projektejeren. Ingen strukturelle ændringer uden godkendelse
 | D12 | Databaseskema | `supabase/migrations/…_init.sql`: profiler, kampagner (opretter = GM), medlemmer, karakterer (build + play som JSONB) og inventory. Spillere ejer deres karakterer; GM kan læse dem i kampagnen, men ikke rette | 2026-11-14 |
 | D13 | Levering af regeldata | Regeldata ligger i en privat Supabase-bucket (`rules/<version>/rules.json`) og hentes først efter login, så regelbogens tekst ikke ligger i den offentlige app (D4). Seneste version gemmes i browseren til brug uden net | 2026-11-14 |
 | D14 | Appens udseende | Stengrå/skifer med runeblå accent, Alegreya + Alegreya Sans, værdier som "runesten", der forklarer sig selv ved tryk | 2026-11-14 |
+| D15 | Spells | Kendte spells gemmes i build (startspells og spells lært i spillet), memoriserede spells i play-tilstanden. Regler og husfortolkninger K11–K14 i `docs/conflicts.md` | 2026-11-14 |
 
 D9–D11 er truffet af Claude på projektejerens vegne efter hans ønske og kan ændres.
 

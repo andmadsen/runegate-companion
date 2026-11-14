@@ -7,10 +7,10 @@ Character companion til rollespillet RuneGate. Projektejeren (andmadsen) er **l�
 Færdigt:
 - **Fase 0 – rammer:** beslutninger D0–D12 i `docs/decisions.md`. Whiteboard: https://claude.ai/artifact/6Ab2cHHir6Fme4UMFJWg9K
 - **Fase 1 – regeldata:** `tools/import/` læser regelbogen (PDF) → `data/rules/2026-09-19/rules.json`. Kuratering i `data/curation/*.json`. 25 regelkonflikter er afgjort som husfortolkninger (`docs/conflicts.md`, felt `clarifications`).
-- **Regelmotor:** `src/engine/` (compute, validate, modifier-stabling), karaktermodel i `src/character/types.ts`. 36 tests: `npm test`.
+- **Regelmotor:** `src/engine/` (compute, validate, modifier-stabling), karaktermodel i `src/character/types.ts`. 43 tests: `npm test`.
 - **Database:** Supabase-projekt `ahrtztpryhrhkgfvlkzx` (EU). Migrationerne i `supabase/migrations/` er anvendt, og RLS er testet (`supabase/tests/`). Ingen sikkerhedsadvarsler fra Supabase.
 
-- **Fase 2 – app (første version):** React + Vite i `src/app/`. Login via magic link, karakterliste, guidet oprettelse, sheet med forklaring af tal, tracking (BP/MP/wounds/conditions/fate), inventory med egne items og attunement, level up. Kør lokalt uden Supabase-variabler = "local mode" (data i browseren, regler fra repoet).
+- **Fase 2 – app (første version):** React + Vite i `src/app/`. Login via magic link, karakterliste, guidet oprettelse, sheet med forklaring af tal, tracking (BP/MP/wounds/conditions/fate), inventory med egne items og attunement, level up, spells (startspells i guiden; Spells-fane med memorisering og lær nye). Kør lokalt uden Supabase-variabler = "local mode" (data i browseren, regler fra repoet).
 
 - **Drift:** appen kører på https://runegate-companion.vercel.app (Vercel, auto-deploy fra `main`).
 

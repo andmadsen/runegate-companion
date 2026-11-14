@@ -2,7 +2,7 @@
   "meta": {
     "book": "core",
     "version": "2026-09-19",
-    "importedAt": "2026-11-13T23:53:28+00:00",
+    "importedAt": "2026-11-14T00:35:24+00:00",
     "sourceFile": "d63232c2-RuneGate_Core_Rulebook_-_v20260919_1259.pdf"
   },
   "progression": {
@@ -215,6 +215,64 @@
       "bp": 10,
       "cp": 1
     },
+    "realms": [
+      {
+        "id": "realm.elementalism",
+        "name": "Elementalism",
+        "skill": "skill.magic-elementalism",
+        "domains": [
+          {
+            "id": "domain.fire",
+            "name": "Fire"
+          },
+          {
+            "id": "domain.earth",
+            "name": "Earth"
+          },
+          {
+            "id": "domain.air",
+            "name": "Air"
+          },
+          {
+            "id": "domain.water",
+            "name": "Water"
+          }
+        ]
+      },
+      {
+        "id": "realm.spiritualism",
+        "name": "Spiritualism",
+        "skill": "skill.magic-spiritualism",
+        "domains": [
+          {
+            "id": "domain.warding",
+            "name": "Warding"
+          },
+          {
+            "id": "domain.nature",
+            "name": "Nature"
+          }
+        ]
+      },
+      {
+        "id": "realm.mysticism",
+        "name": "Mysticism",
+        "skill": "skill.magic-mysticism",
+        "domains": [
+          {
+            "id": "domain.mentalism",
+            "name": "Mentalism"
+          },
+          {
+            "id": "domain.dark-magic",
+            "name": "Dark magic"
+          }
+        ]
+      }
+    ],
+    "startingSpellsPerTier": 3,
+    "spellLevelsPerTier": 5,
+    "memorizedSpellsBase": 5,
     "levels": [
       {
         "level": 2,
@@ -10064,8 +10122,9 @@
       "name": "Druidic practices",
       "text": "You learned your craft under open skies and whispering boughs, where nature was both teacher and test. Through ritual and patience, you felt the pulse beneath the soil and the breath of life in every leaf and storm. You’ve healed with herbs, guided travelers by starlight, and spoken with things that do not use words. But the balance you serve now trembles, and the wild calls you to step beyond the grove—to mend what’s broken before silence takes root.",
       "benefit": {
-        "kind": "text",
-        "text": "Gain 3 extra Nature spells from start."
+        "kind": "extraSpells",
+        "group": "domain.nature",
+        "count": 3
       },
       "skillRanks": [
         {
@@ -10098,7 +10157,10 @@
         "version": "2026-09-19",
         "page": 94,
         "section": "Backgrounds"
-      }
+      },
+      "clarifications": [
+        "House ruling: the 3 extra Nature spells require access to Nature spells (a Magic study feat for Nature) and can be of any tier you have access to."
+      ]
     },
     {
       "id": "background.war-bred",

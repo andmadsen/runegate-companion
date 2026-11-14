@@ -203,6 +203,8 @@ export interface Background extends RuleEntity {
   benefit:
     | { kind: "feat"; feat: Id }
     | { kind: "socialStanding"; min: number }
+    /** Druidic practices: 3 ekstra startspells i et domæne/realm, man har adgang til. */
+    | { kind: "extraSpells"; group: Id; count: number }
     | { kind: "text"; text: string };
   skillRanks: BackgroundSkillRanks[];
 }
@@ -296,6 +298,14 @@ export interface Progression {
     attributePoints?: number;
   }[];
   socialStanding: { roll: [number, number]; status: string; wealth: Price }[];
+  /** Spell realms, deres casting-skill og domæner (s. 152). */
+  realms: { id: Id; name: string; skill: Id; domains: { id: Id; name: string }[] }[];
+  /** Antal startspells pr. study-tier (s. 127/153). */
+  startingSpellsPerTier: number;
+  /** Levels pr. study-tier (Study I = 1-5, II = 6-10 …). */
+  spellLevelsPerTier: number;
+  /** Memoriserede spells: base + linked attribute-modifier + ½ hero level (s. 153). */
+  memorizedSpellsBase: number;
 }
 
 /** Hele regelpakken for én version af bogen. */

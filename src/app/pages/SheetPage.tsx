@@ -13,6 +13,9 @@ import { useRules } from "../lib/rules.tsx";
 import { repo } from "../lib/repo.ts";
 import { actionLabel, ATTRIBUTE_NAMES, idLabel, priceLabel, signed } from "../lib/character.ts";
 import { BottomSheet, BreakdownTable } from "../components/Breakdown.tsx";
+import { DomainFilter, SpellCard } from "../components/Spells.tsx";
+import { groupForSpell, spellGroups, spellLines } from "../../engine/spells.ts";
+import type { CharacterBuild } from "../../character/types.ts";
 import { IssueList } from "./Wizard.tsx";
 
 export function SheetPage() {
@@ -22,25 +25,47 @@ export function SheetPage() {
   const [char, setChar] = useState<Character | null>(null);
   const [missing, setMissing] = useState(false);
   const [explain, setExplain] = useState<{ title: string; value: Value } | null>(null);
-  const [tab, setTab] = useState<"sheet" | "skills" | "feats" | "gear">("sheet");
+  const [tab, setTab] = useState<"sheet" | "skills" | "spells" | "feats" | "gear">("sheet");
   const saveTimer = useRef<number | undefined>(undefined);
 
   useEffect(() => { repo.get(id!).then((c) => (c ? setChar(c) : setMissing(true))); }, [id]);
   const sheet = useMemo(() => char && computeSheet(char.build, char.inventory, rules, ix), [char, rules, ix]);
 
+  // Tilstand under spil gemmes kort efter sidste ændring – og altid med det samme,
+  // når siden skjules eller lukkes (fx når telefonen låses ved bordet).
+  const pending = useRef<{ id: string; play: PlayState } | null>(null);
+  const flush = useCallback(() => {
+    window.clearTimeout(saveTimer.current);
+    if (pending.current) { repo.savePlay(pending.current.id, pending.current.play); pending.current = null; }
+  }, []);
+  useEffect(() => {
+    const onHide = () => { if (document.visibilityState === "hidden") flush(); };
+    window.addEventListener("pagehide", flush);
+    document.addEventListener("visibilitychange", onHide);
+    return () => { flush(); window.removeEventListener("pagehide", flush); document.removeEventListener("visibilitychange", onHide); };
+  }, [flush]);
   const setPlay = useCallback((fn: (p: PlayState) => PlayState) => {
     setChar((c) => {
       if (!c) return c;
       const play = fn(c.play);
+      pending.current = { id: c.id, play };
       window.clearTimeout(saveTimer.current);
-      saveTimer.current = window.setTimeout(() => repo.savePlay(c.id, play), 500);
+      saveTimer.current = window.setTimeout(flush, 500);
       return { ...c, play };
     });
-  }, []);
+  }, [flush]);
   const saveItem = (item: InventoryItem) => {
     setChar((c) => c && ({ ...c, inventory: c.inventory.some((i) => i.instanceId === item.instanceId)
       ? c.inventory.map((i) => (i.instanceId === item.instanceId ? item : i)) : [...c.inventory, item] }));
     repo.saveItem(char!.id, item);
+  };
+  const saveBuild = (fn: (b: CharacterBuild) => CharacterBuild) => {
+    setChar((c) => {
+      if (!c) return c;
+      const build = fn(c.build);
+      repo.saveBuild(c.id, build);
+      return { ...c, build };
+    });
   };
   const deleteItem = (item: InventoryItem) => {
     setChar((c) => c && ({ ...c, inventory: c.inventory.filter((i) => i.instanceId !== item.instanceId) }));
@@ -75,9 +100,9 @@ export function SheetPage() {
       {errors.length > 0 && <div className="panel section"><h3>This character breaks a rule</h3><div style={{ marginTop: "0.5rem" }}><IssueList issues={errors} /></div></div>}
 
       <nav className="row section" aria-label="Sheet sections">
-        {(["sheet", "skills", "feats", "gear"] as const).map((t) => (
+        {(["sheet", "skills", "spells", "feats", "gear"] as const).map((t) => (
           <button key={t} className="btn small quiet" aria-pressed={tab === t} onClick={() => setTab(t)}>
-            {{ sheet: "Sheet", skills: "Skills", feats: "Feats", gear: "Gear" }[t]}
+            {{ sheet: "Sheet", skills: "Skills", spells: "Spells", feats: "Feats", gear: "Gear" }[t]}
           </button>
         ))}
       </nav>
@@ -144,6 +169,7 @@ export function SheetPage() {
       )}
 
       {tab === "skills" && <SkillsTab sheet={sheet} show={show} />}
+      {tab === "spells" && <SpellsTab build={build} play={play} sheet={sheet} setPlay={setPlay} saveBuild={saveBuild} />}
       {tab === "feats" && <FeatsTab feats={[...(sheet.backgroundFeat ? [{ feat: sheet.backgroundFeat, level: 1, fromBackground: true }] : []), ...sheet.feats]} />}
       {tab === "gear" && (
         <GearTab char={char} sheet={sheet} saveItem={saveItem} deleteItem={deleteItem} play={play} setPlay={setPlay}
@@ -220,6 +246,107 @@ function Conditions({ play, setPlay }: { play: PlayState; setPlay: (fn: (p: Play
         <input type="text" placeholder="Add a condition, e.g. Staggered(1)" value={text} onChange={(e) => setText(e.target.value)} style={{ flex: 1 }} />
         <button className="btn quiet">Add</button>
       </form>
+    </section>
+  );
+}
+
+function SpellsTab({ build, play, sheet, setPlay, saveBuild }: {
+  build: CharacterBuild; play: PlayState; sheet: NonNullable<ReturnType<typeof computeSheet>>;
+  setPlay: (fn: (p: PlayState) => PlayState) => void; saveBuild: (fn: (b: CharacterBuild) => CharacterBuild) => void;
+}) {
+  const { rules, ix } = useRules();
+  const [learning, setLearning] = useState(false);
+  const [q, setQ] = useState("");
+  const [domain, setDomain] = useState("");
+  const groups = spellGroups(build, sheet, rules, ix);
+  const lines = spellLines(build, play, groups, ix);
+  const known = new Set(lines.map((l) => l.spell.id));
+  const memorized = new Set(play.memorizedSpells ?? []);
+  const toggleMem = (id: string) => setPlay((p) => {
+    const m = new Set(p.memorizedSpells ?? []);
+    if (m.has(id)) m.delete(id); else m.add(id);
+    return { ...p, memorizedSpells: [...m] };
+  });
+  const forget = (id: string) => {
+    if (!window.confirm("Forget this spell? It is removed from your known spells.")) return;
+    saveBuild((b) => ({ ...b, spells: (b.spells ?? []).filter((s) => s.spell !== id) }));
+    setPlay((p) => ({ ...p, memorizedSpells: (p.memorizedSpells ?? []).filter((x) => x !== id) }));
+  };
+  const learnable = rules.spells.filter((sp) => !known.has(sp.id) && groupForSpell(sp, groups)
+    && (!q || sp.name.toLowerCase().includes(q.toLowerCase())) && (!domain || sp.domain === domain))
+    .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+  const accessDomains = [...new Set(groups.flatMap((g) => g.domains))];
+
+  if (!groups.length && !lines.length) {
+    return (
+      <section className="section panel">
+        <h3>No spellcasting yet</h3>
+        <p style={{ marginTop: "0.5rem" }}>Spells require a Magic study feat (for example Magic study I: Elementalism). Take one when you level up, and you can learn spells here.</p>
+      </section>
+    );
+  }
+  const sections = [...groups.map((g) => ({ g, items: lines.filter((l) => l.group?.id === g.id) })),
+    { g: undefined, items: lines.filter((l) => !l.group) }].filter((x) => x.g || x.items.length);
+  return (
+    <section className="section grid">
+      <div className="spread">
+        <h2>Spells</h2>
+        <button className="btn quiet" aria-pressed={learning} onClick={() => {
+          setLearning(!learning);
+          if (!learning) window.setTimeout(() => document.getElementById("learn-spell")?.scrollIntoView({ behavior: "smooth" }), 50);
+        }}>Learn a spell</button>
+      </div>
+      <p className="small muted">A spell costs MP equal to its level plus any heightening, and its casting DC is its level plus heightening. Spells at or below your cantrip rank are cast automatically, without a roll.</p>
+      {sections.map(({ g, items }) => {
+        const memCount = items.filter((l) => memorized.has(l.spell.id)).length;
+        return (
+          <div key={g?.id ?? "other"} className="panel">
+            <div className="spread">
+              <h3>{g ? g.name : "No longer within your studies"}</h3>
+              {g && <span className={`small ${memCount > g.memorizedLimit ? "" : "muted"}`} style={memCount > g.memorizedLimit ? { color: "var(--bad)" } : undefined}>
+                {memCount}/{g.memorizedLimit} memorized</span>}
+            </div>
+            {g && <p className="small muted" style={{ margin: "0.2rem 0 0" }}>Spells up to level {g.maxLevel}, cantrip rank {g.cantripRank} ({g.realm.name} skill)</p>}
+            <ul className="list">
+              {items.length === 0 && <li className="small muted">No spells known yet.</li>}
+              {items.map((l) => (
+                <li key={l.spell.id}>
+                  <SpellCard spell={l.spell}
+                    badges={<>
+                      <span className="tag" style={{ color: "var(--mind)" }}>{l.mpCost} MP</span>
+                      <span className="tag">DC {l.spell.level}</span>
+                      {l.cantrip && <span className="tag">Cantrip</span>}
+                    </>}
+                    action={
+                      <div className="grid" style={{ gap: "0.3rem", justifyItems: "end" }}>
+                        <label className="row small"><input type="checkbox" checked={l.memorized}
+                          disabled={!l.memorized && !!g && memCount >= g.memorizedLimit}
+                          onChange={() => toggleMem(l.spell.id)} /> Memorized</label>
+                        <button className="btn small quiet" onClick={() => forget(l.spell.id)}>Forget</button>
+                      </div>} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+      {learning && (
+        <div className="panel grid" id="learn-spell">
+          <div className="spread"><h3>Learn a spell</h3><button className="btn small quiet" onClick={() => setLearning(false)}>Done</button></div>
+          <p className="small muted">You learn a spell from a scroll, tome or teacher: study it for as many days as its level, then pass a casting check against DC 10 + its level. Add it here once you have learned it.</p>
+          <input type="search" placeholder="Search spells you can learn" value={q} onChange={(e) => setQ(e.target.value)} />
+          <DomainFilter domains={accessDomains} value={domain} onChange={setDomain} />
+          <ul className="list">
+            {learnable.slice(0, 40).map((sp) => (
+              <li key={sp.id}>
+                <SpellCard spell={sp} action={<button className="btn small quiet"
+                  onClick={() => saveBuild((b) => ({ ...b, spells: [...(b.spells ?? []), { spell: sp.id, source: "learned" }] }))}>Learn</button>} />
+              </li>
+            ))}
+            {learnable.length === 0 && <li className="small muted">No spells within your studies match.</li>}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }
