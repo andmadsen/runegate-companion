@@ -12,9 +12,11 @@ Færdigt:
 
 - **Fase 2 – app (første version):** React + Vite i `src/app/`. Login via magic link, karakterliste, guidet oprettelse, sheet med forklaring af tal, tracking (BP/MP/wounds/conditions/fate), inventory med egne items og attunement, level up. Kør lokalt uden Supabase-variabler = "local mode" (data i browseren, regler fra repoet).
 
+- **Drift:** appen kører på https://runegate-companion.vercel.app (Vercel, auto-deploy fra `main`).
+
 Næste skridt:
-1. Upload `data/rules/2026-09-19/rules.json` til Supabase Storage-bucket `rules` som `2026-09-19/rules.json` (D13).
-2. Deploy på Vercel fra GitHub; sæt Supabase Auth → URL Configuration (Site URL + redirect) til Vercel-adressen.
+1. Regeldata skal ligge i Supabase Storage-bucket `rules` som `2026-09-19/rules.json` (D13).
+2. Supabase Auth → URL Configuration: Site URL og redirect skal pege på Vercel-adressen.
 3. PWA/offline, regelopslag (fase 4), GM-modul (fase 5).
 
 ## Faste principper
