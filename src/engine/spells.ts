@@ -28,6 +28,7 @@ export interface SpellGroup {
 
 export function spellGroups(build: CharacterBuild, sheet: Sheet, rules: RulesPackage, ix: RulesIndex): SpellGroup[] {
   const prog = rules.progression;
+  if (!prog.realms) return []; // ældre regelfil uden spell-regler
   const byGroup = new Map<Id, { tier: number; tierAtLevel1: number }>();
   for (const p of allFeatPicks(build, ix)) {
     const acc = p.feat.grantsSpellAccess;
